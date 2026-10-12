@@ -40,6 +40,7 @@ export default function Navbar() {
           <Link href="/skills" className="hover:text-black dark:hover:text-white transition-colors">Skills</Link>
           <Link href="/mcp" className="hover:text-black dark:hover:text-white transition-colors">MCP Servers</Link>
           <Link href="/trending" className="hover:text-black dark:hover:text-white transition-colors">Trending</Link>
+          <Link href="/design" className="hover:text-black dark:hover:text-white transition-colors">Design</Link>
         </nav>
         <div className="flex items-center gap-2">
           <button onClick={open} className="hidden sm:flex items-center gap-2 text-sm border border-[#E7E5E4] dark:border-[#27272A] rounded-lg px-3 py-1.5 bg-white dark:bg-[#131316] hover:border-neutral-400 transition-colors">
