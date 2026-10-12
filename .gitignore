@@ -1,0 +1,5 @@
+node_modules/
+.next/
+data/cache.json
+.env
+.env.local
