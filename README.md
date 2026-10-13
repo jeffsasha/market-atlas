@@ -13,7 +13,7 @@ Discover financial research projects, agent skills, and MCP servers—then explo
 [![React](https://img.shields.io/badge/React-18-149eca?logo=react)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
-[Features](#features) · [Quick start](#quick-start) · [GitHub Lab](#github-lab) · [Data](#real-github-data) · [Contributing](CONTRIBUTING.md)
+[Features](#features) · [Visit website](https://market-atlas-indol.vercel.app/) · [GitHub Lab](#github-lab) · [Data](#real-github-data) · [Contributing](CONTRIBUTING.md)
 
 </div>
 
@@ -32,44 +32,9 @@ Discover financial research projects, agent skills, and MCP servers—then explo
 
 A quiet, shared dot-grid background, muted lavender/pink accents, a one-time React Bits StrokeText headline, a dark navigation bar with a white mega menu, and a PixelSwap theme transition give the catalog a consistent visual language. The hero opens the shared command palette, and a compact TradingView ticker sits beneath navigation. Light/dark themes, keyboard navigation, focus handling, reduced motion, and a brief ambient-background entrance are included.
 
-## Quick start
+## Visit website
 
-Use **Node.js 22 LTS** and npm.
-
-```bash
-git clone https://github.com/jeffsasha/market-atlas.git
-cd market-atlas
-npm ci
-npm run dev
-```
-
-Open [localhost:3000](http://localhost:3000). The bundled catalog works without a GitHub account, API token, database, or React Bits Pro license.
-
-For a production build:
-
-```bash
-npm run build
-npm start
-```
-
-<details>
-<summary><strong>Optional environment variables and a separate preview</strong></summary>
-
-Copy `.env.example` to `.env.local` if you need a local environment file. The web app loads it through Next.js. For standalone refresh scripts, export `GITHUB_TOKEN` in your shell before running them; those scripts do not load `.env.local` automatically.
-
-| Variable | Purpose | Required? |
-| --- | --- | --- |
-| `GITHUB_TOKEN` | Higher API limits when refreshing repository metadata. Keep it server-side. | No |
-| `MARKETATLAS_DIST_DIR` | Separate build output when another preview is running. | No |
-
-For an isolated preview:
-
-```bash
-MARKETATLAS_DIST_DIR=.next-preview npm run build
-MARKETATLAS_DIST_DIR=.next-preview npm start -- --hostname 127.0.0.1 --port 3003
-```
-
-</details>
+[**Open MarketAtlas →**](https://market-atlas-indol.vercel.app/)
 
 ## Search and market ticker
 
