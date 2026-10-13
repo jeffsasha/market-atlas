@@ -7,13 +7,14 @@
 Discover financial research projects, agent skills, and MCP servers—then explore what is gaining attention across GitHub.
 
 [![CI](https://github.com/jeffsasha/market-atlas/actions/workflows/ci.yml/badge.svg)](https://github.com/jeffsasha/market-atlas/actions/workflows/ci.yml)
+[![License: MIT (original code)](https://img.shields.io/badge/License-MIT%20%28original%20code%29-a855f7)](#license)
 [![GitHub stars](https://img.shields.io/github/stars/jeffsasha/market-atlas?style=flat&color=a855f7)](https://github.com/jeffsasha/market-atlas/stargazers)
 [![Last commit](https://img.shields.io/github/last-commit/jeffsasha/market-atlas?color=ec4899)](https://github.com/jeffsasha/market-atlas/commits/main)
 [![Next.js](https://img.shields.io/badge/Next.js-14-000000?logo=nextdotjs)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-18-149eca?logo=react)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
-[Features](#features) · [Visit website](https://market-atlas-indol.vercel.app/) · [GitHub Lab](#github-lab) · [Data](#real-github-data) · [Contributing](CONTRIBUTING.md)
+[Features](#features) · [Visit website](https://market-atlas-indol.vercel.app/) · [GitHub Lab](#github-lab) · [Data](#real-github-data) · [License](#license) · [Contributing](CONTRIBUTING.md)
 
 </div>
 
@@ -124,6 +125,16 @@ docs/images/             README screenshots
 - [Contributing](CONTRIBUTING.md) — local checks and adding catalog sources.
 - [Report an issue](https://github.com/jeffsasha/market-atlas/issues) — bugs and feature requests.
 
-Space Grotesk is bundled locally under the [SIL Open Font License](app/fonts/OFL.txt), so builds do not fetch it from Google Fonts.
+## License
 
-React Bits components retain their [upstream attribution and terms](components/LICENSE.react-bits.md). No React Bits Pro component or license key is included. Indexed projects retain their own licenses; check upstream terms before using them.
+MarketAtlas's original code and documentation are licensed under the [MIT License](LICENSE). Copyright © 2026 [Jeff Lu (@jeffsasha)](https://github.com/jeffsasha). You may use, modify, and distribute the original code, including commercially, provided you retain the copyright and license notices. The software is provided without warranty.
+
+Third-party materials are excluded from this MIT grant and retain their own licenses and terms:
+
+| Material | License or terms |
+| --- | --- |
+| React Bits components and adaptations | [MIT + Commons Clause](components/LICENSE.react-bits.md); retain the upstream notices and restrictions. No React Bits Pro component or license key is included. |
+| Space Grotesk font | [SIL Open Font License 1.1](app/fonts/OFL.txt); bundled locally so builds do not fetch it from Google Fonts. |
+| Other dependencies | Their respective upstream licenses. |
+| Indexed GitHub projects, Skills, and MCP servers | Their respective upstream licenses; catalog inclusion does not relicense them. |
+| TradingView widget and market data | [TradingView's widget terms and availability](https://www.tradingview.com/widget-docs/faq/data/); this project's MIT License grants no rights to extract or redistribute provider data. |
