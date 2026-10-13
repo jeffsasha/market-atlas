@@ -1,15 +1,36 @@
 'use client';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Star, GitFork, ExternalLink } from 'lucide-react';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
+import { useReducedMotion } from 'framer-motion';
 import type { Repo } from './RepoCard';
 
 export default function RepoPreview({ repo, onClose }: { repo: Repo | null; onClose: () => void }) {
+  const panel = useRef<HTMLElement>(null);
+  const reduced = useReducedMotion();
   useEffect(() => {
-    const h = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose(); };
+    if (!repo) return;
+    const h = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+      if (e.key !== 'Tab') return;
+      const nodes = panel.current?.querySelectorAll<HTMLElement>('button, a[href], [tabindex="0"]');
+      if (!nodes?.length) return;
+      const first = nodes[0], last = nodes[nodes.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    };
     window.addEventListener('keydown', h);
     return () => window.removeEventListener('keydown', h);
-  }, [onClose]);
+  }, [onClose, repo]);
+
+  useEffect(() => {
+    if (!repo) return;
+    const origin = document.activeElement as HTMLElement | null;
+    const overflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    panel.current?.querySelector<HTMLButtonElement>('button')?.focus();
+    return () => { document.body.style.overflow = overflow; origin?.focus(); };
+  }, [repo]);
 
   return (
     <AnimatePresence>
@@ -17,8 +38,9 @@ export default function RepoPreview({ repo, onClose }: { repo: Repo | null; onCl
         <>
           <motion.div className="fixed inset-0 z-40 bg-black/20 backdrop-blur-[2px]" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={onClose} />
           <motion.aside
+            ref={panel}
             role="dialog" aria-modal="true" aria-label={`${repo.full_name} preview`}
-            initial={{ opacity: 0, x: 40 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 40 }}
+            initial={{ opacity: 0, x: reduced ? 0 : 40 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: reduced ? 0 : 40 }}
             transition={{ type: 'spring', damping: 30, stiffness: 350 }}
             className="fixed right-0 top-0 bottom-0 z-50 w-full max-w-md bg-white dark:bg-[#131316] border-l border-[#E7E5E4] dark:border-[#27272A] shadow-2xl overflow-auto p-6">
             <div className="flex items-start justify-between">

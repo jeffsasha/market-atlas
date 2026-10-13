@@ -12,7 +12,7 @@ function headers() {
 }
 
 async function gh(path: string, init?: RequestInit) {
-  const res = await fetch(API + path, { ...init, headers: { ...headers(), ...(init?.headers || {}) }, next: { revalidate: 3600 } });
+  const res = await fetch(API + path, { signal: AbortSignal.timeout(20000), ...init, headers: { ...headers(), ...(init?.headers || {}) }, next: { revalidate: 3600 } });
   if (res.status === 403 && res.headers.get('x-ratelimit-remaining') === '0') {
     const reset = res.headers.get('x-ratelimit-reset');
     throw new Error(`GitHub rate limited until ${reset}`);
@@ -36,6 +36,11 @@ export async function searchRepos(query: string, perPage = 30, page = 1) {
 
 export async function getRepo(owner: string, repo: string) {
   return gh(`/repos/${owner}/${repo}`) as Promise<GhRepo>;
+}
+
+export async function getRepoRef(fullName: string, branch: string): Promise<string> {
+  const ref = await gh(`/repos/${fullName}/git/ref/heads/${encodeURIComponent(branch)}`);
+  return ref.object.sha;
 }
 
 export async function getReadme(owner: string, repo: string) {
@@ -63,5 +68,28 @@ export function toRepoRecord(g: GhRepo, category?: string) {
     topics: g.topics || [], created_at: g.created_at, pushed_at: g.pushed_at, updated_at: g.updated_at,
     avatar_url: g.owner.avatar_url, category: category || null,
     stars_growth_7d: null as number | null, // filled from snapshots when available
+  };
+}
+
+// Count paginated public records without downloading every contributor/commit.
+async function pageCount(endpoint: string): Promise<number | null> {
+  const response = await fetch(API + endpoint, { headers: headers(), signal: AbortSignal.timeout(20000) });
+  if (response.status === 204) return 0;
+  if (!response.ok) throw new Error(`GitHub activity ${response.status}`);
+  const data = await response.json();
+  if (!Array.isArray(data)) return null;
+  const link = response.headers.get('link') || '';
+  const last = link.match(/<[^>]*[?&]page=(\d+)[^>]*>;\s*rel="last"/);
+  return last ? Number(last[1]) : link.includes('rel="next"') ? null : data.length;
+}
+
+export async function getWeeklyActivity(fullName: string, since: string) {
+  const results = await Promise.allSettled([
+    pageCount(`/repos/${fullName}/contributors?anon=true&per_page=1`),
+    pageCount(`/repos/${fullName}/commits?since=${encodeURIComponent(since)}&per_page=1`),
+  ]);
+  return {
+    contributors: results[0].status === 'fulfilled' ? results[0].value : null,
+    commits_7d: results[1].status === 'fulfilled' ? results[1].value : null,
   };
 }

@@ -1,9 +1,8 @@
 import { promises as fs } from 'fs';
 import path from 'path';
+import catalog from '@/data/catalog.json';
 
-// File-backed cache for local dev / free-tier MVP without Supabase.
-// In production with Supabase, API routes query Postgres instead.
-// Cache is ONLY populated from real GitHub API responses (scripts/seed.ts).
+// Real GitHub metadata: refreshed local cache, then checked-in catalog fallback.
 
 const CACHE = path.join(process.cwd(), 'data', 'cache.json');
 
@@ -14,7 +13,7 @@ export async function readCache(): Promise<CachedRepo[]> {
     const raw = await fs.readFile(CACHE, 'utf-8');
     const j = JSON.parse(raw);
     return j.repositories || [];
-  } catch { return []; }
+  } catch { return catalog.repositories; }
 }
 
 export async function writeCache(repos: CachedRepo[]) {
@@ -28,7 +27,7 @@ export function filterRepos(repos: CachedRepo[], opts: { q?: string; category?: 
     const q = opts.q.toLowerCase();
     out = out.filter(r => (r.full_name + ' ' + (r.description || '') + ' ' + (r.topics || []).join(' ')).toLowerCase().includes(q));
   }
-  if (opts.category && opts.category !== 'all') out = out.filter(r => r.category === opts.category);
+  if (opts.category && opts.category !== 'all') out = out.filter(r => (r.categories || [r.category]).includes(opts.category));
   if (opts.language) out = out.filter(r => r.language === opts.language);
   if (opts.minStars) out = out.filter(r => (r.stars || 0) >= opts.minStars!);
   switch (opts.sort) {
@@ -36,7 +35,7 @@ export function filterRepos(repos: CachedRepo[], opts: { q?: string; category?: 
     case 'updated': out.sort((a, b) => +new Date(b.pushed_at || 0) - +new Date(a.pushed_at || 0)); break;
     case 'created': out.sort((a, b) => +new Date(b.created_at || 0) - +new Date(a.created_at || 0)); break;
     case 'az': out.sort((a, b) => a.full_name.localeCompare(b.full_name)); break;
-    case 'trending': out.sort((a, b) => (b.stars_growth_7d || -1) - (a.stars_growth_7d || -1)); break;
+    case 'trending': out.sort((a, b) => (b.stars_growth_7d ?? -Infinity) - (a.stars_growth_7d ?? -Infinity)); break;
     default: out.sort((a, b) => b.stars - a.stars);
   }
   return out;

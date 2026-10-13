@@ -1,29 +1,28 @@
-# Design System — MarketAtlas
+# Design system — MarketAtlas
 
-## Philosophy
-Silicon Valley minimalism. Linear / Vercel / Raycast / Apple / GitHub / Stripe.
+## Visual direction
 
-Avoid: oversized gradients, glassmorphism excess, neon purple, generic SaaS illustrations, large empty heroes, excessive rounded cards, distracting animations.
+A browse-first marketplace with large, tightly tracked headlines, clear repository metadata, and purple/pink accents. The dark navigation opens a white mega menu. Content stays readable over quiet surfaces; the animated hero provides atmosphere.
 
-Prefer: exceptional typography, monochromatic surfaces, subtle borders, calibrated spacing, soft shadows, restrained accents, micro-interactions, data density.
+## Typography and color
 
-## Typography
-- Sans: Inter (fallback Geist). Headings tight tracking.
-- Mono: JetBrains Mono / ui-monospace for stats, metadata, install commands, versions, classifications.
+- Space Grotesk for headings and interface text; system monospace for metrics and metadata.
+- Light surfaces use warm white and pale neutral borders. Dark surfaces use near-black and charcoal.
+- Purple (`#a855f7`) identifies the selected repository and chart. Pink (`#ec4899`) identifies comparisons and secondary accents.
+- Theme-specific contrast and focus styles live in `app/globals.css` and the components.
 
-## Themes
-- Light: warm white #FAFAF9 bg, #E7E5E4 borders, #1C1917 text, minimal shadows.
-- Dark: near-black #0A0A0B bg (not pure black), charcoal #131316 cards, #27272A borders, #EDEDED text.
-- Toggle in top nav, sun/moon transition, persisted to localStorage, respects prefers-color-scheme, no flash (inline script in layout).
+## Navigation and discovery
 
-## Components
-- Sticky nav with backdrop blur, 3 zones (logo | links | search+github+theme).
-- Cards: 1px border, 8px radius max, hover: border darkens + translateY(-1px) + soft shadow.
-- Tables: mono numerals, row hover.
-- Command palette (Cmd+K): floating, blurred backdrop, instant suggestions, keyboard nav, history in localStorage.
-- Floating repo preview: right-side panel, Escape/outside to close, focus trap.
-- Tooltips: subtle, for stars/forks/growth definitions.
-- Motion: Framer Motion, transform+opacity only, 60fps, prefers-reduced-motion respected.
+- The homepage leads into the weekly GitHub top ten, financial favorites, Explore links, and category-based discovery.
+- The primary navigation links Skills, MCP Servers, GitHub Lab, and Trending. Explore reveals the catalog destinations; its footer links the component gallery.
+- Repository cards open a preview with focus handling, Escape dismissal, and focus restoration.
+- The Lab uses a ranked list, a repository overview, a relative radar chart, a comparison selector, and device-local favorites.
 
-## Accent
-Single restrained accent: emerald #10B981 for growth/positive, amber for warnings, otherwise neutral.
+## Motion and accessibility
+
+- GradientWaves uses purple/pink waves with pointer parallax, capped at 30 FPS and DPR 1.5. It pauses while offscreen or hidden and has a visible pause control and static fallback.
+- PixelSwap covers the page during theme changes and persists the choice. Reduced motion switches themes immediately.
+- FloatingSurface adds pointer-driven lift, tilt, and glow to interactive navigation and cards. Fine-pointer checks keep touch layouts steady.
+- Motion respects reduced-motion preferences. Use semantic links and buttons, visible focus rings, accessible names, and readable raw values alongside charts.
+
+The gallery at `/design` demonstrates the current components. React Bits attribution and terms are in [LICENSE.react-bits.md](components/LICENSE.react-bits.md).

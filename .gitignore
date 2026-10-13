@@ -1,5 +1,16 @@
 node_modules/
-.next/
+.next*/
 data/cache.json
 .env
-.env.local
+.env.*
+!.env.example
+
+# Next.js and TypeScript generated files
+next-env.d.ts
+*.tsbuildinfo
+
+data/history.json
+
+# Public GitHub Lab refresh cache
+data/weekly-cache.json
+data/*.tmp

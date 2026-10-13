@@ -1,10 +1,9 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import localFont from 'next/font/local';
 import Navbar from '@/components/Navbar';
-import { CommandPaletteProvider } from '@/components/CommandPalette';
 
-const inter = Inter({ subsets: ['latin'] });
+const display = localFont({ src: './fonts/space-grotesk-latin.woff2', weight: '300 700', style: 'normal', display: 'swap' });
 
 export const metadata: Metadata = {
   title: 'MarketAtlas — Discover open-source financial research tools',
@@ -20,14 +19,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning>
       <head><script dangerouslySetInnerHTML={{ __html: themeInit() }} /></head>
-      <body className={inter.className}>
-        <CommandPaletteProvider>
+      <body className={display.className}>
           <Navbar />
           <main className="min-h-screen">{children}</main>
           <footer className="border-t border-[#E7E5E4] dark:border-[#27272A] py-8 text-center text-sm text-neutral-500">
             <span className="mono">MarketAtlas</span> — open-source financial intelligence discovery. Data from GitHub API.
           </footer>
-        </CommandPaletteProvider>
       </body>
     </html>
   );

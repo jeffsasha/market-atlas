@@ -1,88 +1,47 @@
-// Real GitHub discovery — no mock data. Run with GITHUB_TOKEN set.
-// Usage: npm run discover  (writes data/cache.json)
-
-const API = 'https://api.github.com';
-const token = process.env.GITHUB_TOKEN;
-
-const QUERIES: { q: string; category: string }[] = [
-  { q: 'stock analysis language:python stars:>200', category: 'us-equity' },
-  { q: 'financial modeling valuation language:python stars:>100', category: 'us-equity' },
-  { q: 'quantitative finance backtesting stars:>300', category: 'backtest' },
-  { q: 'algorithmic trading framework stars:>300', category: 'quant' },
-  { q: 'portfolio optimization python stars:>100', category: 'portfolio' },
-  { q: 'cryptocurrency trading bot stars:>300', category: 'crypto' },
-  { q: 'blockchain analytics defi stars:>100', category: 'crypto' },
-  { q: 'financial data api stocks stars:>100', category: 'findata' },
-  { q: 'ai agent finance stock research stars:>50', category: 'ai-agents' },
-  { q: 'mcp server finance stocks modelcontextprotocol', category: 'findata' },
-  { q: 'technical analysis indicators python stars:>200', category: 'ta' },
-];
-
-async function gh(path: string, retries = 3): Promise<any> {
-  for (let i = 0; i < retries; i++) {
-    const res = await fetch(API + path, {
-      headers: {
-        Accept: 'application/vnd.github+json',
-        'User-Agent': 'MarketAtlas-Discovery/0.1',
-        ...(token ? { Authorization: `Bearer ${token}` } : {}),
-      },
-    });
-    if (res.status === 403 && res.headers.get('x-ratelimit-remaining') === '0') {
-      const reset = Number(res.headers.get('x-ratelimit-reset') || 0) * 1000;
-      const wait = Math.max(reset - Date.now(), 1000);
-      console.log(`Rate limited, waiting ${Math.ceil(wait / 1000)}s…`);
-      await new Promise(r => setTimeout(r, wait));
-      continue;
-    }
-    if (res.status >= 500 && i < retries - 1) { await new Promise(r => setTimeout(r, 1000 * 2 ** i)); continue; }
-    if (!res.ok) throw new Error(`GitHub ${res.status} ${path}: ${await res.text().then(t => t.slice(0, 200))}`);
-    return res.json();
-  }
-  throw new Error('retries exhausted');
-}
+// Refresh an explicitly categorized catalog from GitHub; no invented metrics.
+// Optional GITHUB_TOKEN raises public API rate limits. --snapshot updates the
+// checked-in fallback as well as the local cache, ready for review in Git.
+import { promises as fs } from 'fs';
+import path from 'path';
+import sources from '../data/sources.json';
+import { getRepo, toRepoRecord } from '../lib/github';
+import { readCache, writeCache, CachedRepo } from '../lib/store';
+import { Snapshot, weeklyGrowth } from '../lib/snapshots';
+import { refreshArtifacts, CatalogSource } from '../lib/artifacts';
 
 async function main() {
-  const seen = new Map<number, any>();
-  for (const { q, category } of QUERIES) {
-    console.log(`Query: ${q}`);
+  const previous = await readCache();
+  const records = new Map(previous.map(r => [r.github_id, r]));
+  const now = new Date().toISOString();
+  const historyFile = path.join(process.cwd(), 'data', 'history.json');
+  let history: Record<string, Snapshot[]> = {};
+  try { history = JSON.parse(await fs.readFile(historyFile, 'utf8')); }
+  catch (e: any) { if (e.code !== 'ENOENT') throw e; }
+  let refreshed = 0;
+  const only = process.argv.find(arg => arg.startsWith('--only='))?.slice(7).split(',');
+  const selected = only ? sources.filter(source => only.includes(source.full_name)) : sources;
+  if (!selected.length) throw new Error('No matching catalog sources.');
+  for (const source of selected) {
     try {
-      const data = await gh(`/search/repositories?q=${encodeURIComponent(q)}&sort=stars&order=desc&per_page=30&page=1`);
-      for (const item of data.items || []) {
-        if (!seen.has(item.id)) {
-          const [owner, name] = (item.full_name as string).split('/');
-          seen.set(item.id, {
-            github_id: item.id, owner, name, full_name: item.full_name,
-            description: item.description, html_url: item.html_url, homepage: item.homepage,
-            language: item.language, stars: item.stargazers_count, forks: item.forks_count,
-            open_issues: item.open_issues_count, license_spdx: item.license?.spdx_id || null,
-            topics: item.topics || [], created_at: item.created_at, pushed_at: item.pushed_at,
-            updated_at: item.updated_at, avatar_url: item.owner?.avatar_url,
-            category, stars_growth_7d: null, last_synced_at: new Date().toISOString(),
-            has_skill_md: false, is_mcp: (item.topics || []).includes('mcp') || /mcp/i.test(item.description || ''),
-          });
-        }
-      }
-    } catch (e: any) { console.error(`  failed: ${e.message}`); }
-    await new Promise(r => setTimeout(r, 2000)); // respect search rate limits
-  }
-
-  // Verify SKILL.md for candidates (name suggests skill)
-  const candidates = Array.from(seen.values()).filter(r => /skill|agent/i.test(r.full_name + ' ' + (r.description || ''))).slice(0, 20);
-  for (const r of candidates) {
-    for (const p of ['SKILL.md', 'skills/SKILL.md']) {
-      try { await gh(`/repos/${r.full_name}/contents/${p}`); r.has_skill_md = true; r.skill_path = p; console.log(`  skill verified: ${r.full_name} @ ${p}`); break; }
-      catch {}
+      const g = await getRepo(...source.full_name.split('/') as [string, string]);
+      const prior = records.get(g.id);
+      const samples = history[g.full_name] || (prior?.last_synced_at ? [{ captured_at: prior.last_synced_at, stars: prior.stars }] : []);
+      const latest = { captured_at: now, stars: g.stargazers_count };
+      let repo: CachedRepo = { ...prior, ...toRepoRecord(g, source.categories[0]), categories: source.categories, last_synced_at: now, stars_growth_7d: weeklyGrowth(samples, latest), has_skill_md: prior?.has_skill_md || false, is_mcp: prior?.is_mcp || false };
+      repo = await refreshArtifacts(repo, source as CatalogSource, g.default_branch, now);
+      records.set(g.id, repo);
+      history[g.full_name] = [...samples.filter(s => s.captured_at.slice(0, 10) !== now.slice(0, 10) && +new Date(s.captured_at) >= Date.now() - 60 * 86400000), latest];
+      refreshed++;
+      console.log(`Refreshed ${g.full_name}`);
+    } catch (error: any) {
+      console.error(`Preserving previous data for ${source.full_name}: ${error.message}`);
     }
-    await new Promise(r => setTimeout(r, 500));
   }
-
-  const repos = Array.from(seen.values()).sort((a, b) => b.stars - a.stars);
-  const fs = await import('fs/promises');
-  const path = await import('path');
-  const out = path.join(process.cwd(), 'data', 'cache.json');
-  await fs.mkdir(path.dirname(out), { recursive: true });
-  await fs.writeFile(out, JSON.stringify({ repositories: repos, cached_at: new Date().toISOString(), count: repos.length }, null, 2));
-  console.log(`Wrote ${repos.length} real repositories to data/cache.json`);
+  if (!refreshed) throw new Error('No repositories refreshed. Existing catalog was preserved.');
+  const repos = [...records.values()].sort((a, b) => b.stars - a.stars);
+  await writeCache(repos);
+  await fs.writeFile(historyFile, JSON.stringify(history, null, 2) + '\n');
+  if (process.argv.includes('--snapshot')) await fs.writeFile(path.join(process.cwd(), 'data', 'catalog.json'), JSON.stringify({ repositories: repos, cached_at: now, count: repos.length }, null, 2) + '\n');
+  console.log(`Refreshed ${refreshed}/${selected.length}; serving ${repos.length} real projects.`);
 }
-
-main().catch(e => { console.error(e); process.exit(1); });
+main().catch(error => { console.error(error); process.exitCode = 1; });

@@ -1,48 +1,21 @@
-# Data Ingestion Strategy
+# Catalog refresh
 
-## Sources
-Primary: GitHub REST API (server-side, token from env `GITHUB_TOKEN`). Never expose to client.
+The included catalog contains actual GitHub metadata, not example projects. Repository descriptions and statistics are captured with `last_synced_at`; categories are editorial, with multiple memberships permitted.
 
-## Discovery Queries (category-specific, not single broad search)
-- `stock analysis language:python stars:>100`
-- `financial modeling language:python`
-- `quantitative finance backtest`
-- `algorithmic trading framework`
-- `portfolio optimization python`
-- `cryptocurrency trading bot`
-- `blockchain analytics`
-- `defi analytics`
-- `financial data api`
-- `ai agent finance`
-- `mcp server finance` / `model context protocol stocks`
-- `agent skill finance` / `SKILL.md finance`
+Run `npm run discover` to refresh the repositories in `data/sources.json`. Export an optional `GITHUB_TOKEN` for higher API rate limits. No browser-side credentials are needed. Use `npm run discover -- --snapshot` to update the checked-in catalog for review and redistribution with the app.
 
-Each query paginated (max 100/page, up to 10 pages per query to respect search rate limits: 30 req/min authenticated).
+Records are keyed by GitHub's stable repository ID, including when upstream projects rename. Failed requests preserve the previous record. A completely failed run exits unsuccessfully without replacing the catalog. Requests time out after 20 seconds; rate limits do not trigger an indefinite sleep.
 
-## Ranking
-score = 0.4*log(stars+1) + 0.3*recency(pushed_at) + 0.2*maintenance(open_issues ratio, release cadence) + 0.1*docs(README length, topics, license)
+Daily snapshots are retained locally in ignored `data/history.json` for 60 days. Weekly growth compares the newest count with a real observation between seven and eight days old. It remains null until suitable history exists. Total-star ranking is explicitly labeled as popular, never weekly growth. Run refreshes regularly to accumulate history; this repo does not currently include a scheduler.
 
-Trending (weekly) = stars_today - stars_7d_ago from `repository_snapshots`. Display only if ≥2 snapshots; otherwise show "—" with tooltip "insufficient history", never total stars as growth.
+The source manifest declares explicit Skill paths and MCP documentation paths. A repository can contain multiple Skills: each is indexed separately by repository plus path, with its own name, description, topics, source URL, content SHA-256, verification time, and pinned Git commit. The refresh resolves the current branch to a commit before fetching files. Only manifests with `name` and `description` frontmatter are listed. These files are treated as data and never executed.
 
-## Deduplication & Normalization
-- Key: `github_id` (stable). Also unique(owner,name) case-insensitive.
-- Normalize: trim description, lower topics, coerce nulls → distinguish unavailable vs 0 in UI.
+The bundled catalog includes 25 Skills from seven repositories and eight MCP servers. Source documentation is checked for an MCP description; transport, access requirements, topic tags, and publisher status are curated from upstream documentation. Stars always belong to the source repository. Publisher-maintained badges are limited to sources explicitly verified from publisher documentation. A source check is not a code audit or security approval.
 
-## Rate Limits / Resilience
-- Authenticated: 5000 req/hr core, 30/min search.
-- Backoff on 403 rate-limit: read `x-ratelimit-reset`, sleep.
-- Retry: 3x exponential for 5xx.
-- Idempotent upserts: `on conflict (github_id) do update`.
-- Incremental: only re-fetch repos with `pushed_at > last_sync - 1d` or new.
+`npm run discover -- --only=owner/repo --snapshot` refreshes an existing source selectively. Missing/invalid manifests are removed from that source's listings; request failures preserve the previous repository record. The catalog mirrors metadata and links, not upstream code. No installation commands are run or invented, and no provider credentials are collected.
 
-## Verification
-- Skills: GET `/repos/{owner}/{repo}/contents/SKILL.md` (and `skills/`, `.claude/skills/`). Only list on 200.
-- MCP: check topics contains `mcp`, or package.json has `@modelcontextprotocol/*`, or README matches `/mcp server/i` + config snippet. Publisher official only if owner matches known org (e.g. `modelcontextprotocol`) or repo states "official".
-- Install commands: extract from README code blocks only; never invent.
+## Global weekly Lab snapshot
 
-## Scheduling
-- GitHub Actions `.github/workflows/sync.yml`: cron `0 */6 * * *` (every 6h), runs `scripts/discover.ts`.
-- Logs to `sync_jobs` table.
+`npm run refresh:weekly -- --snapshot` updates the ten highest weekly-star counts from the repositories present on GitHub’s public weekly Trending page. It records candidate count, source URL, and capture time. GitHub repository metadata supplies stars, forks, license, creation date, language, and topics. Paginated contributor/commit endpoints supply contributor counts (including anonymous) and commits on the default branch since seven days before capture. Failed optional activity requests become null; failed required metadata or fewer than ten candidates abort without replacing the snapshot. Writes use temporary files and atomic renames.
 
-## Timestamps
-Track `discovered_at`, `last_synced_at`, `source_url`, `verification_status` per spec.
+The checked-in `data/github-weekly.json` makes the Lab work in fresh clones without visiting GitHub from the browser. The ignored `data/weekly-cache.json` takes precedence locally. The snapshot refresh is separate from the finance catalog and its locally measured seven-day growth. The Lab ranking describes GitHub’s Trending selection, not every repository on GitHub. There is no scheduled refresh job in this change.

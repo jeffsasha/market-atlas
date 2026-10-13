@@ -1,19 +1,12 @@
-'use client';
-import { useEffect, useState } from 'react';
-import RepoCard, { Repo } from '@/components/RepoCard';
+import TrendingSection from '@/components/TrendingSection';
+import type { Repo } from '@/components/RepoCard';
+import { readCache } from '@/lib/store';
 
-export default function TrendingPage() {
-  const [repos, setRepos] = useState<Repo[]>([]);
-  const [verified, setVerified] = useState(false);
-  const [note, setNote] = useState('');
-  useEffect(() => {
-    fetch('/api/trending?limit=24').then(r => r.json()).then(j => { setRepos(j.results || []); setVerified(j.verified); setNote(j.note); });
-  }, []);
-  return (
-    <div className="mx-auto max-w-7xl px-4 py-8">
-      <h1 className="text-2xl font-semibold tracking-tight mb-2">Trending</h1>
-      <p className="mono text-xs text-neutral-500 mb-6">{verified ? '✓ ' : ''}{note}</p>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">{repos.map(r => <RepoCard key={r.full_name} repo={r} />)}</div>
-    </div>
-  );
+export const dynamic = 'force-dynamic';
+
+export default async function TrendingPage() {
+  const repos = await readCache();
+  const weekly = repos.filter(r => typeof r.stars_growth_7d === 'number').sort((a, b) => b.stars_growth_7d - a.stars_growth_7d);
+  const results = weekly.length ? weekly : repos.sort((a, b) => b.stars - a.stars);
+  return <div className="mx-auto max-w-7xl px-5 py-10 sm:py-14"><p className="mono mb-3 text-[10px] uppercase tracking-widest market-accent">Explore / 04 · community favorites</p><h1 className="mb-4 text-4xl font-bold uppercase tracking-tight sm:text-6xl">{weekly.length ? 'Trending this week' : 'Popular right now'}</h1><p className="mb-7 text-sm text-neutral-500">{weekly.length ? 'Ranked by verified star growth across seven days of GitHub snapshots.' : 'Ranked by total GitHub stars. Weekly growth is unavailable until seven days of snapshots have been recorded.'}</p><TrendingSection repos={results.slice(0, 24) as Repo[]} /></div>;
 }

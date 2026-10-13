@@ -1,10 +1,11 @@
 'use client';
 import { useEffect, useState, ReactNode } from 'react';
-import { Moon, Sun, Star, GitFork, Search } from 'lucide-react';
+import { Star, GitFork } from 'lucide-react';
 import CodeBlock from '@/components/CodeBlock';
 import RepoCard, { Repo } from '@/components/RepoCard';
-import TypographicWall from '@/components/TypographicWall';
-import { useCommandPalette } from '@/components/CommandPalette';
+import ThemeToggle from '@/components/ThemeToggle';
+import FloatingSurface from '@/components/FloatingSurface';
+import RepoPreview from '@/components/RepoPreview';
 
 function Section({ id, title, desc, preview, code }: { id: string; title: string; desc: string; preview: ReactNode; code: string }) {
   return (
@@ -19,41 +20,19 @@ function Section({ id, title, desc, preview, code }: { id: string; title: string
   );
 }
 
-function ThemeToggleDemo() {
-  const [dark, setDark] = useState(false);
-  useEffect(() => setDark(document.documentElement.classList.contains('dark')), []);
-  return (
-    <button onClick={() => { const n = !dark; setDark(n); document.documentElement.classList.toggle('dark', n); try { localStorage.setItem('ma-theme', n ? 'dark' : 'light'); } catch {} }}
-      aria-label="Toggle theme" className="p-2.5 border border-[#E7E5E4] dark:border-[#27272A] rounded-lg hover:border-neutral-400 transition-all">
-      <span className="block transition-transform duration-300" style={{ transform: dark ? 'rotate(180deg)' : 'rotate(0deg)' }}>
-        {dark ? <Sun size={18} /> : <Moon size={18} />}
-      </span>
-    </button>
-  );
-}
-
-function PaletteTriggerDemo() {
-  const { open } = useCommandPalette();
-  return (
-    <button onClick={open} className="flex items-center gap-2 text-sm border border-[#E7E5E4] dark:border-[#27272A] rounded-lg px-4 py-2 bg-white dark:bg-[#131316] hover:border-neutral-400 transition-colors">
-      <Search size={14} /><span className="text-neutral-500">Search…</span>
-      <kbd className="mono text-[10px] border rounded px-1 text-neutral-500">⌘K</kbd>
-    </button>
-  );
-}
-
 const SECTIONS = [
   { id: 'theme-toggle', label: 'Theme Toggle' },
   { id: 'buttons', label: 'Buttons' },
   { id: 'repo-card', label: 'Repository Card' },
   { id: 'badges', label: 'Badges & Metrics' },
-  { id: 'palette', label: 'Command Palette Trigger' },
+  { id: 'floating', label: 'Floating Surface' },
   { id: 'stat-blocks', label: 'Stat Blocks' },
-  { id: 'type-wall', label: 'Typographic Wall' },
+  { id: 'headline', label: 'Headline' },
 ];
 
 export default function DesignPage() {
   const [sample, setSample] = useState<Repo | null>(null);
+  const [preview, setPreview] = useState<Repo | null>(null);
   useEffect(() => {
     fetch('/api/repositories?limit=1').then(r => r.json()).then(j => setSample(j.results?.[0] || null)).catch(() => {});
   }, []);
@@ -70,36 +49,36 @@ export default function DesignPage() {
       </aside>
 
       <div className="flex-1 min-w-0">
-        <p className="mono text-xs uppercase tracking-widest text-emerald-600 dark:text-emerald-400 mb-2">Design System</p>
+        <p className="mono text-xs uppercase tracking-widest text-purple-600 dark:text-purple-400 mb-2">Design System</p>
         <h1 className="text-3xl font-semibold tracking-tight">Component Previews</h1>
-        <p className="text-neutral-500 mt-2 mb-4 max-w-2xl">Every primitive in MarketAtlas, live. Inspired by <a href="https://reactbits.dev" target="_blank" rel="noreferrer" className="underline underline-offset-2">reactbits.dev</a> — preview first, code second. All components support light/dark themes and respect <span className="mono text-xs">prefers-reduced-motion</span>.</p>
+        <p className="text-neutral-500 mt-2 mb-4 max-w-2xl">A selection of MarketAtlas components, live. Inspired by <a href="https://reactbits.dev" target="_blank" rel="noreferrer" className="underline underline-offset-2">reactbits.dev</a> — preview first, code second. Interactive surfaces support light/dark themes and respect <span className="mono text-xs">prefers-reduced-motion</span>.</p>
 
-        <Section id="theme-toggle" title="Theme Toggle" desc="Sun/moon icon with a 180° rotation transition. Persists to localStorage, respects system preference, no flash on load."
-          preview={<ThemeToggleDemo />}
-          code={`// Toggles .dark on <html>, persists choice\nconst [dark, setDark] = useState(false);\nconst toggle = () => {\n  const next = !dark;\n  setDark(next);\n  document.documentElement.classList.toggle('dark', next);\n  localStorage.setItem('ma-theme', next ? 'dark' : 'light');\n};\n// <span style={{ transform: dark ? 'rotate(180deg)' : 'rotate(0deg)' }}>\n//   {dark ? <Sun size={16}/> : <Moon size={16}/>}\n// </span>`} />
+        <Section id="theme-toggle" title="Theme Toggle" desc="PixelSwap theme transition with a persisted choice and an immediate switch for reduced motion."
+          preview={<ThemeToggle />}
+          code={`import ThemeToggle from '@/components/ThemeToggle';\n<ThemeToggle />`} />
 
-        <Section id="buttons" title="Buttons" desc="Two weights: solid primary, subtle bordered secondary. Restrained radius, no gradients."
+        <Section id="buttons" title="Buttons" desc="Solid primary and bordered secondary styles."
           preview={<div className="flex gap-3"><button className="px-5 py-2.5 rounded-lg bg-neutral-900 dark:bg-white text-white dark:text-black text-sm font-medium hover:opacity-90 transition-opacity">Browse repositories</button><button className="px-5 py-2.5 rounded-lg border border-[#E7E5E4] dark:border-[#27272A] text-sm hover:border-neutral-400 transition-colors">Trending this week</button></div>}
           code={`<button className="px-5 py-2.5 rounded-lg bg-neutral-900 dark:bg-white\n  text-white dark:text-black text-sm font-medium hover:opacity-90">\n  Browse repositories\n</button>\n<button className="px-5 py-2.5 rounded-lg border\n  border-[#E7E5E4] dark:border-[#27272A] text-sm\n  hover:border-neutral-400">\n  Trending this week\n</button>`} />
 
         <Section id="repo-card" title="Repository Card" desc="The core surface: mono repo name, description, language dot, stars/forks in mono, verified 7-day growth or an honest n/a, license chip, category, GitHub link. Click opens the floating preview."
-          preview={sample ? <div className="w-full max-w-md"><RepoCard repo={sample} /></div> : <p className="text-sm text-neutral-500">Loading real data…</p>}
+          preview={sample ? <div className="w-full max-w-md"><RepoCard repo={sample} onPreview={setPreview} /></div> : <p className="text-sm text-neutral-500">Loading real data…</p>}
           code={`<RepoCard repo={repo} onPreview={setPreview} />\n// repo: { full_name, description, language,\n//   stars, forks, stars_growth_7d | null,\n//   license_spdx, category, html_url, avatar_url }`} />
 
-        <Section id="badges" title="Badges & Metrics" desc="Monospace for every number. Tooltips explain each metric. Growth is only shown from verified snapshots."
+        <Section id="badges" title="Badges & Metrics" desc="Illustrative metric styles. Repository cards show live catalog values and verified growth when available."
           preview={<div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-neutral-500">
-            <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full bg-emerald-500/70" />Python</span>
+            <span className="flex items-center gap-1.5"><span className="w-2.5 h-2.5 rounded-full bg-purple-500/70" />Python</span>
             <span className="mono flex items-center gap-1"><Star size={12} />55,306</span>
             <span className="mono flex items-center gap-1"><GitFork size={12} />12,408</span>
-            <span className="mono text-emerald-600 dark:text-emerald-400">+214 this week</span>
+            <span className="mono text-purple-600 dark:text-purple-400">+214 this week</span>
             <span className="mono border rounded px-1">MIT</span>
             <span className="mono text-neutral-400" title="Insufficient snapshot history">— growth n/a</span>
           </div>}
-          code={`<span className="mono flex items-center gap-1">\n  <Star size={12} />{repo.stars.toLocaleString()}\n</span>\n{typeof growth === 'number'\n  ? <span className="mono text-emerald-600">+{growth} this week</span>\n  : <span className="mono text-neutral-400">— growth n/a</span>}`} />
+          code={`<span className="mono flex items-center gap-1">\n  <Star size={12} />{repo.stars.toLocaleString()}\n</span>\n{typeof growth === 'number'\n  ? <span className="mono text-purple-600">+{growth} this week</span>\n  : <span className="mono text-neutral-400">— growth n/a</span>}`} />
 
-        <Section id="palette" title="Command Palette Trigger" desc="Opens the floating ⌘K palette. Try it — it searches real indexed data."
-          preview={<PaletteTriggerDemo />}
-          code={`const { open } = useCommandPalette();\n// ⌘K / Ctrl+K listener lives in Navbar\n<button onClick={open}>…</button>`} />
+        <Section id="floating" title="Floating Surface" desc="Pointer-driven lift, tilt, and glow. Touch and reduced-motion preferences keep the surface steady."
+          preview={<FloatingSurface><a href="/skills" className="block rounded-xl border border-purple-200 bg-purple-50 p-6 text-purple-800">Explore Skills →</a></FloatingSurface>}
+          code={`import FloatingSurface from '@/components/FloatingSurface';\n<FloatingSurface><a href="/skills">Explore Skills</a></FloatingSurface>`} />
 
         <Section id="stat-blocks" title="Stat Blocks" desc="Detail-page metrics: 1px borders, 8px radius, uppercase micro-labels, mono values."
           preview={<div className="grid grid-cols-2 md:grid-cols-4 gap-3 w-full max-w-xl">
@@ -112,9 +91,10 @@ export default function DesignPage() {
           </div>}
           code={`<div className="border rounded-lg p-3">\n  <div className="text-[11px] uppercase tracking-wide\n    text-neutral-400">Stars</div>\n  <div className="mono text-sm mt-1">55,306</div>\n</div>`} />
 
-        <Section id="type-wall" title="Typographic Wall" desc="Homepage centerpiece. The licensed React Bits Pro component drops in here when REACTBITS_LICENSE_KEY is configured — see components/TypographicWall/README.md. Current placeholder shown below."
-          preview={<div className="w-full"><TypographicWall /></div>}
-          code={`// Licensed: npx shadcn@latest add\n//   @reactbits-starter/typographic-wall-tw\nimport { TypographicWall } from '@/components/ui/typographic-wall';\n<TypographicWall words={[\n  'FINANCIAL INTELLIGENCE',\n  'OPEN SOURCE RESEARCH',\n  // …8 lines total\n]} />`} />
+        <Section id="headline" title="Headline" desc="Large, tightly tracked typography with purple-to-pink emphasis."
+          preview={<h2 className="text-4xl font-bold uppercase tracking-[-.06em] sm:text-5xl">Open tools.<br /><span className="bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">Real edge.</span></h2>}
+          code={`<h2 className="text-5xl font-bold uppercase tracking-[-.06em]">\n  Open tools.\n  <span className="bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent">Real edge.</span>\n</h2>`} />
+        <RepoPreview repo={preview} onClose={() => setPreview(null)} />
       </div>
     </div>
   );

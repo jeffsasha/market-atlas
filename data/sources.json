@@ -1,0 +1,527 @@
+[
+  {
+    "full_name": "openbq-org/OpenBB",
+    "categories": [
+      "us-equity",
+      "findata"
+    ]
+  },
+  {
+    "full_name": "ranaroussi/yfinance",
+    "categories": [
+      "us-equity",
+      "findata"
+    ]
+  },
+  {
+    "full_name": "ZhuLinsen/daily_stock_analysis",
+    "categories": [
+      "us-equity",
+      "ai-agents"
+    ]
+  },
+  {
+    "full_name": "FinanceData/FinanceDataReader",
+    "categories": [
+      "us-equity",
+      "findata"
+    ]
+  },
+  {
+    "full_name": "freqtrade/freqtrade",
+    "categories": [
+      "crypto",
+      "backtest"
+    ]
+  },
+  {
+    "full_name": "ccxt/ccxt",
+    "categories": [
+      "crypto",
+      "findata"
+    ]
+  },
+  {
+    "full_name": "hummingbot/hummingbot",
+    "categories": [
+      "crypto",
+      "quant"
+    ]
+  },
+  {
+    "full_name": "jesse-ai/jesse",
+    "categories": [
+      "crypto",
+      "backtest"
+    ]
+  },
+  {
+    "full_name": "QuantConnect/Lean",
+    "categories": [
+      "quant",
+      "backtest"
+    ]
+  },
+  {
+    "full_name": "microsoft/qlib",
+    "categories": [
+      "quant",
+      "ai-agents"
+    ]
+  },
+  {
+    "full_name": "stefan-jansen/machine-learning-for-trading",
+    "categories": [
+      "quant",
+      "ai-agents"
+    ]
+  },
+  {
+    "full_name": "AI4Finance-Foundation/FinRL",
+    "categories": [
+      "quant",
+      "ai-agents"
+    ]
+  },
+  {
+    "full_name": "polakowo/vectorbt",
+    "categories": [
+      "backtest",
+      "quant"
+    ]
+  },
+  {
+    "full_name": "kernc/backtesting.py",
+    "categories": [
+      "backtest"
+    ]
+  },
+  {
+    "full_name": "mementum/backtrader",
+    "categories": [
+      "backtest"
+    ]
+  },
+  {
+    "full_name": "PyPortfolio/PyPortfolioOpt",
+    "categories": [
+      "portfolio"
+    ]
+  },
+  {
+    "full_name": "dcajasn/Riskfolio-Lib",
+    "categories": [
+      "portfolio",
+      "risk"
+    ]
+  },
+  {
+    "full_name": "akfamily/akshare",
+    "categories": [
+      "findata"
+    ]
+  },
+  {
+    "full_name": "bukosabino/ta",
+    "categories": [
+      "ta"
+    ]
+  },
+  {
+    "full_name": "TA-Lib/ta-lib-python",
+    "categories": [
+      "ta"
+    ]
+  },
+  {
+    "full_name": "lballabio/QuantLib",
+    "categories": [
+      "derivatives",
+      "risk"
+    ]
+  },
+  {
+    "full_name": "ProsusAI/finBERT",
+    "categories": [
+      "sentiment"
+    ]
+  },
+  {
+    "full_name": "virattt/ai-hedge-fund",
+    "categories": [
+      "ai-agents",
+      "us-equity"
+    ]
+  },
+  {
+    "full_name": "narumiruna/yfinance-mcp",
+    "categories": [
+      "findata"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "Not specified",
+      "auth": "See upstream documentation",
+      "publisher_status": "community",
+      "description": "Yahoo Finance market data for AI research workflows."
+    }
+  },
+  {
+    "full_name": "anthropics/skills",
+    "categories": [
+      "ai-agents"
+    ],
+    "skills": [
+      {
+        "path": "skills/xlsx/SKILL.md",
+        "topics": [
+          "Finance"
+        ]
+      }
+    ]
+  },
+  {
+    "full_name": "anthropics/financial-services",
+    "categories": [
+      "ai-agents",
+      "us-equity",
+      "portfolio"
+    ],
+    "skills": [
+      {
+        "path": "plugins/vertical-plugins/financial-analysis/skills/dcf-model/SKILL.md",
+        "topics": [
+          "Finance"
+        ]
+      },
+      {
+        "path": "plugins/vertical-plugins/financial-analysis/skills/comps-analysis/SKILL.md",
+        "topics": [
+          "Finance"
+        ]
+      },
+      {
+        "path": "plugins/vertical-plugins/financial-analysis/skills/3-statement-model/SKILL.md",
+        "topics": [
+          "Finance"
+        ]
+      },
+      {
+        "path": "plugins/vertical-plugins/financial-analysis/skills/lbo-model/SKILL.md",
+        "topics": [
+          "Finance"
+        ]
+      },
+      {
+        "path": "plugins/vertical-plugins/equity-research/skills/earnings-analysis/SKILL.md",
+        "topics": [
+          "Finance"
+        ]
+      },
+      {
+        "path": "plugins/vertical-plugins/equity-research/skills/sector-overview/SKILL.md",
+        "topics": [
+          "Finance"
+        ]
+      },
+      {
+        "path": "plugins/vertical-plugins/private-equity/skills/portfolio-monitoring/SKILL.md",
+        "topics": [
+          "Finance"
+        ]
+      },
+      {
+        "path": "plugins/vertical-plugins/private-equity/skills/dd-checklist/SKILL.md",
+        "topics": [
+          "Finance"
+        ]
+      }
+    ]
+  },
+  {
+    "full_name": "anthropics/knowledge-work-plugins",
+    "categories": [
+      "ai-agents",
+      "findata"
+    ],
+    "skills": [
+      {
+        "path": "finance/skills/financial-statements/SKILL.md",
+        "topics": [
+          "Finance"
+        ]
+      },
+      {
+        "path": "finance/skills/variance-analysis/SKILL.md",
+        "topics": [
+          "Finance"
+        ]
+      },
+      {
+        "path": "finance/skills/reconciliation/SKILL.md",
+        "topics": [
+          "Finance"
+        ]
+      }
+    ]
+  },
+  {
+    "full_name": "agiprolabs/claude-trading-skills",
+    "categories": [
+      "crypto",
+      "quant",
+      "ai-agents"
+    ],
+    "skills": [
+      {
+        "path": "skills/coingecko-api/SKILL.md",
+        "topics": [
+          "Crypto"
+        ]
+      },
+      {
+        "path": "skills/defillama-api/SKILL.md",
+        "topics": [
+          "Crypto"
+        ]
+      },
+      {
+        "path": "skills/token-economics/SKILL.md",
+        "topics": [
+          "Crypto"
+        ]
+      },
+      {
+        "path": "skills/portfolio-analytics/SKILL.md",
+        "topics": [
+          "Crypto",
+          "Quant"
+        ]
+      },
+      {
+        "path": "skills/risk-management/SKILL.md",
+        "topics": [
+          "Quant"
+        ]
+      },
+      {
+        "path": "skills/position-sizing/SKILL.md",
+        "topics": [
+          "Quant"
+        ]
+      },
+      {
+        "path": "skills/vectorbt/SKILL.md",
+        "topics": [
+          "Quant"
+        ]
+      },
+      {
+        "path": "skills/walk-forward-validation/SKILL.md",
+        "topics": [
+          "Quant"
+        ]
+      }
+    ]
+  },
+  {
+    "full_name": "hummingbot/skills",
+    "categories": [
+      "crypto",
+      "ai-agents"
+    ],
+    "skills": [
+      {
+        "path": "skills/trading-agent-builder/SKILL.md",
+        "topics": [
+          "Crypto",
+          "Quant"
+        ],
+        "trading_warning": true
+      },
+      {
+        "path": "skills/find-arbitrage-opps/SKILL.md",
+        "topics": [
+          "Crypto",
+          "Quant"
+        ]
+      }
+    ]
+  },
+  {
+    "full_name": "JStrait515/crypto-agent-skill",
+    "categories": [
+      "crypto",
+      "ai-agents"
+    ],
+    "skills": [
+      {
+        "path": "crypto-market/SKILL.md",
+        "topics": [
+          "Crypto"
+        ]
+      }
+    ]
+  },
+  {
+    "full_name": "crypto-com/crypto-agent-trading",
+    "categories": [
+      "crypto",
+      "ai-agents"
+    ],
+    "skills": [
+      {
+        "path": "crypto-com-app/SKILL.md",
+        "topics": [
+          "Crypto"
+        ],
+        "trading_warning": true
+      },
+      {
+        "path": "crypto-com-exchange/SKILL.md",
+        "topics": [
+          "Crypto"
+        ],
+        "trading_warning": true
+      }
+    ]
+  },
+  {
+    "full_name": "alpacahq/alpaca-mcp-server",
+    "categories": [
+      "us-equity",
+      "crypto",
+      "derivatives"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance",
+        "Crypto"
+      ],
+      "transport": "stdio / Streamable HTTP",
+      "auth": "Alpaca API key + secret",
+      "publisher_status": "official",
+      "trading_warning": true,
+      "description": "Stock, options, and crypto market data, portfolio access, and order management through Alpaca."
+    }
+  },
+  {
+    "full_name": "alphavantage/alpha_vantage_mcp",
+    "categories": [
+      "findata",
+      "us-equity",
+      "crypto"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance",
+        "Crypto"
+      ],
+      "transport": "stdio / HTTP",
+      "auth": "Alpha Vantage API key; remote OAuth supported",
+      "publisher_status": "official",
+      "trading_warning": false,
+      "description": "Stock, FX, crypto, economic indicators, and company fundamentals from Alpha Vantage."
+    }
+  },
+  {
+    "full_name": "financial-datasets/mcp-server",
+    "categories": [
+      "findata",
+      "us-equity",
+      "crypto"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance",
+        "Crypto"
+      ],
+      "transport": "stdio",
+      "auth": "Financial Datasets API key",
+      "publisher_status": "community",
+      "trading_warning": false,
+      "description": "Financial statements, equity prices, company news, and crypto prices from Financial Datasets."
+    }
+  },
+  {
+    "full_name": "cdtait/fmp-mcp-server",
+    "categories": [
+      "findata",
+      "us-equity",
+      "crypto"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance",
+        "Crypto"
+      ],
+      "transport": "stdio / SSE / Streamable HTTP",
+      "auth": "Financial Modeling Prep API key",
+      "publisher_status": "community",
+      "trading_warning": false,
+      "description": "Company profiles, financial statements, equity quotes, crypto, forex, and ETF research."
+    }
+  },
+  {
+    "full_name": "OctagonAI/octagon-mcp-server",
+    "categories": [
+      "findata",
+      "us-equity",
+      "crypto"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance",
+        "Crypto"
+      ],
+      "transport": "stdio",
+      "auth": "Octagon API key",
+      "publisher_status": "community",
+      "trading_warning": false,
+      "description": "SEC filings, earnings calls, stocks and crypto data, and prediction-market research."
+    }
+  },
+  {
+    "full_name": "bnb-chain/bnbchain-mcp",
+    "categories": [
+      "crypto"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Crypto"
+      ],
+      "transport": "stdio / SSE",
+      "auth": "Optional wallet private key for write operations",
+      "publisher_status": "community",
+      "trading_warning": true,
+      "description": "BNB Chain and EVM network research, token and contract queries, and wallet transactions."
+    }
+  },
+  {
+    "full_name": "cyanheads/coingecko-mcp-server",
+    "categories": [
+      "crypto",
+      "findata"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Crypto"
+      ],
+      "transport": "stdio / Streamable HTTP",
+      "auth": "No API key required; optional CoinGecko Demo key",
+      "publisher_status": "community",
+      "trading_warning": false,
+      "description": "CoinGecko prices, rankings, historical charts, token profiles, and crypto market research."
+    }
+  }
+]
