@@ -14,3 +14,6 @@ data/history.json
 # Public GitHub Lab refresh cache
 data/weekly-cache.json
 data/*.tmp
+
+# Local Vercel project metadata and environment files
+.vercel/

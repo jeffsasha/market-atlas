@@ -4,9 +4,10 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
-import { ArrowUpRight, BookOpen, FlaskConical, ChevronDown, Github, Layers3, Plug, TrendingUp, X } from 'lucide-react';
+import { ArrowUpRight, BookOpen, FlaskConical, ChevronDown, Github, Search, Layers3, Plug, TrendingUp, X } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
 import FloatingSurface from './FloatingSurface';
+import { useCommandPalette } from './CommandPalette';
 
 const destinations = [
   { href: '/#discover', label: 'Projects', detail: 'Open-source tools for market research, trading, and financial data.', icon: Layers3, tag: 'Find your toolkit' },
@@ -18,6 +19,7 @@ const destinations = [
 
 export default function Navbar() {
   const path = usePathname();
+  const { open: openSearch } = useCommandPalette();
   const [open, setOpen] = useState(false);
   const headerRef = useRef<HTMLElement>(null);
   const triggerRef = useRef<HTMLButtonElement>(null);
@@ -51,6 +53,7 @@ export default function Navbar() {
           {destinations.slice(1).map(item => <FloatingSurface key={item.href} inline><Link href={item.href} onClick={() => setOpen(false)} aria-current={path === item.href ? 'page' : undefined} className={`nav-link hidden py-2 lg:block ${path === item.href ? 'text-fuchsia-300' : 'text-neutral-300'}`}>{item.label}</Link></FloatingSurface>)}
         </nav>
         <div className="flex shrink-0 items-center gap-2">
+          <button onClick={() => { setOpen(false); openSearch(); }} aria-label="Search MarketAtlas" title="Search (⌘K / Ctrl+K)" className="grid h-9 w-9 place-items-center rounded-full text-neutral-300 hover:bg-white/5"><Search size={16} /></button>
           <a href="https://github.com/jeffsasha/market-atlas" target="_blank" rel="noreferrer" aria-label="GitHub" className="hidden h-9 w-9 place-items-center rounded-full border border-white/20 text-neutral-300 transition-colors hover:border-fuchsia-300 hover:text-white sm:grid"><Github size={16} /></a>
           <ThemeToggle />
         </div>

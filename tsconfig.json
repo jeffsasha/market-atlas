@@ -39,6 +39,7 @@
     ".next-preview/types/**/*.ts",
     ".next-debug/types/**/*.ts",
     ".next-lab/types/**/*.ts",
-    ".next-release/types/**/*.ts"
+    ".next-release/types/**/*.ts",
+    ".next-redesign/types/**/*.ts"
   ]
 }

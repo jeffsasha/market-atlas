@@ -2,7 +2,7 @@
 
 ## Visual direction
 
-A browse-first marketplace with large, tightly tracked headlines, clear repository metadata, and purple/pink accents. The dark navigation opens a white mega menu. Content stays readable over quiet surfaces; the animated hero provides atmosphere.
+A browse-first marketplace with large, tightly tracked headlines, clear repository metadata, and purple/pink accents. The dark navigation opens a white mega menu. Content stays readable over quiet surfaces; a shared CSS dot field supplies a calm technical backdrop.
 
 ## Typography and color
 
@@ -20,9 +20,11 @@ A browse-first marketplace with large, tightly tracked headlines, clear reposito
 
 ## Motion and accessibility
 
-- GradientWaves uses purple/pink waves with pointer parallax, capped at 30 FPS and DPR 1.5. It pauses while offscreen or hidden and has a visible pause control and static fallback.
+- DotField uses CSS dots with no cursor behavior, canvas, or render loop. A brief four-second ambient entrance pauses while hidden; mobile and reduced-motion layouts are static.
 - PixelSwap covers the page during theme changes and persists the choice. Reduced motion switches themes immediately.
-- FloatingSurface adds pointer-driven lift, tilt, and glow to interactive navigation and cards. Fine-pointer checks keep touch layouts steady.
+- FloatingSurface preserves the shared card wrapper without cursor listeners, tilt, or glow. Borders provide restrained hover feedback.
+- StrokeText draws and fills the hero once at mount, with readable SSR text and a final static state for reduced motion. The shared command palette provides keyboard search and focus management.
+- TradingView provides a narrow quote strip below navigation, with delayed equity labels and a static keyboard-accessible symbol menu.
 - Motion respects reduced-motion preferences. Use semantic links and buttons, visible focus rings, accessible names, and readable raw values alongside charts.
 
 The gallery at `/design` demonstrates the current components. React Bits attribution and terms are in [LICENSE.react-bits.md](components/LICENSE.react-bits.md).

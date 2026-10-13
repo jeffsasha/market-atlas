@@ -1,5 +1,7 @@
-# DotField grid adaptation
+# DotField background adaptation
 
-Based on the React Bits DotField source supplied for this integration. The point field is rendered as connected horizontal and vertical grid segments, with pointer deformation and theme-aware colors.
+The supplied React Bits DotField reference is adapted into a CSS-only decorative dot field shared through `GlobalBackground` in the root layout. It uses theme tokens, evenly spaced small dots, and quiet ambient opacity changes.
 
-The canvas caps device pixel ratio and mesh density, suspends animation while idle, hidden, offscreen, or paused, and cleans up observers and event listeners. Reduced motion uses a static grid. No additional package or license key is required.
+There is no canvas, mouse tracking, pointer listener, cursor displacement, particle simulation, or animation frame loop. The layer has `pointer-events: none` and stays behind page content. Mobile and reduced-motion layouts use a static background. Desktop ambience runs once for four seconds; hidden pages pause it automatically. The footer contains only the owner’s GitHub profile link.
+
+Upstream attribution and terms: [LICENSE.react-bits.md](../LICENSE.react-bits.md).

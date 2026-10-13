@@ -76,7 +76,7 @@ export default function DesignPage() {
           </div>}
           code={`<span className="mono flex items-center gap-1">\n  <Star size={12} />{repo.stars.toLocaleString()}\n</span>\n{typeof growth === 'number'\n  ? <span className="mono text-purple-600">+{growth} this week</span>\n  : <span className="mono text-neutral-400">— growth n/a</span>}`} />
 
-        <Section id="floating" title="Floating Surface" desc="Pointer-driven lift, tilt, and glow. Touch and reduced-motion preferences keep the surface steady."
+        <Section id="floating" title="Floating Surface" desc="A shared, steady surface wrapper with subtle border feedback. No cursor-driven tilt or glow."
           preview={<FloatingSurface><a href="/skills" className="block rounded-xl border border-purple-200 bg-purple-50 p-6 text-purple-800">Explore Skills →</a></FloatingSurface>}
           code={`import FloatingSurface from '@/components/FloatingSurface';\n<FloatingSurface><a href="/skills">Explore Skills</a></FloatingSurface>`} />
 

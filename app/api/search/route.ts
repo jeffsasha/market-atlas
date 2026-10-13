@@ -1,12 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { readCache, filterRepos } from '@/lib/store';
+import { readCache } from '@/lib/store';
+import { buildSearchIndex, searchCatalog, SearchKind } from '@/lib/search';
 
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
-  const q = searchParams.get('q') || '';
-  const limit = Math.min(Number(searchParams.get('limit') || 8), 20);
-  if (!q.trim()) return NextResponse.json({ results: [] });
-  const repos = await readCache();
-  const out = filterRepos(repos, { q, sort: 'popular' }).slice(0, limit);
-  return NextResponse.json({ results: out });
+  const query = searchParams.get('q') || '';
+  if (!query.trim()) return NextResponse.json({ results: [] });
+  const requested = searchParams.get('type') || 'all';
+  const kind: SearchKind = ['projects', 'skills', 'mcp'].includes(requested) ? requested as SearchKind : 'all';
+  const results = searchCatalog(buildSearchIndex(await readCache()), query, kind, Number(searchParams.get('limit') || 8));
+  return NextResponse.json({ results });
 }

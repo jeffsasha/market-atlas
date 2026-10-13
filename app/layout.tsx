@@ -2,6 +2,11 @@ import './globals.css';
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import Navbar from '@/components/Navbar';
+import GlobalBackground from '@/components/GlobalBackground';
+import MarketTicker from '@/components/MarketTicker';
+import { CommandPaletteProvider } from '@/components/CommandPalette';
+import { readCache } from '@/lib/store';
+import { buildSearchIndex } from '@/lib/search';
 
 const display = localFont({ src: './fonts/space-grotesk-latin.woff2', weight: '300 700', style: 'normal', display: 'swap' });
 
@@ -15,16 +20,21 @@ function themeInit() {
   return `(function(){try{var t=localStorage.getItem('ma-theme');if(t==='dark'||(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)){document.documentElement.classList.add('dark')}}catch(e){}})();`;
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const items = buildSearchIndex(await readCache());
   return (
     <html lang="en" suppressHydrationWarning>
       <head><script dangerouslySetInnerHTML={{ __html: themeInit() }} /></head>
       <body className={display.className}>
+          <CommandPaletteProvider items={items}>
+          <GlobalBackground />
           <Navbar />
+          <MarketTicker />
           <main className="min-h-screen">{children}</main>
           <footer className="border-t border-[#E7E5E4] dark:border-[#27272A] py-8 text-center text-sm text-neutral-500">
-            <span className="mono">MarketAtlas</span> — open-source financial intelligence discovery. Data from GitHub API.
+            <a href="https://github.com/jeffsasha" target="_blank" rel="noopener noreferrer" className="mono transition-colors hover:text-violet-400">GitHub · @jeffsasha</a>
           </footer>
+          </CommandPaletteProvider>
       </body>
     </html>
   );

@@ -17,7 +17,7 @@ Discover financial research projects, agent skills, and MCP servers—then explo
 
 </div>
 
-![GitHub Lab: weekly rankings, repository facts, and an interactive radar comparison](docs/images/github-lab.jpg)
+![MarketAtlas: refined hero, catalog search, dot-grid background, and market ticker](docs/images/homepage.jpg)
 
 ## Features
 
@@ -30,7 +30,7 @@ Discover financial research projects, agent skills, and MCP servers—then explo
 | **Trending** | Explore financial community favorites and verified weekly growth when enough history is available. |
 | **Design gallery** | Preview the site's components and their usage examples at `/design`. |
 
-Purple and pink GradientWaves, pointer-responsive floating surfaces, a dark navigation bar with a white mega menu, and a PixelSwap theme transition bring the catalog to life. Light and dark themes persist on your device. Keyboard navigation, repository-preview focus handling, reduced-motion support, a background pause control, and a static gradient fallback are included.
+A quiet, shared dot-grid background, muted lavender/pink accents, a one-time React Bits StrokeText headline, a dark navigation bar with a white mega menu, and a PixelSwap theme transition give the catalog a consistent visual language. The hero opens the shared command palette, and a compact TradingView ticker sits beneath navigation. Light/dark themes, keyboard navigation, focus handling, reduced motion, and a brief ambient-background entrance are included.
 
 ## Quick start
 
@@ -71,7 +71,23 @@ MARKETATLAS_DIST_DIR=.next-preview npm start -- --hostname 127.0.0.1 --port 3003
 
 </details>
 
+## Search and market ticker
+
+The hero search button and navigation search icon open a shared command palette. Press **⌘K**, **Ctrl+K**, or **/** outside an editable field. Use ↑/↓ and Enter to open a result, Tab to move through controls, and Escape to close. Focus stays inside the dialog and returns to its opener.
+
+Search runs instantly against the actual bundled/refreshed catalog. `lib/search.ts` builds one index of projects, individual Skills, and MCP servers; the palette and `/api/search?q=...&type=projects|skills|mcp` use the same search engine. Matching includes names, descriptions, repositories, tags, and category labels. Project results open internal detail pages; Skills and MCP results open their verified upstream source documentation in a new tab. Suggestion chips use existing catalog categories.
+
+The layout embeds the [official TradingView Ticker Tape](https://www.tradingview.com/widget-docs/widgets/tickers/legacy-ticker-tape/) for AAPL, MSFT, NVDA, GOOGL, AMZN, META, TSLA, SPY, QQQ, and Coinbase BTC/USD, ETH/USD, SOL/USD. **No market API key is required.** Market data stays within TradingView's widget; MarketAtlas does not scrape, cache, or redistribute its quote values.
+
+US equity data is labeled **delayed**. Provider badges show the actual delay (currently 15 minutes in the verified embed), market status, and symbol availability. Crypto availability and updates depend on the provider. The widget does not expose a reliable quote timestamp to the host, so MarketAtlas does not invent one or label equity quotes as real-time. Outside market hours, the provider supplies its latest available data and status.
+
+The provider marquee pauses on hover; reduced-motion preferences stop its animation and allow manual horizontal scrolling. The Markets menu offers stable keyboard-accessible links to all twelve instruments. Loading and script/iframe failure states keep the strip's size stable and display em dashes and unavailable labels, never fake prices. Retry reconnects the widget. Provider-internal failures remain governed by its own unavailable indicators; an iframe load alone cannot prove every quote is available.
+
+TradingView branding and attribution remain visible. Display rights and exchange restrictions follow [TradingView's widget data terms and availability](https://www.tradingview.com/widget-docs/faq/data/); availability can vary by geography, provider changes, content blockers, and exchange restrictions. Do not treat embedding the widget as permission to extract or resell market data.
+
 ## GitHub Lab
+
+![GitHub Lab: weekly rankings, repository facts, and an interactive radar comparison](docs/images/github-lab.jpg)
 
 The homepage's weekly top 10 links directly to repository profiles at `/lab`. The Lab covers **all languages and all project categories** in GitHub's public weekly Trending selection, ranked by its reported weekly stars. The selection is not an exhaustive ranking of every GitHub repository.
 
