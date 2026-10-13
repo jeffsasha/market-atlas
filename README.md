@@ -14,7 +14,7 @@ Discover financial research projects, agent skills, and MCP servers—then explo
 [![React](https://img.shields.io/badge/React-18-149eca?logo=react)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
-[Features](#features) · [Visit website](https://market-atlas-indol.vercel.app/) · [GitHub Lab](#github-lab) · [Data](#real-github-data) · [License](#license) · [Contributing](CONTRIBUTING.md)
+[Features](#features) · [Visit website](https://market-atlas-indol.vercel.app/) · [GitHub Lab](#github-lab) · [Data](#real-github-data) · [Architecture](#interactive-architecture) · [License](#license) · [Contributing](CONTRIBUTING.md)
 
 </div>
 
@@ -36,6 +36,16 @@ A quiet, shared dot-grid background, muted lavender/pink accents, a one-time Rea
 ## Visit website
 
 [**Open MarketAtlas →**](https://market-atlas-indol.vercel.app/)
+
+## Interactive architecture
+
+[![MarketAtlas application and data architecture](docs/images/architecture.svg)](https://market-atlas-indol.vercel.app/architecture.html)
+
+[**Explore the interactive diagram →**](https://market-atlas-indol.vercel.app/architecture.html)
+
+Inspect components and pinned GitHub source references, trace relationships, switch light/dark themes, and export views. The diagram explains the Next.js app, local catalog search, JSON snapshots, manual GitHub refreshes, device storage, and TradingView embed. GitHub shows the static SVG preview above; the linked page provides the full interactive viewer.
+
+[Editable diagram source](docs/architecture/marketatlas.architecture.json) · [Standalone HTML](public/architecture.html)
 
 ## Search and market ticker
 
@@ -135,6 +145,7 @@ Third-party materials are excluded from this MIT grant and retain their own lice
 | --- | --- |
 | React Bits components and adaptations | [MIT + Commons Clause](components/LICENSE.react-bits.md); retain the upstream notices and restrictions. No React Bits Pro component or license key is included. |
 | Space Grotesk font | [SIL Open Font License 1.1](app/fonts/OFL.txt); bundled locally so builds do not fetch it from Google Fonts. |
+| Archify diagram viewer | [MIT License](docs/architecture/LICENSE.archify); bundled font notices remain embedded in the viewer and SVG preview. |
 | Other dependencies | Their respective upstream licenses. |
 | Indexed GitHub projects, Skills, and MCP servers | Their respective upstream licenses; catalog inclusion does not relicense them. |
 | TradingView widget and market data | [TradingView's widget terms and availability](https://www.tradingview.com/widget-docs/faq/data/); this project's MIT License grants no rights to extract or redistribute provider data. |

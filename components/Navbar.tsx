@@ -68,7 +68,7 @@ export default function Navbar() {
                 <div><span className="mono mb-1 block text-[9px] uppercase tracking-wider text-purple-500">0{index + 1} / {item.tag}</span><h2 className="text-lg font-semibold tracking-tight">{item.label}</h2><p className="mt-2 text-xs leading-relaxed text-neutral-500">{item.detail}</p></div>
               </Link></FloatingSurface>)}
             </nav>
-            <div className="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-purple-100 pt-5 text-xs"><Link href="/design" onClick={() => setOpen(false)} className="font-medium text-purple-700">Component gallery</Link><a href="https://github.com/jeffsasha/market-atlas" target="_blank" rel="noreferrer" className="flex items-center gap-2 font-medium text-purple-700">Build with us on GitHub <ArrowUpRight size={13} /></a></div>
+            <div className="mt-5 flex flex-wrap items-center justify-between gap-3 border-t border-purple-100 pt-5 text-xs"><div className="flex flex-wrap gap-5"><Link href="/design" onClick={() => setOpen(false)} className="font-medium text-purple-700">Component gallery</Link><a href="/architecture.html" className="font-medium text-purple-700">Architecture diagram</a></div><a href="https://github.com/jeffsasha/market-atlas" target="_blank" rel="noreferrer" className="flex items-center gap-2 font-medium text-purple-700">Build with us on GitHub <ArrowUpRight size={13} /></a></div>
           </div>
         </motion.div>}
       </AnimatePresence>

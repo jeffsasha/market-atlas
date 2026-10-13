@@ -1,0 +1,389 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "MarketAtlas \u2014 Application & Data Architecture",
+    "locale": "en",
+    "output": "public/architecture.html",
+    "quality_profile": "showcase",
+    "repository": {
+      "url": "https://github.com/jeffsasha/market-atlas.git",
+      "revision": "b521025144a09bc1ad94671ba0821c73151548f7",
+      "link_mode": "web"
+    }
+  },
+  "components": [
+    {
+      "id": "browser",
+      "type": "frontend",
+      "label": "React discovery UI",
+      "sublabel": "Projects / Skills / MCP / GitHub Lab",
+      "pos": [
+        40,
+        260
+      ],
+      "size": [
+        220,
+        76
+      ],
+      "sources": [
+        {
+          "path": "components/CommandPalette.tsx",
+          "line": 15,
+          "end_line": 46
+        },
+        {
+          "path": "components/GitHubLab.tsx",
+          "line": 13,
+          "end_line": 48
+        },
+        {
+          "path": "components/MarketTicker.tsx",
+          "line": 25,
+          "end_line": 59
+        }
+      ]
+    },
+    {
+      "id": "next",
+      "type": "backend",
+      "label": "Next.js App Router",
+      "sublabel": "Server pages + read-only catalog APIs",
+      "pos": [
+        510,
+        260
+      ],
+      "size": [
+        220,
+        76
+      ],
+      "sources": [
+        {
+          "path": "app/page.tsx",
+          "line": 9,
+          "end_line": 14
+        },
+        {
+          "path": "app/api/mcp/route.ts",
+          "line": 4,
+          "end_line": 17
+        },
+        {
+          "path": "app/repositories/[owner]/[repo]/page.tsx",
+          "line": 6,
+          "end_line": 12
+        }
+      ]
+    },
+    {
+      "id": "readers",
+      "type": "backend",
+      "label": "Snapshot readers",
+      "sublabel": "Cache first; bundled fallback",
+      "pos": [
+        980,
+        260
+      ],
+      "size": [
+        220,
+        76
+      ],
+      "sources": [
+        {
+          "path": "lib/store.ts",
+          "line": 3,
+          "end_line": 16
+        },
+        {
+          "path": "lib/weekly-store.ts",
+          "line": 3,
+          "end_line": 12
+        }
+      ]
+    },
+    {
+      "id": "quotes",
+      "type": "external",
+      "label": "TradingView embed",
+      "sublabel": "Provider-owned equity + crypto quotes",
+      "pos": [
+        40,
+        40
+      ],
+      "size": [
+        220,
+        76
+      ],
+      "sources": [
+        {
+          "path": "components/MarketTicker.tsx",
+          "line": 25,
+          "end_line": 59
+        },
+        {
+          "path": "components/MarketTicker.tsx",
+          "line": 61,
+          "end_line": 70
+        }
+      ]
+    },
+    {
+      "id": "search",
+      "type": "frontend",
+      "label": "Local command palette",
+      "sublabel": "Shared index; in-browser matching",
+      "pos": [
+        510,
+        40
+      ],
+      "size": [
+        220,
+        76
+      ],
+      "sources": [
+        {
+          "path": "app/layout.tsx",
+          "line": 23,
+          "end_line": 29
+        },
+        {
+          "path": "components/CommandPalette.tsx",
+          "line": 15,
+          "end_line": 25
+        },
+        {
+          "path": "lib/search.ts",
+          "line": 16,
+          "end_line": 37
+        }
+      ]
+    },
+    {
+      "id": "device",
+      "type": "database",
+      "label": "Device localStorage",
+      "sublabel": "Theme + Lab favorite repository IDs",
+      "pos": [
+        40,
+        480
+      ],
+      "size": [
+        220,
+        76
+      ],
+      "sources": [
+        {
+          "path": "components/ThemeToggle.tsx",
+          "line": 23,
+          "end_line": 26
+        },
+        {
+          "path": "components/GitHubLab.tsx",
+          "line": 25,
+          "end_line": 48
+        }
+      ]
+    },
+    {
+      "id": "snapshots",
+      "type": "database",
+      "label": "JSON snapshots",
+      "sublabel": "Financial catalog + weekly selection",
+      "pos": [
+        980,
+        480
+      ],
+      "size": [
+        220,
+        76
+      ],
+      "sources": [
+        {
+          "path": "data/catalog.json",
+          "line": 1,
+          "end_line": 15
+        },
+        {
+          "path": "data/github-weekly.json",
+          "line": 1,
+          "end_line": 12
+        },
+        {
+          "path": ".gitignore",
+          "line": 3,
+          "end_line": 16
+        }
+      ]
+    },
+    {
+      "id": "refresh",
+      "type": "backend",
+      "label": "Manual refresh tools",
+      "sublabel": "Metadata / manifest verification",
+      "pos": [
+        980,
+        700
+      ],
+      "size": [
+        220,
+        76
+      ],
+      "sources": [
+        {
+          "path": "scripts/discover.ts",
+          "line": 12,
+          "end_line": 44
+        },
+        {
+          "path": "scripts/refresh-weekly.ts",
+          "line": 5,
+          "end_line": 35
+        },
+        {
+          "path": "lib/artifacts.ts",
+          "line": 21,
+          "end_line": 46
+        }
+      ]
+    },
+    {
+      "id": "github",
+      "type": "external",
+      "label": "GitHub public sources",
+      "sublabel": "REST / raw files / weekly Trending",
+      "pos": [
+        510,
+        700
+      ],
+      "size": [
+        220,
+        76
+      ],
+      "sources": [
+        {
+          "path": "lib/github.ts",
+          "line": 4,
+          "end_line": 21
+        },
+        {
+          "path": "scripts/refresh-weekly.ts",
+          "line": 6,
+          "end_line": 9
+        },
+        {
+          "path": "lib/artifacts.ts",
+          "line": 13,
+          "end_line": 18
+        }
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "id": "browse",
+      "from": "browser",
+      "to": "next",
+      "label": "Pages + catalog API",
+      "variant": "emphasis"
+    },
+    {
+      "id": "load",
+      "from": "next",
+      "to": "readers",
+      "label": "Load catalog / Lab",
+      "variant": "emphasis"
+    },
+    {
+      "id": "read-files",
+      "from": "readers",
+      "to": "snapshots",
+      "label": "Read; fallback on error"
+    },
+    {
+      "id": "index",
+      "from": "next",
+      "to": "search",
+      "label": "Build + pass index"
+    },
+    {
+      "id": "type-search",
+      "from": "browser",
+      "to": "search",
+      "label": "Type / scope / open"
+    },
+    {
+      "id": "quote-embed",
+      "from": "browser",
+      "to": "quotes",
+      "label": "Load official embed"
+    },
+    {
+      "id": "save-local",
+      "from": "browser",
+      "to": "device",
+      "label": "Read / save locally"
+    },
+    {
+      "id": "detail-readme",
+      "from": "next",
+      "to": "github",
+      "label": "README on detail only"
+    },
+    {
+      "id": "refresh-sources",
+      "from": "refresh",
+      "to": "github",
+      "label": "Fetch + verify"
+    },
+    {
+      "id": "refresh-files",
+      "from": "refresh",
+      "to": "snapshots",
+      "label": "Write; bundle if --snapshot"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "Visitor journey",
+      "items": [
+        "The server reads saved catalogs and renders the homepage and repository routes. Client components handle category filters, previews, Lab selection, comparisons and keyboard navigation.",
+        "Skills and MCP pages request /api/skills and /api/mcp, then filter locally. Those entries link to upstream documentation; MarketAtlas does not run the indexed tools."
+      ]
+    },
+    {
+      "dot": "violet",
+      "title": "Search stays local",
+      "items": [
+        "The root layout builds one index from the financial catalog and passes it to the command palette. Typing performs case-insensitive, multi-word matching in memory.",
+        "/api/search is a separate read-only interface using the same search functions; the palette does not call it. Project results use internal detail routes; Skills and MCP results open upstream sources."
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Saved data, explicit refresh",
+      "items": [
+        "Catalog reads prefer data/cache.json and fall back to bundled data/catalog.json on read or parse errors. Weekly reads prefer data/weekly-cache.json, validate ten entries, and fall back to data/github-weekly.json on error.",
+        "Refresh commands are operator-run. discover.ts preserves previous entries on individual failures; refresh-weekly.ts validates ten repositories before atomically replacing files. --snapshot also updates the bundled fallback.",
+        "Financial seven-day growth uses recorded observations. GitHub Lab uses reported weekly stars from GitHub Trending selection, not an exhaustive ranking of every repository."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "External services & boundaries",
+      "items": [
+        "TradingView loads directly in the browser. Quotes remain in its iframe; equities are labeled delayed. The host handles loading failures and retry, not market-data storage.",
+        "Repository detail routes attempt a GitHub README request; browsing catalogs and typing search do not trigger GitHub discovery. GITHUB_TOKEN is optional and remains server-side.",
+        "Favorites and theme preferences stay on the visitor device. The current application has no connected database or account backend; the optional SQL schema is not part of this runtime."
+      ]
+    },
+    {
+      "dot": "slate",
+      "title": "Source and release scope",
+      "items": [
+        "Every node includes inspected source ranges pinned to a published GitHub commit. Open a node to review its source files. This standalone diagram describes that committed application snapshot.",
+        "This is a source-backed application overview, not a live deployment topology. GitHub Actions validates tests, build and types; it does not schedule catalog refresh. Vercel infrastructure details are intentionally outside this source map."
+      ]
+    }
+  ]
+}
