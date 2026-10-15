@@ -52,9 +52,10 @@ def main():
     parent_tree = sh("git", "rev-parse", f"{parent}^{{tree}}").strip()
     fmt = sh("git", "log", "-1", "--format=%an%x00%ae%x00%aI%x00%cn%x00%ce%x00%cI").strip().split("\x00")
     an, ae, ad, cn, ce, cd = fmt
-    # Exact message bytes: git always terminates the message with a newline;
-    # stripping it would change the commit SHA.
-    message = sh("git", "log", "-1", "--format=%B")
+    # Exact message bytes: `git log --format=%B` appends one extra newline
+    # after the stored body, so strip exactly one trailing newline.
+    _msg_out = sh("git", "log", "-1", "--format=%B")
+    message = _msg_out[:-1] if _msg_out.endswith("\n") else _msg_out
 
     remote = api("GET", f"/repos/{REPO}/git/refs/heads/main")
     remote_sha = remote["object"]["sha"]
