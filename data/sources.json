@@ -1068,5 +1068,83 @@
       "auth": "unknown",
       "publisher_status": "community"
     }
+  },
+  {
+    "full_name": "zhensherlock/sp500-mcp-server",
+    "categories": [
+      "sentiment",
+      "ai-agents"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "mrgoonie/vnstock-agent",
+    "categories": [
+      "findata",
+      "ai-agents"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "LuxAlgo/luxalgo-mcp-server",
+    "categories": [
+      "ai-agents"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "ignaciohermosillacornejo/copilot-money-mcp",
+    "categories": [
+      "ai-agents"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "LLMQuant/data-mcp",
+    "categories": [
+      "findata",
+      "ai-agents"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
   }
 ]
