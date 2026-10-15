@@ -896,5 +896,99 @@
       "sentiment",
       "findata"
     ]
+  },
+  {
+    "full_name": "BlockRunAI/awesome-finance-mcp",
+    "categories": [
+      "crypto",
+      "ai-agents"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "letehaha/moneymatter",
+    "categories": [
+      "ai-agents"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "imbenrabi/Financial-Modeling-Prep-MCP-Server",
+    "categories": [
+      "ai-agents",
+      "us-equity"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "akfamily/akquant",
+    "categories": [
+      "backtest"
+    ]
+  },
+  {
+    "full_name": "ranaroussi/qtpylib",
+    "categories": [
+      "backtest"
+    ]
+  },
+  {
+    "full_name": "coding-kitties/investing-algorithm-framework",
+    "categories": [
+      "crypto",
+      "backtest"
+    ]
+  },
+  {
+    "full_name": "Lumiwealth/lumibot",
+    "categories": [
+      "crypto",
+      "backtest"
+    ]
+  },
+  {
+    "full_name": "joshyattridge/smart-money-concepts",
+    "categories": [
+      "crypto",
+      "ta"
+    ]
+  },
+  {
+    "full_name": "LastAncientOne/Stock_Analysis_For_Quant",
+    "categories": [
+      "ta",
+      "us-equity"
+    ]
+  },
+  {
+    "full_name": "cbailes/awesome-deep-trading",
+    "categories": [
+      "crypto",
+      "us-equity"
+    ]
   }
 ]

@@ -1,0 +1,136 @@
+=== 2026-10-15T13:51:44Z daily sync start ===
+Already up to date.
+query "agent skill finance": 348 total, kept scanning top 30
+query "agent skill quantitative trading": 8 total, kept scanning top 30
+query "claude skill financial analysis": 70 total, kept scanning top 30
+query "SKILL.md stocks trading": 0 total, kept scanning top 30
+query "mcp server finance": 912 total, kept scanning top 30
+query "model context protocol stocks": 13 total, kept scanning top 30
+query "mcp server market data": 659 total, kept scanning top 30
+query "ai agent finance trading": 230 total, kept scanning top 30
+query "autonomous trading agent": 2220 total, kept scanning top 30
+query "financial research agent llm": 304 total, kept scanning top 30
+query "quantitative finance stars:>1000": 16 total, kept scanning top 20
+query "algorithmic trading stars:>1000": 30 total, kept scanning top 20
+query "stock analysis stars:>1000": 10 total, kept scanning top 20
+
+Candidates after gates: 82; selecting 10 (skills/MCP prioritized).
+  + BlockRunAI/awesome-finance-mcp ★224 [mcp+agent] -> crypto,ai-agents
+  + letehaha/moneymatter ★172 [mcp] -> ai-agents
+  + imbenrabi/Financial-Modeling-Prep-MCP-Server ★150 [mcp] -> ai-agents,us-equity
+  + akfamily/akquant ★2421 [top-starred] -> backtest
+  + ranaroussi/qtpylib ★2267 [top-starred] -> backtest
+  + coding-kitties/investing-algorithm-framework ★2177 [top-starred] -> crypto,backtest
+  + Lumiwealth/lumibot ★2124 [agent] -> crypto,backtest
+  + joshyattridge/smart-money-concepts ★2083 [top-starred] -> crypto,ta
+  + LastAncientOne/Stock_Analysis_For_Quant ★2081 [top-starred] -> ta,us-equity
+  + cbailes/awesome-deep-trading ★2050 [top-starred] -> crypto,us-equity
+Appended 10 new sources to data/sources.json (77 -> 87).
+Refreshed openbq-org/OpenBB
+Refreshed ranaroussi/yfinance
+Refreshed ZhuLinsen/daily_stock_analysis
+Refreshed FinanceData/FinanceDataReader
+Refreshed freqtrade/freqtrade
+Refreshed ccxt/ccxt
+Refreshed hummingbot/hummingbot
+Refreshed jesse-ai/jesse
+Refreshed QuantConnect/Lean
+Refreshed microsoft/qlib
+Refreshed stefan-jansen/machine-learning-for-trading
+Refreshed AI4Finance-Foundation/FinRL
+Refreshed polakowo/vectorbt
+Refreshed kernc/backtesting.py
+Refreshed mementum/backtrader
+Refreshed PyPortfolio/PyPortfolioOpt
+Refreshed dcajasn/Riskfolio-Lib
+Refreshed akfamily/akshare
+Refreshed bukosabino/ta
+Refreshed TA-Lib/ta-lib-python
+Refreshed lballabio/QuantLib
+Refreshed ProsusAI/finBERT
+Refreshed virattt/ai-hedge-fund
+Refreshed narumiruna/yfinance-mcp
+Refreshed anthropics/skills
+Refreshed anthropics/financial-services
+Refreshed anthropics/knowledge-work-plugins
+Refreshed agiprolabs/claude-trading-skills
+Refreshed hummingbot/skills
+Refreshed JStrait515/crypto-agent-skill
+Refreshed crypto-com/crypto-agent-trading
+Refreshed alpacahq/alpaca-mcp-server
+Refreshed alphavantage/alpha_vantage_mcp
+Refreshed financial-datasets/mcp-server
+Refreshed cdtait/fmp-mcp-server
+Refreshed OctagonAI/octagon-mcp-server
+Refreshed bnb-chain/bnbchain-mcp
+Refreshed cyanheads/coingecko-mcp-server
+Refreshed ALAGENT-HKU/x2strategy
+Refreshed ApocData/ApocData-skill
+Refreshed atilaahmettaner/tradingview-mcp
+Refreshed ariadng/metatrader-mcp-server
+Refreshed wshobson/maverick-mcp
+Refreshed wilsonfreitas/awesome-quant
+Refreshed quantopian/zipline
+Refreshed goldmansachs/gs-quant
+Refreshed OpenByteInc/QuantDinger
+Refreshed EodHistoricalData/eodhd-claude-skills
+Refreshed robcerda/monarch-mcp-server
+Refreshed massive-com/mcp_massive
+Refreshed stefanoamorelli/sec-edgar-mcp
+Refreshed StockSharp/StockSharp
+Refreshed cantaro86/Financial-Models-Numerical-Methods
+Refreshed ricequant/rqalpha
+Refreshed The-Swarm-Corporation/AutoHedge
+Refreshed Superalgos/Superalgos
+Refreshed google/tf-quant-finance
+Refreshed Alex2Yang97/yahoo-finance-mcp
+Refreshed xang1234/stock-screener
+Refreshed guangxiangdebizi/TradingAgents-MCPmode
+Refreshed gbeced/pyalgotrade
+Refreshed quantopian/alphalens
+Refreshed shashankvemuri/Finance
+Refreshed LLMQuant/quant-wiki
+Refreshed grananqvist/Awesome-Quant-Machine-Learning-Trading
+Refreshed edtechre/pybroker
+Refreshed fasiondog/hikyuu
+Refreshed zwldarren/akshare-one-mcp
+Refreshed daniel3303/Equibles
+Refreshed Qoyyuum/mcp-metatrader5-server
+Refreshed chrisconlan/algorithmic-trading-with-python
+Refreshed TradeMaster-NTU/TradeMaster
+Refreshed LLMQuant/quant-mind
+Refreshed alsk1992/CloddsBot
+Refreshed nickmccullum/algorithmic-trading-python
+Refreshed scrtlabs/catalyst
+Refreshed shirosaidev/stocksight
+Refreshed BlockRunAI/awesome-finance-mcp
+Refreshed letehaha/moneymatter
+Refreshed imbenrabi/Financial-Modeling-Prep-MCP-Server
+Refreshed akfamily/akquant
+Refreshed ranaroussi/qtpylib
+Refreshed coding-kitties/investing-algorithm-framework
+Refreshed Lumiwealth/lumibot
+Refreshed joshyattridge/smart-money-concepts
+Refreshed LastAncientOne/Stock_Analysis_For_Quant
+Refreshed cbailes/awesome-deep-trading
+Refreshed 87/87; serving 87 real projects.
+✔ bundled catalog has real projects across every browse category (2.481215ms)
+✔ category membership supports multiple uses without duplicating projects (0.214081ms)
+✔ weekly growth requires a real baseline; zero and negative growth stay valid (0.300451ms)
+✔ weekly ranking uses reported weekly stars, deduplicates repositories, and ignores missing metrics (4.532735ms)
+✔ radar normalization distinguishes unavailable data from zero and stays within its scale (0.468454ms)
+✔ bundled Lab snapshot has ten unique repositories ordered by weekly growth (19.260506ms)
+✔ skill manifests require actual frontmatter metadata, not a filename alone (2.674556ms)
+✔ multiple skills in one repository keep separate stable identities (0.597817ms)
+✔ search includes human-readable categories and matches all query words regardless of case (6.245726ms)
+✔ skills and MCP servers remain individually searchable with valid source destinations (11.522259ms)
+✔ search keeps project navigation internal, applies safe result limits, and handles an empty catalog (3.537781ms)
+✔ search API respects MCP scope and returns usable results when its limit is invalid (208.102981ms)
+ℹ tests 12
+ℹ suites 0
+ℹ pass 12
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1809.790712
