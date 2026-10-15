@@ -29,14 +29,14 @@ async function main() {
       const latest = { captured_at: now, stars: g.stargazers_count };
       let repo: CachedRepo = { ...prior, ...toRepoRecord(g, source.categories[0]), categories: source.categories, last_synced_at: now, stars_growth_7d: weeklyGrowth(samples, latest), has_skill_md: prior?.has_skill_md || false, is_mcp: prior?.is_mcp || false };
       repo = await refreshArtifacts(repo, source as CatalogSource, g.default_branch, now);
-      // Clear stale artifacts: if the source no longer declares skills/MCP,
-      // previously verified data must not linger in the record.
+      // Clear stale artifacts: if the source no longer declares skills, or the
+      // MCP did not verify, previously verified data must not linger and no
+      // explicit nulls may remain (the catalog's types expect absent keys).
       if (!source.skills) {
         repo.skills = []; repo.has_skill_md = false;
         delete repo.skill_path; delete repo.skill_source_url;
       }
-      if (!source.mcp) {
-        repo.is_mcp = false;
+      if (!repo.is_mcp) {
         for (const k of ['mcp_source_url', 'mcp_source_ref', 'mcp_source_sha', 'mcp_verified_at', 'mcp_description', 'mcp_topics', 'mcp_transport', 'mcp_auth', 'mcp_status', 'mcp_trading_warning']) delete repo[k];
       }
       records.set(g.id, repo);

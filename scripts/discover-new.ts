@@ -9,6 +9,8 @@ import path from 'path';
 import { searchRepos, checkSkillManifest, type GhRepo } from '../lib/github';
 import { CATEGORIES } from '../lib/categories';
 
+type CategoryId = (typeof CATEGORIES)[number]['id'];
+
 type Kind = 'skill' | 'mcp' | 'agent' | 'top';
 
 const QUERIES: { q: string; kind: Kind; minStars: number; maxAgeDays: number; perPage: number }[] = [
@@ -34,7 +36,7 @@ const QUERIES: { q: string; kind: Kind; minStars: number; maxAgeDays: number; pe
 const FINANCE_RE = /financ|trad|stock|quant|portfolio|crypto|bitcoin|defi|blockchain|forex|option|future|backtest|invest|bank|fintech|market.?data|broker|hedge|equit|etf/i;
 const MCP_RE = /mcp[ -]?server|model context protocol/i;
 
-const CATEGORY_RULES: [RegExp, string][] = [
+const CATEGORY_RULES: [RegExp, CategoryId][] = [
   [/crypto|bitcoin|defi|blockchain|web3/, 'crypto'],
   [/backtest/, 'backtest'],
   [/portfolio/, 'portfolio'],
