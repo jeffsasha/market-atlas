@@ -19,6 +19,18 @@ EOF
 )"
 export GITHUB_TOKEN
 
+# Optional args (passed to discover-new.ts):
+#   --kinds=skill,mcp,agent,top   limit discovery to these kinds (default: all)
+#   --max-add=N                   max new sources per run (default: 10)
+KINDS_ARG=""
+MAX_ADD_ARG=""
+for arg in "$@"; do
+  case "$arg" in
+    --kinds=*) KINDS_ARG="$arg" ;;
+    --max-add=*) MAX_ADD_ARG="$arg" ;;
+  esac
+done
+
 echo "=== $(date -u +%FT%TZ) daily sync start ==="
 
 # 1. Sync with remote (fail loud on divergence so no work is silently lost).
@@ -26,7 +38,8 @@ git fetch origin
 git merge --ff-only origin/main
 
 # 2. Discover new finance skills / MCP / agents / top-starred projects.
-./node_modules/.bin/tsx scripts/discover-new.ts --max-add=10
+[ -n "$MAX_ADD_ARG" ] || MAX_ADD_ARG="--max-add=10"
+./node_modules/.bin/tsx scripts/discover-new.ts $MAX_ADD_ARG $KINDS_ARG
 
 # 3. Refresh stats + artifacts for all sources, write data/catalog.json snapshot.
 ./node_modules/.bin/tsx scripts/discover.ts --snapshot

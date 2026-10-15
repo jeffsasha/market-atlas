@@ -3,7 +3,7 @@
 // data/sources.json. The regular `discover.ts --snapshot` run then picks them
 // up for stats refresh + artifact verification.
 //
-// Usage: tsx scripts/discover-new.ts [--dry-run] [--max-add=10]
+// Usage: tsx scripts/discover-new.ts [--dry-run] [--max-add=10] [--kinds=skill,mcp,agent,top]
 import { promises as fs } from 'fs';
 import path from 'path';
 import { searchRepos, checkSkillManifest, type GhRepo } from '../lib/github';
@@ -79,6 +79,12 @@ function freshEnough(repo: GhRepo, maxAgeDays: number): boolean {
 async function main() {
   const dryRun = process.argv.includes('--dry-run');
   const maxAdd = Number(process.argv.find(a => a.startsWith('--max-add='))?.slice(10) || 10);
+  const kindsArg = process.argv.find(a => a.startsWith('--kinds='))?.slice(8);
+  const onlyKinds = new Set<Kind>(
+    (kindsArg ? kindsArg.split(',') : []).filter(k => ['skill', 'mcp', 'agent', 'top'].includes(k)) as Kind[]
+  );
+  const queries = onlyKinds.size ? QUERIES.filter(q => onlyKinds.has(q.kind)) : QUERIES;
+  if (!queries.length) throw new Error('No queries match --kinds filter.');
   const sourcesPath = path.join(process.cwd(), 'data', 'sources.json');
   const sources: { full_name: string; categories: string[]; skills?: any[]; mcp?: any }[] =
     JSON.parse(await fs.readFile(sourcesPath, 'utf8'));
@@ -104,8 +110,8 @@ async function main() {
     throw new Error('unreachable');
   }
 
-  for (let i = 0; i < QUERIES.length; i++) {
-    const { q, perPage } = QUERIES[i];
+  for (let i = 0; i < queries.length; i++) {
+    const { q, perPage } = queries[i];
     try {
       const res = await searchWithRetry(q, perPage);
       for (const item of res.items || []) {
@@ -127,7 +133,7 @@ async function main() {
     if (!financeRelevant(repo)) continue;
     const kinds: Kind[] = [];
     for (const i of queryIdx) {
-      const cfg = QUERIES[i];
+      const cfg = queries[i];
       if (repo.stargazers_count < cfg.minStars) continue;
       if (!freshEnough(repo, cfg.maxAgeDays)) continue;
       if (!kinds.includes(cfg.kind)) kinds.push(cfg.kind);
