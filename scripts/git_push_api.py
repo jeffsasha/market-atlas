@@ -70,9 +70,13 @@ def main():
             entries.append({"path": path, "mode": "100644", "type": "blob", "sha": None})
             continue
         mode = sh("git", "ls-tree", "HEAD", "--", path).split()[0]
-        with open(f"/home/hatch/workspace/market-atlas/{path}", "rb") as f:
-            content = base64.b64encode(f.read()).decode()
-        blob = api("POST", f"/repos/{REPO}/git/blobs", {"content": content, "encoding": "base64"})
+        # Read blob bytes from the commit itself, never the working tree
+        # (they can differ if files were edited after committing).
+        content = subprocess.run(
+            ["git", "show", f"{head}:{path}"],
+            capture_output=True, cwd="/home/hatch/workspace/market-atlas").stdout
+        blob = api("POST", f"/repos/{REPO}/git/blobs",
+                   {"content": base64.b64encode(content).decode(), "encoding": "base64"})
         entries.append({"path": path, "mode": mode, "type": "blob", "sha": blob["sha"]})
 
     new_tree = api("POST", f"/repos/{REPO}/git/trees", {"base_tree": parent_tree, "tree": entries})
