@@ -29,6 +29,16 @@ async function main() {
       const latest = { captured_at: now, stars: g.stargazers_count };
       let repo: CachedRepo = { ...prior, ...toRepoRecord(g, source.categories[0]), categories: source.categories, last_synced_at: now, stars_growth_7d: weeklyGrowth(samples, latest), has_skill_md: prior?.has_skill_md || false, is_mcp: prior?.is_mcp || false };
       repo = await refreshArtifacts(repo, source as CatalogSource, g.default_branch, now);
+      // Clear stale artifacts: if the source no longer declares skills/MCP,
+      // previously verified data must not linger in the record.
+      if (!source.skills) {
+        repo.skills = []; repo.has_skill_md = false;
+        delete repo.skill_path; delete repo.skill_source_url;
+      }
+      if (!source.mcp) {
+        repo.is_mcp = false;
+        for (const k of ['mcp_source_url', 'mcp_source_ref', 'mcp_source_sha', 'mcp_verified_at', 'mcp_description', 'mcp_topics', 'mcp_transport', 'mcp_auth', 'mcp_status', 'mcp_trading_warning']) delete repo[k];
+      }
       records.set(g.id, repo);
       history[g.full_name] = [...samples.filter(s => s.captured_at.slice(0, 10) !== now.slice(0, 10) && +new Date(s.captured_at) >= Date.now() - 60 * 86400000), latest];
       refreshed++;
@@ -38,6 +48,18 @@ async function main() {
     }
   }
   if (!refreshed) throw new Error('No repositories refreshed. Existing catalog was preserved.');
+  // Full runs only (--only= skips this): drop records whose source was removed
+  // from data/sources.json, keeping the catalog exactly in sync with the
+  // curated list.
+  if (!only) {
+    const valid = new Set(selected.map(s => s.full_name.toLowerCase()));
+    for (const [id, repo] of records) {
+      if (!valid.has((repo.full_name || '').toLowerCase())) {
+        records.delete(id);
+        console.log(`Pruned ${repo.full_name} (no longer in sources.json)`);
+      }
+    }
+  }
   const repos = [...records.values()].sort((a, b) => b.stars - a.stars);
   await writeCache(repos);
   await fs.writeFile(historyFile, JSON.stringify(history, null, 2) + '\n');

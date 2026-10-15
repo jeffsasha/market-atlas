@@ -523,5 +523,378 @@
       "trading_warning": false,
       "description": "CoinGecko prices, rankings, historical charts, token profiles, and crypto market research."
     }
+  },
+  {
+    "full_name": "ALAGENT-HKU/x2strategy",
+    "categories": [
+      "ai-agents"
+    ]
+  },
+  {
+    "full_name": "ApocData/ApocData-skill",
+    "categories": [
+      "ai-agents",
+      "us-equity"
+    ]
+  },
+  {
+    "full_name": "atilaahmettaner/tradingview-mcp",
+    "categories": [
+      "crypto",
+      "backtest"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "ariadng/metatrader-mcp-server",
+    "categories": [
+      "ai-agents"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "wshobson/maverick-mcp",
+    "categories": [
+      "backtest",
+      "portfolio"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "wilsonfreitas/awesome-quant",
+    "categories": [
+      "ta",
+      "findata"
+    ]
+  },
+  {
+    "full_name": "quantopian/zipline",
+    "categories": [
+      "quant"
+    ]
+  },
+  {
+    "full_name": "goldmansachs/gs-quant",
+    "categories": [
+      "derivatives",
+      "risk"
+    ]
+  },
+  {
+    "full_name": "OpenByteInc/QuantDinger",
+    "categories": [
+      "crypto",
+      "backtest"
+    ]
+  },
+  {
+    "full_name": "EodHistoricalData/eodhd-claude-skills",
+    "categories": [
+      "findata",
+      "ai-agents"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "robcerda/monarch-mcp-server",
+    "categories": [
+      "ai-agents"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "massive-com/mcp_massive",
+    "categories": [
+      "crypto",
+      "derivatives"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "stefanoamorelli/sec-edgar-mcp",
+    "categories": [
+      "ai-agents"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "StockSharp/StockSharp",
+    "categories": [
+      "crypto",
+      "backtest"
+    ]
+  },
+  {
+    "full_name": "cantaro86/Financial-Models-Numerical-Methods",
+    "categories": [
+      "derivatives"
+    ]
+  },
+  {
+    "full_name": "ricequant/rqalpha",
+    "categories": [
+      "backtest",
+      "derivatives"
+    ]
+  },
+  {
+    "full_name": "The-Swarm-Corporation/AutoHedge",
+    "categories": [
+      "risk",
+      "ai-agents"
+    ]
+  },
+  {
+    "full_name": "Superalgos/Superalgos",
+    "categories": [
+      "crypto",
+      "backtest"
+    ]
+  },
+  {
+    "full_name": "google/tf-quant-finance",
+    "categories": [
+      "quant"
+    ]
+  },
+  {
+    "full_name": "Alex2Yang97/yahoo-finance-mcp",
+    "categories": [
+      "derivatives",
+      "sentiment"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "xang1234/stock-screener",
+    "categories": [
+      "us-equity"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "guangxiangdebizi/TradingAgents-MCPmode",
+    "categories": [
+      "ai-agents",
+      "us-equity"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "gbeced/pyalgotrade",
+    "categories": [
+      "quant"
+    ]
+  },
+  {
+    "full_name": "quantopian/alphalens",
+    "categories": [
+      "us-equity"
+    ]
+  },
+  {
+    "full_name": "shashankvemuri/Finance",
+    "categories": [
+      "backtest",
+      "portfolio"
+    ]
+  },
+  {
+    "full_name": "LLMQuant/quant-wiki",
+    "categories": [
+      "quant"
+    ]
+  },
+  {
+    "full_name": "grananqvist/Awesome-Quant-Machine-Learning-Trading",
+    "categories": [
+      "us-equity"
+    ]
+  },
+  {
+    "full_name": "edtechre/pybroker",
+    "categories": [
+      "crypto",
+      "backtest"
+    ]
+  },
+  {
+    "full_name": "fasiondog/hikyuu",
+    "categories": [
+      "backtest",
+      "portfolio"
+    ]
+  },
+  {
+    "full_name": "zwldarren/akshare-one-mcp",
+    "categories": [
+      "findata",
+      "ai-agents"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "daniel3303/Equibles",
+    "categories": [
+      "derivatives",
+      "findata"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "Qoyyuum/mcp-metatrader5-server",
+    "categories": [
+      "findata",
+      "ai-agents"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "chrisconlan/algorithmic-trading-with-python",
+    "categories": [
+      "quant"
+    ]
+  },
+  {
+    "full_name": "TradeMaster-NTU/TradeMaster",
+    "categories": [
+      "us-equity"
+    ]
+  },
+  {
+    "full_name": "LLMQuant/quant-mind",
+    "categories": [
+      "ai-agents"
+    ]
+  },
+  {
+    "full_name": "alsk1992/CloddsBot",
+    "categories": [
+      "crypto",
+      "derivatives"
+    ]
+  },
+  {
+    "full_name": "nickmccullum/algorithmic-trading-python",
+    "categories": [
+      "quant"
+    ]
+  },
+  {
+    "full_name": "scrtlabs/catalyst",
+    "categories": [
+      "crypto"
+    ]
+  },
+  {
+    "full_name": "shirosaidev/stocksight",
+    "categories": [
+      "sentiment",
+      "findata"
+    ]
   }
 ]

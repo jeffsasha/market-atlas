@@ -9,27 +9,25 @@
       "html_url": "https://github.com/anthropics/skills",
       "homepage": "",
       "language": "Python",
-      "stars": 180859,
-      "forks": 21432,
-      "open_issues": 1406,
+      "stars": 181230,
+      "forks": 21453,
+      "open_issues": 1412,
       "license_spdx": null,
       "topics": [
         "agent-skills"
       ],
       "created_at": "2025-09-22T15:53:31Z",
       "pushed_at": "2026-10-09T18:45:52Z",
-      "updated_at": "2026-10-13T14:45:01Z",
+      "updated_at": "2026-10-15T07:15:46Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/76263028?v=4",
       "category": "ai-agents",
+      "stars_growth_7d": null,
       "categories": [
         "ai-agents"
       ],
-      "stars_growth_7d": null,
-      "last_synced_at": "2026-10-13T14:45:58.577Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": true,
       "is_mcp": false,
-      "skill_path": "skills/xlsx/SKILL.md",
-      "skill_source_url": "https://github.com/anthropics/skills/blob/main/skills/xlsx/SKILL.md",
       "skills": [
         {
           "name": "xlsx",
@@ -42,7 +40,7 @@
           "source_url": "https://github.com/anthropics/skills/blob/dbd4588f9e1033efb41dad4bef2f7947c8993d44/skills/xlsx/SKILL.md",
           "source_ref": "dbd4588f9e1033efb41dad4bef2f7947c8993d44",
           "source_sha": "6712b39718fe815054abca9c3ee72f989613e6f771c8a5c58f30a65a6c905622",
-          "verified_at": "2026-10-13T14:45:58.577Z"
+          "verified_at": "2026-10-15T07:19:16.158Z"
         }
       ]
     },
@@ -55,8 +53,8 @@
       "html_url": "https://github.com/openbq-org/OpenBB",
       "homepage": "https://openbb.co",
       "language": "Python",
-      "stars": 74167,
-      "forks": 7664,
+      "stars": 74246,
+      "forks": 7686,
       "open_issues": 101,
       "license_spdx": "NOASSERTION",
       "topics": [
@@ -75,8 +73,8 @@
         "stocks"
       ],
       "created_at": "2020-12-20T10:46:38Z",
-      "pushed_at": "2026-10-11T20:16:55Z",
-      "updated_at": "2026-10-12T20:38:00Z",
+      "pushed_at": "2026-10-15T03:45:03Z",
+      "updated_at": "2026-10-15T06:42:55Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/328144346?v=4",
       "category": "us-equity",
       "stars_growth_7d": null,
@@ -84,9 +82,10 @@
         "us-equity",
         "findata"
       ],
-      "last_synced_at": "2026-10-12T20:57:42.249Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": false,
-      "is_mcp": false
+      "is_mcp": false,
+      "skills": []
     },
     {
       "github_id": 1131513930,
@@ -97,9 +96,9 @@
       "html_url": "https://github.com/ZhuLinsen/daily_stock_analysis",
       "homepage": "https://dsa.zhulinsen.tech",
       "language": "Python",
-      "stars": 66240,
-      "forks": 55146,
-      "open_issues": 28,
+      "stars": 66375,
+      "forks": 55249,
+      "open_issues": 34,
       "license_spdx": "MIT",
       "topics": [
         "a-stock",
@@ -111,18 +110,19 @@
         "quantitative-trading"
       ],
       "created_at": "2026-01-10T06:43:20Z",
-      "pushed_at": "2026-10-11T11:10:45Z",
-      "updated_at": "2026-10-12T20:24:24Z",
+      "pushed_at": "2026-10-14T02:17:59Z",
+      "updated_at": "2026-10-15T07:19:05Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/42829555?v=4",
       "category": "us-equity",
+      "stars_growth_7d": null,
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
       "categories": [
         "us-equity",
         "ai-agents"
       ],
-      "stars_growth_7d": null,
-      "last_synced_at": "2026-10-12T20:57:42.249Z",
-      "has_skill_md": false,
-      "is_mcp": false
+      "skills": []
     },
     {
       "github_id": 896144595,
@@ -133,24 +133,25 @@
       "html_url": "https://github.com/virattt/ai-hedge-fund",
       "homepage": null,
       "language": "Python",
-      "stars": 63959,
-      "forks": 11227,
+      "stars": 64000,
+      "forks": 11236,
       "open_issues": 177,
       "license_spdx": "MIT",
       "topics": [],
       "created_at": "2024-11-29T16:30:01Z",
       "pushed_at": "2026-10-02T14:19:04Z",
-      "updated_at": "2026-10-12T20:39:31Z",
+      "updated_at": "2026-10-15T07:08:48Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/901795?v=4",
       "category": "ai-agents",
+      "stars_growth_7d": null,
       "categories": [
         "ai-agents",
         "us-equity"
       ],
-      "stars_growth_7d": null,
-      "last_synced_at": "2026-10-12T20:57:42.249Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": false,
-      "is_mcp": false
+      "is_mcp": false,
+      "skills": []
     },
     {
       "github_id": 91629816,
@@ -161,9 +162,9 @@
       "html_url": "https://github.com/freqtrade/freqtrade",
       "homepage": "https://www.freqtrade.io",
       "language": "Python",
-      "stars": 55317,
-      "forks": 11430,
-      "open_issues": 30,
+      "stars": 55399,
+      "forks": 11457,
+      "open_issues": 27,
       "license_spdx": "GPL-3.0",
       "topics": [
         "algorithmic-trading",
@@ -177,18 +178,19 @@
         "trading-bot"
       ],
       "created_at": "2017-05-17T23:48:53Z",
-      "pushed_at": "2026-10-12T18:06:38Z",
-      "updated_at": "2026-10-12T20:50:10Z",
+      "pushed_at": "2026-10-15T04:42:04Z",
+      "updated_at": "2026-10-15T07:19:04Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/37536846?v=4",
       "category": "crypto",
+      "stars_growth_7d": null,
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
       "categories": [
         "crypto",
         "backtest"
       ],
-      "stars_growth_7d": null,
-      "last_synced_at": "2026-10-12T20:57:42.249Z",
-      "has_skill_md": false,
-      "is_mcp": false
+      "skills": []
     },
     {
       "github_id": 287463830,
@@ -199,8 +201,8 @@
       "html_url": "https://github.com/microsoft/qlib",
       "homepage": "https://qlib.readthedocs.io/en/latest/",
       "language": "Python",
-      "stars": 49313,
-      "forks": 7784,
+      "stars": 49371,
+      "forks": 7798,
       "open_issues": 492,
       "license_spdx": "MIT",
       "topics": [
@@ -224,18 +226,19 @@
         "stock-data"
       ],
       "created_at": "2020-08-14T06:46:00Z",
-      "pushed_at": "2026-10-08T10:58:43Z",
-      "updated_at": "2026-10-12T20:39:48Z",
+      "pushed_at": "2026-10-14T20:32:10Z",
+      "updated_at": "2026-10-15T06:07:20Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/6154722?v=4",
       "category": "quant",
+      "stars_growth_7d": null,
       "categories": [
         "quant",
         "ai-agents"
       ],
-      "stars_growth_7d": null,
-      "last_synced_at": "2026-10-12T20:57:42.249Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": false,
-      "is_mcp": false
+      "is_mcp": false,
+      "skills": []
     },
     {
       "github_id": 91253698,
@@ -246,9 +249,9 @@
       "html_url": "https://github.com/ccxt/ccxt",
       "homepage": "https://docs.ccxt.com",
       "language": "Python",
-      "stars": 44344,
-      "forks": 8877,
-      "open_issues": 716,
+      "stars": 44377,
+      "forks": 8887,
+      "open_issues": 706,
       "license_spdx": "MIT",
       "topics": [
         "altcoin",
@@ -272,18 +275,19 @@
         "trading"
       ],
       "created_at": "2017-05-14T15:41:56Z",
-      "pushed_at": "2026-10-12T15:36:53Z",
-      "updated_at": "2026-10-12T19:39:52Z",
+      "pushed_at": "2026-10-15T05:11:39Z",
+      "updated_at": "2026-10-15T07:16:34Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/31901609?v=4",
       "category": "crypto",
+      "stars_growth_7d": null,
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
       "categories": [
         "crypto",
         "findata"
       ],
-      "stars_growth_7d": null,
-      "last_synced_at": "2026-10-12T20:57:42.249Z",
-      "has_skill_md": false,
-      "is_mcp": false
+      "skills": []
     },
     {
       "github_id": 1165056385,
@@ -294,14 +298,14 @@
       "html_url": "https://github.com/anthropics/financial-services",
       "homepage": null,
       "language": "Python",
-      "stars": 39656,
-      "forks": 5596,
-      "open_issues": 233,
+      "stars": 39900,
+      "forks": 5613,
+      "open_issues": 235,
       "license_spdx": "Apache-2.0",
       "topics": [],
       "created_at": "2026-02-23T19:24:50Z",
       "pushed_at": "2026-09-21T21:10:41Z",
-      "updated_at": "2026-10-13T14:44:34Z",
+      "updated_at": "2026-10-15T07:18:21Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/76263028?v=4",
       "category": "ai-agents",
       "stars_growth_7d": null,
@@ -310,7 +314,7 @@
         "us-equity",
         "portfolio"
       ],
-      "last_synced_at": "2026-10-13T14:45:58.577Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": true,
       "is_mcp": false,
       "skills": [
@@ -325,7 +329,7 @@
           "source_url": "https://github.com/anthropics/financial-services/blob/574ed3624aebd0418c7e96cd101262f30210ab26/plugins/vertical-plugins/financial-analysis/skills/dcf-model/SKILL.md",
           "source_ref": "574ed3624aebd0418c7e96cd101262f30210ab26",
           "source_sha": "2bb3ed672ab2fa76f8820ee919b158a67dc6df10e7052eeb661599140a9a2494",
-          "verified_at": "2026-10-13T14:45:58.577Z"
+          "verified_at": "2026-10-15T07:19:16.158Z"
         },
         {
           "name": "comps-analysis",
@@ -338,7 +342,7 @@
           "source_url": "https://github.com/anthropics/financial-services/blob/574ed3624aebd0418c7e96cd101262f30210ab26/plugins/vertical-plugins/financial-analysis/skills/comps-analysis/SKILL.md",
           "source_ref": "574ed3624aebd0418c7e96cd101262f30210ab26",
           "source_sha": "2d49d9d694297da6ca3b084564ce10ed496f4ff21f275dae6b6c50d7b4dd889a",
-          "verified_at": "2026-10-13T14:45:58.577Z"
+          "verified_at": "2026-10-15T07:19:16.158Z"
         },
         {
           "name": "3-statement-model",
@@ -351,7 +355,7 @@
           "source_url": "https://github.com/anthropics/financial-services/blob/574ed3624aebd0418c7e96cd101262f30210ab26/plugins/vertical-plugins/financial-analysis/skills/3-statement-model/SKILL.md",
           "source_ref": "574ed3624aebd0418c7e96cd101262f30210ab26",
           "source_sha": "bc2aeb423a3cc9e6ab973dcc4e3c6682427c751e20d8b3a0eec057eab67b1e83",
-          "verified_at": "2026-10-13T14:45:58.577Z"
+          "verified_at": "2026-10-15T07:19:16.158Z"
         },
         {
           "name": "lbo-model",
@@ -364,7 +368,7 @@
           "source_url": "https://github.com/anthropics/financial-services/blob/574ed3624aebd0418c7e96cd101262f30210ab26/plugins/vertical-plugins/financial-analysis/skills/lbo-model/SKILL.md",
           "source_ref": "574ed3624aebd0418c7e96cd101262f30210ab26",
           "source_sha": "19749a568d6960137a2e0b83a2ac2215bf45c54d94a042626678e0bc955aaca7",
-          "verified_at": "2026-10-13T14:45:58.577Z"
+          "verified_at": "2026-10-15T07:19:16.158Z"
         },
         {
           "name": "earnings-analysis",
@@ -377,7 +381,7 @@
           "source_url": "https://github.com/anthropics/financial-services/blob/574ed3624aebd0418c7e96cd101262f30210ab26/plugins/vertical-plugins/equity-research/skills/earnings-analysis/SKILL.md",
           "source_ref": "574ed3624aebd0418c7e96cd101262f30210ab26",
           "source_sha": "4db857c27a53141b6ebc38ec9ee7f0020dec59cab084ae6753e53366d118c8ee",
-          "verified_at": "2026-10-13T14:45:58.577Z"
+          "verified_at": "2026-10-15T07:19:16.158Z"
         },
         {
           "name": "sector-overview",
@@ -390,7 +394,7 @@
           "source_url": "https://github.com/anthropics/financial-services/blob/574ed3624aebd0418c7e96cd101262f30210ab26/plugins/vertical-plugins/equity-research/skills/sector-overview/SKILL.md",
           "source_ref": "574ed3624aebd0418c7e96cd101262f30210ab26",
           "source_sha": "8d4b7b47c3fe1591bde0a4260b1ffbe489e7ddbe3eddd3dbeb046ce29f315608",
-          "verified_at": "2026-10-13T14:45:58.577Z"
+          "verified_at": "2026-10-15T07:19:16.158Z"
         },
         {
           "name": "portfolio-monitoring",
@@ -403,7 +407,7 @@
           "source_url": "https://github.com/anthropics/financial-services/blob/574ed3624aebd0418c7e96cd101262f30210ab26/plugins/vertical-plugins/private-equity/skills/portfolio-monitoring/SKILL.md",
           "source_ref": "574ed3624aebd0418c7e96cd101262f30210ab26",
           "source_sha": "7a3b7bbd66109e334b39d7c154d2f6375b7501671c06fccab206bb2bcd345640",
-          "verified_at": "2026-10-13T14:45:58.577Z"
+          "verified_at": "2026-10-15T07:19:16.158Z"
         },
         {
           "name": "dd-checklist",
@@ -416,9 +420,59 @@
           "source_url": "https://github.com/anthropics/financial-services/blob/574ed3624aebd0418c7e96cd101262f30210ab26/plugins/vertical-plugins/private-equity/skills/dd-checklist/SKILL.md",
           "source_ref": "574ed3624aebd0418c7e96cd101262f30210ab26",
           "source_sha": "f2a8210587b7595fa642e8457b197ede9fa2ce4eb9f71bb25a26e7d707eddf8c",
-          "verified_at": "2026-10-13T14:45:58.577Z"
+          "verified_at": "2026-10-15T07:19:16.158Z"
         }
       ]
+    },
+    {
+      "github_id": 43425480,
+      "owner": "wilsonfreitas",
+      "name": "awesome-quant",
+      "full_name": "wilsonfreitas/awesome-quant",
+      "description": "A curated list of insanely awesome libraries, packages and resources for Quants (Quantitative Finance)",
+      "html_url": "https://github.com/wilsonfreitas/awesome-quant",
+      "homepage": "https://wilsonfreitas.github.io/awesome-quant/",
+      "language": "HTML",
+      "stars": 30073,
+      "forks": 4147,
+      "open_issues": 178,
+      "license_spdx": null,
+      "topics": [
+        "algorithmic-trading-engine",
+        "algorithmic-trading-library",
+        "algotrading",
+        "arbitrage-bot",
+        "awesome",
+        "awesome-list",
+        "finance",
+        "finance-api",
+        "financial-data",
+        "financial-instruments",
+        "google-finance",
+        "quant",
+        "quantitative-finance",
+        "quantitative-trading",
+        "stock-data",
+        "technical-analysis",
+        "trading-algorithms",
+        "trading-bot",
+        "trading-strategies",
+        "yahoo-finance"
+      ],
+      "created_at": "2015-09-30T09:53:49Z",
+      "pushed_at": "2026-10-15T01:14:28Z",
+      "updated_at": "2026-10-15T06:14:12Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1583922?v=4",
+      "category": "ta",
+      "stars_growth_7d": null,
+      "categories": [
+        "ta",
+        "findata"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
+      "skills": []
     },
     {
       "github_id": 1140828898,
@@ -429,14 +483,14 @@
       "html_url": "https://github.com/anthropics/knowledge-work-plugins",
       "homepage": null,
       "language": "Python",
-      "stars": 29473,
-      "forks": 3345,
-      "open_issues": 141,
+      "stars": 29713,
+      "forks": 3364,
+      "open_issues": 146,
       "license_spdx": "Apache-2.0",
       "topics": [],
       "created_at": "2026-01-23T20:11:54Z",
-      "pushed_at": "2026-10-12T10:20:03Z",
-      "updated_at": "2026-10-13T14:45:07Z",
+      "pushed_at": "2026-10-14T18:14:03Z",
+      "updated_at": "2026-10-15T07:11:38Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/76263028?v=4",
       "category": "ai-agents",
       "stars_growth_7d": null,
@@ -444,7 +498,7 @@
         "ai-agents",
         "findata"
       ],
-      "last_synced_at": "2026-10-13T14:45:58.577Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": true,
       "is_mcp": false,
       "skills": [
@@ -456,10 +510,10 @@
             "Finance"
           ],
           "trading_warning": false,
-          "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/02ffa99ff00ce4d3046ccebabb8357cb39f3ab06/finance/skills/financial-statements/SKILL.md",
-          "source_ref": "02ffa99ff00ce4d3046ccebabb8357cb39f3ab06",
+          "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/f652327d4e953d7957d99e735c3c7f9964e9d2e5/finance/skills/financial-statements/SKILL.md",
+          "source_ref": "f652327d4e953d7957d99e735c3c7f9964e9d2e5",
           "source_sha": "1a9ba1cc85495eef32fa250b8a4c05e4854430af574a290b855f919dbb557dfc",
-          "verified_at": "2026-10-13T14:45:58.577Z"
+          "verified_at": "2026-10-15T07:19:16.158Z"
         },
         {
           "name": "variance-analysis",
@@ -469,10 +523,10 @@
             "Finance"
           ],
           "trading_warning": false,
-          "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/02ffa99ff00ce4d3046ccebabb8357cb39f3ab06/finance/skills/variance-analysis/SKILL.md",
-          "source_ref": "02ffa99ff00ce4d3046ccebabb8357cb39f3ab06",
+          "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/f652327d4e953d7957d99e735c3c7f9964e9d2e5/finance/skills/variance-analysis/SKILL.md",
+          "source_ref": "f652327d4e953d7957d99e735c3c7f9964e9d2e5",
           "source_sha": "467db7de3fb118550d013409254e2d4a9f87385a661e154655bf3431919b0ba1",
-          "verified_at": "2026-10-13T14:45:58.577Z"
+          "verified_at": "2026-10-15T07:19:16.158Z"
         },
         {
           "name": "reconciliation",
@@ -482,10 +536,10 @@
             "Finance"
           ],
           "trading_warning": false,
-          "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/02ffa99ff00ce4d3046ccebabb8357cb39f3ab06/finance/skills/reconciliation/SKILL.md",
-          "source_ref": "02ffa99ff00ce4d3046ccebabb8357cb39f3ab06",
+          "source_url": "https://github.com/anthropics/knowledge-work-plugins/blob/f652327d4e953d7957d99e735c3c7f9964e9d2e5/finance/skills/reconciliation/SKILL.md",
+          "source_ref": "f652327d4e953d7957d99e735c3c7f9964e9d2e5",
           "source_sha": "aa17e90539f4d4d84130c910c7f527236bfaa71977c4c03493c8e8e515ddeea6",
-          "verified_at": "2026-10-13T14:45:58.577Z"
+          "verified_at": "2026-10-15T07:19:16.158Z"
         }
       ]
     },
@@ -498,8 +552,8 @@
       "html_url": "https://github.com/ranaroussi/yfinance",
       "homepage": "https://ranaroussi.github.io/yfinance",
       "language": "Python",
-      "stars": 25501,
-      "forks": 3438,
+      "stars": 25525,
+      "forks": 3444,
       "open_issues": 110,
       "license_spdx": "Apache-2.0",
       "topics": [
@@ -514,17 +568,18 @@
       ],
       "created_at": "2017-05-21T10:16:15Z",
       "pushed_at": "2026-10-12T18:34:05Z",
-      "updated_at": "2026-10-12T20:40:49Z",
+      "updated_at": "2026-10-15T05:30:53Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/1185458?v=4",
       "category": "us-equity",
+      "stars_growth_7d": null,
       "categories": [
         "us-equity",
         "findata"
       ],
-      "stars_growth_7d": null,
-      "last_synced_at": "2026-10-12T20:57:42.249Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": false,
-      "is_mcp": false
+      "is_mcp": false,
+      "skills": []
     },
     {
       "github_id": 29050338,
@@ -535,8 +590,8 @@
       "html_url": "https://github.com/mementum/backtrader",
       "homepage": "https://www.backtrader.com",
       "language": "Python",
-      "stars": 23459,
-      "forks": 5292,
+      "stars": 23486,
+      "forks": 5297,
       "open_issues": 64,
       "license_spdx": "GPL-3.0",
       "topics": [
@@ -547,16 +602,17 @@
       ],
       "created_at": "2015-01-10T07:14:52Z",
       "pushed_at": "2024-08-19T17:47:36Z",
-      "updated_at": "2026-10-12T19:18:55Z",
+      "updated_at": "2026-10-15T06:55:34Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/5713511?v=4",
       "category": "backtest",
+      "stars_growth_7d": null,
       "categories": [
         "backtest"
       ],
-      "stars_growth_7d": null,
-      "last_synced_at": "2026-10-12T20:57:42.249Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": false,
-      "is_mcp": false
+      "is_mcp": false,
+      "skills": []
     },
     {
       "github_id": 212037775,
@@ -567,8 +623,8 @@
       "html_url": "https://github.com/akfamily/akshare",
       "homepage": "https://akshare.akfamily.xyz",
       "language": "Python",
-      "stars": 22901,
-      "forks": 3534,
+      "stars": 22935,
+      "forks": 3538,
       "open_issues": 3,
       "license_spdx": "MIT",
       "topics": [
@@ -593,17 +649,18 @@
         "stock"
       ],
       "created_at": "2019-10-01T07:34:12Z",
-      "pushed_at": "2026-10-07T04:17:29Z",
-      "updated_at": "2026-10-12T20:41:12Z",
+      "pushed_at": "2026-10-14T19:37:02Z",
+      "updated_at": "2026-10-15T07:15:13Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/91018023?v=4",
       "category": "findata",
+      "stars_growth_7d": null,
       "categories": [
         "findata"
       ],
-      "stars_growth_7d": null,
-      "last_synced_at": "2026-10-12T20:57:42.249Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": false,
-      "is_mcp": false
+      "is_mcp": false,
+      "skills": []
     },
     {
       "github_id": 27251463,
@@ -614,9 +671,9 @@
       "html_url": "https://github.com/QuantConnect/Lean",
       "homepage": "https://lean.io",
       "language": "C#",
-      "stars": 21970,
-      "forks": 5295,
-      "open_issues": 273,
+      "stars": 22014,
+      "forks": 5305,
+      "open_issues": 287,
       "license_spdx": "Apache-2.0",
       "topics": [
         "algorithm",
@@ -636,18 +693,19 @@
         "trading-strategies"
       ],
       "created_at": "2014-11-28T04:20:19Z",
-      "pushed_at": "2026-10-12T18:32:30Z",
-      "updated_at": "2026-10-12T20:02:12Z",
+      "pushed_at": "2026-10-13T16:28:47Z",
+      "updated_at": "2026-10-15T07:13:13Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/3912814?v=4",
       "category": "quant",
+      "stars_growth_7d": null,
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
       "categories": [
         "quant",
         "backtest"
       ],
-      "stars_growth_7d": null,
-      "last_synced_at": "2026-10-12T20:57:42.249Z",
-      "has_skill_md": false,
-      "is_mcp": false
+      "skills": []
     },
     {
       "github_id": 132754148,
@@ -658,9 +716,9 @@
       "html_url": "https://github.com/stefan-jansen/machine-learning-for-trading",
       "homepage": "https://ml4trading.io",
       "language": "Jupyter Notebook",
-      "stars": 21311,
-      "forks": 5694,
-      "open_issues": 2,
+      "stars": 21358,
+      "forks": 5702,
+      "open_issues": 1,
       "license_spdx": "MIT",
       "topics": [
         "algorithmic-trading",
@@ -683,18 +741,19 @@
         "trading-strategies"
       ],
       "created_at": "2018-05-09T12:33:08Z",
-      "pushed_at": "2026-10-11T14:07:51Z",
-      "updated_at": "2026-10-12T19:07:35Z",
+      "pushed_at": "2026-10-13T15:20:42Z",
+      "updated_at": "2026-10-15T06:45:45Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/4275885?v=4",
       "category": "quant",
+      "stars_growth_7d": null,
       "categories": [
         "quant",
         "ai-agents"
       ],
-      "stars_growth_7d": null,
-      "last_synced_at": "2026-10-12T20:57:42.249Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": false,
-      "is_mcp": false
+      "is_mcp": false,
+      "skills": []
     },
     {
       "github_id": 179163124,
@@ -705,9 +764,9 @@
       "html_url": "https://github.com/hummingbot/hummingbot",
       "homepage": "https://hummingbot.org",
       "language": "Python",
-      "stars": 20419,
-      "forks": 4982,
-      "open_issues": 175,
+      "stars": 20464,
+      "forks": 4998,
+      "open_issues": 174,
       "license_spdx": "Apache-2.0",
       "topics": [
         "ai-agents",
@@ -731,18 +790,52 @@
         "trading-stategy"
       ],
       "created_at": "2019-04-02T21:41:52Z",
-      "pushed_at": "2026-10-06T01:12:38Z",
-      "updated_at": "2026-10-12T19:40:24Z",
+      "pushed_at": "2026-10-15T01:37:30Z",
+      "updated_at": "2026-10-15T07:02:03Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/88165212?v=4",
       "category": "crypto",
+      "stars_growth_7d": null,
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
       "categories": [
         "crypto",
         "quant"
       ],
+      "skills": []
+    },
+    {
+      "github_id": 6297520,
+      "owner": "quantopian",
+      "name": "zipline",
+      "full_name": "quantopian/zipline",
+      "description": "Zipline, a Pythonic Algorithmic Trading Library",
+      "html_url": "https://github.com/quantopian/zipline",
+      "homepage": "https://www.zipline.io",
+      "language": "Python",
+      "stars": 20154,
+      "forks": 5042,
+      "open_issues": 367,
+      "license_spdx": "Apache-2.0",
+      "topics": [
+        "algorithmic-trading",
+        "python",
+        "quant",
+        "zipline"
+      ],
+      "created_at": "2012-10-19T15:50:29Z",
+      "pushed_at": "2024-02-13T08:02:51Z",
+      "updated_at": "2026-10-14T18:44:32Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1393215?v=4",
+      "category": "quant",
       "stars_growth_7d": null,
-      "last_synced_at": "2026-10-12T20:57:42.249Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": false,
-      "is_mcp": false
+      "is_mcp": false,
+      "categories": [
+        "quant"
+      ],
+      "skills": []
     },
     {
       "github_id": 282653872,
@@ -753,9 +846,9 @@
       "html_url": "https://github.com/AI4Finance-Foundation/FinRL",
       "homepage": "https://finrl.ai",
       "language": "Jupyter Notebook",
-      "stars": 16630,
-      "forks": 3540,
-      "open_issues": 308,
+      "stars": 16647,
+      "forks": 3545,
+      "open_issues": 307,
       "license_spdx": "MIT",
       "topics": [
         "algorithmic-trading",
@@ -774,18 +867,103 @@
         "trading-tasks"
       ],
       "created_at": "2020-07-26T13:18:16Z",
-      "pushed_at": "2026-10-09T09:03:13Z",
-      "updated_at": "2026-10-12T19:40:47Z",
+      "pushed_at": "2026-10-13T16:08:03Z",
+      "updated_at": "2026-10-15T05:35:01Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/68813910?v=4",
       "category": "quant",
+      "stars_growth_7d": null,
       "categories": [
         "quant",
         "ai-agents"
       ],
-      "stars_growth_7d": null,
-      "last_synced_at": "2026-10-12T20:57:42.249Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": false,
-      "is_mcp": false
+      "is_mcp": false,
+      "skills": []
+    },
+    {
+      "github_id": 161840815,
+      "owner": "goldmansachs",
+      "name": "gs-quant",
+      "full_name": "goldmansachs/gs-quant",
+      "description": "Python toolkit for quantitative finance",
+      "html_url": "https://github.com/goldmansachs/gs-quant",
+      "homepage": "https://developer.gs.com/discover/products/gs-quant/",
+      "language": "Python",
+      "stars": 13200,
+      "forks": 1796,
+      "open_issues": 94,
+      "license_spdx": "Apache-2.0",
+      "topics": [
+        "derivatives",
+        "goldman-sachs",
+        "gs-quant",
+        "risk-management",
+        "trading-strategies"
+      ],
+      "created_at": "2018-12-14T21:10:40Z",
+      "pushed_at": "2026-10-13T10:22:46Z",
+      "updated_at": "2026-10-15T06:03:14Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1268489?v=4",
+      "category": "derivatives",
+      "stars_growth_7d": null,
+      "categories": [
+        "derivatives",
+        "risk"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
+      "skills": []
+    },
+    {
+      "github_id": 1124295269,
+      "owner": "OpenByteInc",
+      "name": "QuantDinger",
+      "full_name": "OpenByteInc/QuantDinger",
+      "description": "Open-source AI Trading OS, agent trading, and vibe trading, with Jev System One integration. Research, build Python strategies, backtest, and paper/live trade across crypto, stocks, and forex. Launch your own multi-tenant trading SaaS with built-in user management, billing, payments, and settlement.",
+      "html_url": "https://github.com/OpenByteInc/QuantDinger",
+      "homepage": "https://ai.quantdinger.com",
+      "language": "Python",
+      "stars": 12799,
+      "forks": 2621,
+      "open_issues": 43,
+      "license_spdx": "Apache-2.0",
+      "topics": [
+        "agent",
+        "alpaca",
+        "backtesting",
+        "binance",
+        "crypto",
+        "exchange",
+        "finance",
+        "fintech",
+        "forex",
+        "jev",
+        "mcp-server",
+        "python",
+        "quant",
+        "quantitative-finance",
+        "saas",
+        "stocks",
+        "strategy",
+        "trade",
+        "typesafe-ai"
+      ],
+      "created_at": "2025-12-28T18:39:26Z",
+      "pushed_at": "2026-10-09T15:40:41Z",
+      "updated_at": "2026-10-15T07:17:33Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/306676008?v=4",
+      "category": "crypto",
+      "stars_growth_7d": null,
+      "categories": [
+        "crypto",
+        "backtest"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
+      "skills": []
     },
     {
       "github_id": 3810626,
@@ -796,9 +974,9 @@
       "html_url": "https://github.com/TA-Lib/ta-lib-python",
       "homepage": "http://ta-lib.github.io/ta-lib-python",
       "language": "Cython",
-      "stars": 12287,
-      "forks": 2003,
-      "open_issues": 90,
+      "stars": 12293,
+      "forks": 2002,
+      "open_issues": 91,
       "license_spdx": "BSD-2-Clause",
       "topics": [
         "finance",
@@ -809,17 +987,68 @@
         "technical-analysis"
       ],
       "created_at": "2012-03-23T17:14:15Z",
-      "pushed_at": "2026-10-12T17:57:07Z",
-      "updated_at": "2026-10-12T18:59:47Z",
+      "pushed_at": "2026-10-14T01:20:55Z",
+      "updated_at": "2026-10-15T02:08:44Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/21127168?v=4",
       "category": "ta",
+      "stars_growth_7d": null,
       "categories": [
         "ta"
       ],
-      "stars_growth_7d": null,
-      "last_synced_at": "2026-10-12T20:57:42.249Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": false,
-      "is_mcp": false
+      "is_mcp": false,
+      "skills": []
+    },
+    {
+      "github_id": 27703983,
+      "owner": "StockSharp",
+      "name": "StockSharp",
+      "full_name": "StockSharp/StockSharp",
+      "description": "Algorithmic trading and quantitative trading open source platform to develop trading robots (stock markets, forex, crypto, bitcoins, and options).",
+      "html_url": "https://github.com/StockSharp/StockSharp",
+      "homepage": "https://stocksharp.com",
+      "language": "C#",
+      "stars": 10900,
+      "forks": 2282,
+      "open_issues": 0,
+      "license_spdx": "NOASSERTION",
+      "topics": [
+        "algorithmic-trading",
+        "algorithmic-trading-engine",
+        "backtesting",
+        "bitcoins",
+        "broker",
+        "brokers",
+        "c-sharp",
+        "crypto",
+        "cryptocurrency",
+        "finance",
+        "fixprotocol",
+        "forex",
+        "hft-trading",
+        "interactive-brokers",
+        "quantitative-finance",
+        "stocks",
+        "trading",
+        "trading-platform",
+        "trading-robots",
+        "trading-strategies"
+      ],
+      "created_at": "2014-12-08T07:53:44Z",
+      "pushed_at": "2026-10-13T15:28:28Z",
+      "updated_at": "2026-10-15T06:10:22Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10113234?v=4",
+      "category": "crypto",
+      "stars_growth_7d": null,
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
+      "categories": [
+        "crypto",
+        "backtest"
+      ],
+      "skills": []
     },
     {
       "github_id": 110684325,
@@ -830,9 +1059,9 @@
       "html_url": "https://github.com/polakowo/vectorbt",
       "homepage": "https://vectorbt.dev",
       "language": "Python",
-      "stars": 9347,
-      "forks": 1197,
-      "open_issues": 137,
+      "stars": 9383,
+      "forks": 1209,
+      "open_issues": 130,
       "license_spdx": "NOASSERTION",
       "topics": [
         "algorithmic-trading",
@@ -851,18 +1080,19 @@
         "trading-strategies"
       ],
       "created_at": "2017-11-14T11:56:32Z",
-      "pushed_at": "2026-10-09T20:04:03Z",
-      "updated_at": "2026-10-12T20:00:46Z",
+      "pushed_at": "2026-10-14T12:01:40Z",
+      "updated_at": "2026-10-15T06:55:49Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/2664108?v=4",
       "category": "backtest",
+      "stars_growth_7d": null,
       "categories": [
         "backtest",
         "quant"
       ],
-      "stars_growth_7d": null,
-      "last_synced_at": "2026-10-12T20:57:42.249Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": false,
-      "is_mcp": false
+      "is_mcp": false,
+      "skills": []
     },
     {
       "github_id": 163788469,
@@ -873,9 +1103,9 @@
       "html_url": "https://github.com/kernc/backtesting.py",
       "homepage": "https://kernc.github.io/backtesting.py/",
       "language": "Python",
-      "stars": 9038,
-      "forks": 1543,
-      "open_issues": 95,
+      "stars": 9049,
+      "forks": 1549,
+      "open_issues": 94,
       "license_spdx": "AGPL-3.0",
       "topics": [
         "algo-trading",
@@ -901,16 +1131,17 @@
       ],
       "created_at": "2019-01-02T03:11:32Z",
       "pushed_at": "2026-08-05T12:39:16Z",
-      "updated_at": "2026-10-12T18:21:18Z",
+      "updated_at": "2026-10-15T05:18:38Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/684364?v=4",
       "category": "backtest",
+      "stars_growth_7d": null,
       "categories": [
         "backtest"
       ],
-      "stars_growth_7d": null,
-      "last_synced_at": "2026-10-12T20:57:42.249Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": false,
-      "is_mcp": false
+      "is_mcp": false,
+      "skills": []
     },
     {
       "github_id": 156847937,
@@ -921,9 +1152,9 @@
       "html_url": "https://github.com/jesse-ai/jesse",
       "homepage": "https://jesse.trade",
       "language": "Python",
-      "stars": 8632,
-      "forks": 1253,
-      "open_issues": 10,
+      "stars": 8649,
+      "forks": 1259,
+      "open_issues": 11,
       "license_spdx": "MIT",
       "topics": [
         "algo-trading",
@@ -947,17 +1178,18 @@
       ],
       "created_at": "2018-11-09T10:38:44Z",
       "pushed_at": "2026-10-12T15:37:04Z",
-      "updated_at": "2026-10-12T20:15:21Z",
+      "updated_at": "2026-10-15T05:37:49Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/44895627?v=4",
       "category": "crypto",
+      "stars_growth_7d": null,
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
       "categories": [
         "crypto",
         "backtest"
       ],
-      "stars_growth_7d": null,
-      "last_synced_at": "2026-10-12T20:57:42.249Z",
-      "has_skill_md": false,
-      "is_mcp": false
+      "skills": []
     },
     {
       "github_id": 48185587,
@@ -968,26 +1200,157 @@
       "html_url": "https://github.com/lballabio/QuantLib",
       "homepage": "http://quantlib.org",
       "language": "C++",
-      "stars": 7666,
-      "forks": 2344,
-      "open_issues": 84,
+      "stars": 7670,
+      "forks": 2349,
+      "open_issues": 85,
       "license_spdx": "NOASSERTION",
       "topics": [
         "quantitative-finance"
       ],
       "created_at": "2015-12-17T16:29:33Z",
-      "pushed_at": "2026-10-12T13:56:17Z",
-      "updated_at": "2026-10-12T16:15:39Z",
+      "pushed_at": "2026-10-14T12:51:41Z",
+      "updated_at": "2026-10-15T02:26:31Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/170560?v=4",
       "category": "derivatives",
+      "stars_growth_7d": null,
       "categories": [
         "derivatives",
         "risk"
       ],
-      "stars_growth_7d": null,
-      "last_synced_at": "2026-10-12T20:57:42.249Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": false,
-      "is_mcp": false
+      "is_mcp": false,
+      "skills": []
+    },
+    {
+      "github_id": 207623149,
+      "owner": "cantaro86",
+      "name": "Financial-Models-Numerical-Methods",
+      "full_name": "cantaro86/Financial-Models-Numerical-Methods",
+      "description": "Collection of notebooks about quantitative finance, with interactive python code.",
+      "html_url": "https://github.com/cantaro86/Financial-Models-Numerical-Methods",
+      "homepage": "",
+      "language": "Jupyter Notebook",
+      "stars": 7497,
+      "forks": 1283,
+      "open_issues": 7,
+      "license_spdx": "AGPL-3.0",
+      "topics": [
+        "american-options",
+        "brownian-motion",
+        "econometrics",
+        "financial-engineering",
+        "financial-mathematics",
+        "fourier-inversion",
+        "heston-model",
+        "jump-diffusion-mertons-model",
+        "jupyter-notebooks",
+        "kalman-filter",
+        "levy-processes",
+        "linear-regression",
+        "linear-systems-equations",
+        "monte-carlo-methods",
+        "option-pricing",
+        "partial-differential-equations",
+        "python",
+        "quantitative-finance",
+        "stochastic-differential-equations",
+        "stochastic-processes"
+      ],
+      "created_at": "2019-09-10T17:35:01Z",
+      "pushed_at": "2026-10-05T21:44:11Z",
+      "updated_at": "2026-10-15T04:44:57Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/50926847?v=4",
+      "category": "derivatives",
+      "stars_growth_7d": null,
+      "categories": [
+        "derivatives"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
+      "skills": []
+    },
+    {
+      "github_id": 63773246,
+      "owner": "ricequant",
+      "name": "rqalpha",
+      "full_name": "ricequant/rqalpha",
+      "description": "A extendable, replaceable Python algorithmic backtest && trading framework supporting multiple securities",
+      "html_url": "https://github.com/ricequant/rqalpha",
+      "homepage": "http://rqalpha.io",
+      "language": "Python",
+      "stars": 6824,
+      "forks": 1791,
+      "open_issues": 17,
+      "license_spdx": "NOASSERTION",
+      "topics": [
+        "backtest",
+        "finance",
+        "futures",
+        "python",
+        "quant",
+        "ricequant",
+        "rqalpha",
+        "stock",
+        "ta-lib",
+        "trading"
+      ],
+      "created_at": "2016-07-20T10:38:57Z",
+      "pushed_at": "2026-10-14T06:31:41Z",
+      "updated_at": "2026-10-15T04:30:55Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/13045878?v=4",
+      "category": "backtest",
+      "stars_growth_7d": null,
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
+      "categories": [
+        "backtest",
+        "derivatives"
+      ],
+      "skills": []
+    },
+    {
+      "github_id": 901529145,
+      "owner": "The-Swarm-Corporation",
+      "name": "AutoHedge",
+      "full_name": "The-Swarm-Corporation/AutoHedge",
+      "description": "Build your autonomous hedge fund in minutes. AutoHedge harnesses the power of swarm intelligence and AI agents to automate market analysis, risk management, and trade execution.",
+      "html_url": "https://github.com/The-Swarm-Corporation/AutoHedge",
+      "homepage": "https://swarms.xyz/",
+      "language": "Python",
+      "stars": 6290,
+      "forks": 907,
+      "open_issues": 22,
+      "license_spdx": "MIT",
+      "topics": [
+        "ai",
+        "blackrock",
+        "finance",
+        "goldmansachs",
+        "hedgefund",
+        "jpmorgan",
+        "ml",
+        "quant",
+        "quantitative-finance",
+        "quantitative-trading",
+        "trading"
+      ],
+      "created_at": "2024-12-10T20:34:46Z",
+      "pushed_at": "2026-05-11T05:44:09Z",
+      "updated_at": "2026-10-15T05:34:23Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/167784574?v=4",
+      "category": "risk",
+      "stars_growth_7d": null,
+      "categories": [
+        "risk",
+        "ai-agents"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
+      "skills": []
     },
     {
       "github_id": 135300551,
@@ -998,9 +1361,9 @@
       "html_url": "https://github.com/PyPortfolio/PyPortfolioOpt",
       "homepage": "https://pyportfolioopt.readthedocs.io/",
       "language": "Jupyter Notebook",
-      "stars": 6094,
-      "forks": 1178,
-      "open_issues": 117,
+      "stars": 6098,
+      "forks": 1181,
+      "open_issues": 118,
       "license_spdx": "MIT",
       "topics": [
         "algorithmic-trading",
@@ -1018,16 +1381,108 @@
       ],
       "created_at": "2018-05-29T13:30:30Z",
       "pushed_at": "2026-07-07T21:18:14Z",
-      "updated_at": "2026-10-12T13:38:46Z",
+      "updated_at": "2026-10-15T00:20:54Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/242826734?v=4",
       "category": "portfolio",
       "stars_growth_7d": null,
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
       "categories": [
         "portfolio"
       ],
-      "last_synced_at": "2026-10-12T20:57:42.249Z",
+      "skills": []
+    },
+    {
+      "github_id": 201978761,
+      "owner": "Superalgos",
+      "name": "Superalgos",
+      "full_name": "Superalgos/Superalgos",
+      "description": "Free, open-source crypto trading bot, automated bitcoin / cryptocurrency trading software, algorithmic trading bots. Visually design your crypto trading bot, leveraging an integrated charting system, data-mining, backtesting, paper trading, and multi-server crypto bot deployments.",
+      "html_url": "https://github.com/Superalgos/Superalgos",
+      "homepage": "https://www.superalgos.org",
+      "language": "JavaScript",
+      "stars": 5700,
+      "forks": 5999,
+      "open_issues": 122,
+      "license_spdx": "Apache-2.0",
+      "topics": [
+        "algorithmic-trading",
+        "algotrading",
+        "bitcoin-trading",
+        "bitcoin-trading-bots",
+        "crypto",
+        "crypto-trading",
+        "crypto-trading-bots",
+        "crypto-trading-strategies",
+        "cryptocurrencies",
+        "cryptocurrency",
+        "cryptocurrency-trading-bots",
+        "free",
+        "open-source",
+        "quantitative-trading",
+        "trading",
+        "trading-algorithms",
+        "trading-bot",
+        "trading-platform",
+        "trading-strategies",
+        "trading-systems"
+      ],
+      "created_at": "2019-08-12T17:34:43Z",
+      "pushed_at": "2026-10-13T14:51:45Z",
+      "updated_at": "2026-10-15T06:10:32Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/33465981?v=4",
+      "category": "crypto",
+      "stars_growth_7d": null,
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": false,
-      "is_mcp": false
+      "is_mcp": false,
+      "categories": [
+        "crypto",
+        "backtest"
+      ],
+      "skills": []
+    },
+    {
+      "github_id": 198669252,
+      "owner": "google",
+      "name": "tf-quant-finance",
+      "full_name": "google/tf-quant-finance",
+      "description": "High-performance TensorFlow library for quantitative finance.",
+      "html_url": "https://github.com/google/tf-quant-finance",
+      "homepage": "",
+      "language": "Python",
+      "stars": 5526,
+      "forks": 701,
+      "open_issues": 42,
+      "license_spdx": "Apache-2.0",
+      "topics": [
+        "finance",
+        "gpu",
+        "gpu-computing",
+        "high-performance",
+        "high-performance-computing",
+        "numerical-integration",
+        "numerical-methods",
+        "numerical-optimization",
+        "python",
+        "quantitative-finance",
+        "quantlib",
+        "tensorflow"
+      ],
+      "created_at": "2019-07-24T16:09:50Z",
+      "pushed_at": "2026-08-06T22:18:59Z",
+      "updated_at": "2026-10-15T02:11:33Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1342004?v=4",
+      "category": "quant",
+      "stars_growth_7d": null,
+      "categories": [
+        "quant"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
+      "skills": []
     },
     {
       "github_id": 116043206,
@@ -1038,8 +1493,8 @@
       "html_url": "https://github.com/bukosabino/ta",
       "homepage": "https://technical-analysis-library-in-python.readthedocs.io/en/latest/",
       "language": "Jupyter Notebook",
-      "stars": 5235,
-      "forks": 1159,
+      "stars": 5237,
+      "forks": 1160,
       "open_issues": 159,
       "license_spdx": "MIT",
       "topics": [
@@ -1062,16 +1517,100 @@
       ],
       "created_at": "2018-01-02T18:08:48Z",
       "pushed_at": "2026-03-18T13:04:55Z",
-      "updated_at": "2026-10-09T13:50:15Z",
+      "updated_at": "2026-10-14T11:31:44Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/4375209?v=4",
       "category": "ta",
+      "stars_growth_7d": null,
       "categories": [
         "ta"
       ],
-      "stars_growth_7d": null,
-      "last_synced_at": "2026-10-12T20:57:42.249Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": false,
-      "is_mcp": false
+      "is_mcp": false,
+      "skills": []
+    },
+    {
+      "github_id": 1034736943,
+      "owner": "atilaahmettaner",
+      "name": "tradingview-mcp",
+      "full_name": "atilaahmettaner/tradingview-mcp",
+      "description": "TradingView MCP server — real-time market data, technical analysis, screeners & backtesting for Claude, ChatGPT, Cursor & any MCP client. Stocks, crypto, forex & futures across global exchanges. Hosted or self-host.",
+      "html_url": "https://github.com/atilaahmettaner/tradingview-mcp",
+      "homepage": "https://tradingmcp.ai",
+      "language": "Python",
+      "stars": 5062,
+      "forks": 999,
+      "open_issues": 8,
+      "license_spdx": "MIT",
+      "topics": [
+        "claude-desktop",
+        "cryptocurrency",
+        "futures",
+        "market-data",
+        "mcp-server",
+        "mcp-tools",
+        "model-context-protocol",
+        "openclaw",
+        "stock-market",
+        "technical-analysis",
+        "trading-mcp",
+        "trading-strategies",
+        "tradingview"
+      ],
+      "created_at": "2025-08-08T22:34:03Z",
+      "pushed_at": "2026-10-14T06:01:59Z",
+      "updated_at": "2026-10-15T06:11:57Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/67838093?v=4",
+      "category": "crypto",
+      "stars_growth_7d": null,
+      "categories": [
+        "crypto",
+        "backtest"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": true,
+      "mcp_source_url": "https://github.com/atilaahmettaner/tradingview-mcp/blob/90470ee22cc997b1fabb5046ea8ed2af87f5368f/README.md",
+      "mcp_source_ref": "90470ee22cc997b1fabb5046ea8ed2af87f5368f",
+      "mcp_source_sha": "e04f00421d51f7bd6c92e5708948888b9839095dea73d02f2fc2447e3919909a",
+      "mcp_verified_at": "2026-10-15T07:19:16.158Z",
+      "mcp_description": "TradingView MCP server — real-time market data, technical analysis, screeners & backtesting for Claude, ChatGPT, Cursor & any MCP client. Stocks, crypto, forex & futures across global exchanges. Hosted or self-host.",
+      "mcp_topics": [
+        "Finance"
+      ],
+      "mcp_transport": "unknown",
+      "mcp_auth": "unknown",
+      "mcp_status": "community",
+      "mcp_trading_warning": false,
+      "skills": []
+    },
+    {
+      "github_id": 3644516,
+      "owner": "gbeced",
+      "name": "pyalgotrade",
+      "full_name": "gbeced/pyalgotrade",
+      "description": "Python Algorithmic Trading Library",
+      "html_url": "https://github.com/gbeced/pyalgotrade",
+      "homepage": "http://gbeced.github.io/pyalgotrade/",
+      "language": "Python",
+      "stars": 4675,
+      "forks": 1385,
+      "open_issues": 51,
+      "license_spdx": "NOASSERTION",
+      "topics": [],
+      "created_at": "2012-03-07T01:09:54Z",
+      "pushed_at": "2023-11-13T07:16:00Z",
+      "updated_at": "2026-10-13T14:04:42Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1163917?v=4",
+      "category": "quant",
+      "stars_growth_7d": null,
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
+      "categories": [
+        "quant"
+      ],
+      "skills": []
     },
     {
       "github_id": 244460835,
@@ -1082,8 +1621,8 @@
       "html_url": "https://github.com/dcajasn/Riskfolio-Lib",
       "homepage": "https://portfoliooptimization.org",
       "language": "C++",
-      "stars": 4540,
-      "forks": 720,
+      "stars": 4543,
+      "forks": 721,
       "open_issues": 11,
       "license_spdx": "BSD-3-Clause",
       "topics": [
@@ -1110,17 +1649,515 @@
       ],
       "created_at": "2020-03-02T19:49:06Z",
       "pushed_at": "2026-10-04T20:35:18Z",
-      "updated_at": "2026-10-12T19:21:52Z",
+      "updated_at": "2026-10-15T04:41:29Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/61527316?v=4",
       "category": "portfolio",
+      "stars_growth_7d": null,
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
       "categories": [
         "portfolio",
         "risk"
       ],
+      "skills": []
+    },
+    {
+      "github_id": 60379729,
+      "owner": "quantopian",
+      "name": "alphalens",
+      "full_name": "quantopian/alphalens",
+      "description": "Performance analysis of predictive (alpha) stock factors",
+      "html_url": "https://github.com/quantopian/alphalens",
+      "homepage": "http://quantopian.github.io/alphalens",
+      "language": "Jupyter Notebook",
+      "stars": 4468,
+      "forks": 1355,
+      "open_issues": 50,
+      "license_spdx": "Apache-2.0",
+      "topics": [
+        "algorithmic-trading",
+        "finance",
+        "jupyter",
+        "numpy",
+        "pandas",
+        "python"
+      ],
+      "created_at": "2016-06-03T21:49:15Z",
+      "pushed_at": "2024-02-12T06:44:22Z",
+      "updated_at": "2026-10-14T08:53:29Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1393215?v=4",
+      "category": "us-equity",
       "stars_growth_7d": null,
-      "last_synced_at": "2026-10-12T20:57:42.249Z",
+      "categories": [
+        "us-equity"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": false,
-      "is_mcp": false
+      "is_mcp": false,
+      "skills": []
+    },
+    {
+      "github_id": 239389449,
+      "owner": "shashankvemuri",
+      "name": "Finance",
+      "full_name": "shashankvemuri/Finance",
+      "description": "Python toolkit for quantitative finance: stock analysis, technical indicators, strategy backtesting, portfolio optimization, and financial modeling.",
+      "html_url": "https://github.com/shashankvemuri/Finance",
+      "homepage": "",
+      "language": "Python",
+      "stars": 4319,
+      "forks": 377,
+      "open_issues": 4,
+      "license_spdx": "MIT",
+      "topics": [
+        "algorithmic-trading",
+        "data-science",
+        "finance",
+        "machine-learning",
+        "pandas",
+        "python",
+        "quantitative-finance",
+        "stock",
+        "stock-market",
+        "stocks",
+        "technical-indicators",
+        "trading-strategies"
+      ],
+      "created_at": "2020-02-09T23:16:59Z",
+      "pushed_at": "2026-09-12T01:00:07Z",
+      "updated_at": "2026-10-15T05:49:26Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/49424748?v=4",
+      "category": "backtest",
+      "stars_growth_7d": null,
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
+      "categories": [
+        "backtest",
+        "portfolio"
+      ],
+      "skills": []
+    },
+    {
+      "github_id": 909701196,
+      "owner": "LLMQuant",
+      "name": "quant-wiki",
+      "full_name": "LLMQuant/quant-wiki",
+      "description": "We are committed to the open-sourcing quantitative knowledge, aiming to bridge the information gap between the domestic and international quantitative finance industries. 我们致力于量化知识的开源与汉化，打破国内外量化金融行业信息差。",
+      "html_url": "https://github.com/LLMQuant/quant-wiki",
+      "homepage": "http://quant-wiki.com",
+      "language": null,
+      "stars": 4309,
+      "forks": 339,
+      "open_issues": 22,
+      "license_spdx": null,
+      "topics": [
+        "quantitative-finance",
+        "quantitative-trading",
+        "wiki"
+      ],
+      "created_at": "2024-12-29T14:28:31Z",
+      "pushed_at": "2026-04-16T10:50:54Z",
+      "updated_at": "2026-10-15T06:08:32Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/67217001?v=4",
+      "category": "quant",
+      "stars_growth_7d": null,
+      "categories": [
+        "quant"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
+      "skills": []
+    },
+    {
+      "github_id": 156283359,
+      "owner": "grananqvist",
+      "name": "Awesome-Quant-Machine-Learning-Trading",
+      "full_name": "grananqvist/Awesome-Quant-Machine-Learning-Trading",
+      "description": "Quant/Algorithm trading resources with an emphasis on Machine Learning",
+      "html_url": "https://github.com/grananqvist/Awesome-Quant-Machine-Learning-Trading",
+      "homepage": null,
+      "language": null,
+      "stars": 4055,
+      "forks": 702,
+      "open_issues": 24,
+      "license_spdx": null,
+      "topics": [
+        "awesome",
+        "awesome-list",
+        "deep-learning",
+        "financial-machine-learning",
+        "machine-learning",
+        "machine-learning-trading",
+        "stock-trading",
+        "trading-strategies"
+      ],
+      "created_at": "2018-11-05T21:09:06Z",
+      "pushed_at": "2025-05-21T20:41:58Z",
+      "updated_at": "2026-10-15T06:50:17Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16865473?v=4",
+      "category": "us-equity",
+      "stars_growth_7d": null,
+      "categories": [
+        "us-equity"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
+      "skills": []
+    },
+    {
+      "github_id": 589385734,
+      "owner": "edtechre",
+      "name": "pybroker",
+      "full_name": "edtechre/pybroker",
+      "description": "Algorithmic Trading in Python with Machine Learning",
+      "html_url": "https://github.com/edtechre/pybroker",
+      "homepage": "https://www.pybroker.com",
+      "language": "Python",
+      "stars": 3614,
+      "forks": 459,
+      "open_issues": 10,
+      "license_spdx": "NOASSERTION",
+      "topics": [
+        "ai",
+        "algorithmic-trading",
+        "algotrading",
+        "artificial-intelligence",
+        "backtesting",
+        "crypto",
+        "cryptocurrency",
+        "data-science",
+        "finance",
+        "framework",
+        "investment",
+        "machine-learning",
+        "python",
+        "quantitative-finance",
+        "stocks",
+        "trading",
+        "trading-strategies"
+      ],
+      "created_at": "2023-01-16T01:11:52Z",
+      "pushed_at": "2026-10-05T16:15:41Z",
+      "updated_at": "2026-10-15T06:10:49Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/328665?v=4",
+      "category": "crypto",
+      "stars_growth_7d": null,
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
+      "categories": [
+        "crypto",
+        "backtest"
+      ],
+      "skills": []
+    },
+    {
+      "github_id": 5103141,
+      "owner": "fasiondog",
+      "name": "hikyuu",
+      "full_name": "fasiondog/hikyuu",
+      "description": "An open-source, high-performance quantitative trading framework in C++/Python focused on strategy analysis and backtesting Trading model R&D · Ultra-fast engine · Efficient backtesting",
+      "html_url": "https://github.com/fasiondog/hikyuu",
+      "homepage": "http://hikyuu.org/",
+      "language": "C++",
+      "stars": 3561,
+      "forks": 834,
+      "open_issues": 4,
+      "license_spdx": "Apache-2.0",
+      "topics": [
+        "algorithms-trading",
+        "backtesting",
+        "finance",
+        "portfolio",
+        "quant",
+        "stock",
+        "system-trading",
+        "trading",
+        "vestment"
+      ],
+      "created_at": "2012-07-18T23:21:42Z",
+      "pushed_at": "2026-10-14T22:30:11Z",
+      "updated_at": "2026-10-15T07:15:17Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1145161?v=4",
+      "category": "backtest",
+      "stars_growth_7d": null,
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
+      "categories": [
+        "backtest",
+        "portfolio"
+      ],
+      "skills": []
+    },
+    {
+      "github_id": 252342235,
+      "owner": "chrisconlan",
+      "name": "algorithmic-trading-with-python",
+      "full_name": "chrisconlan/algorithmic-trading-with-python",
+      "description": "Source code for Algorithmic Trading with Python (2020) by Chris Conlan",
+      "html_url": "https://github.com/chrisconlan/algorithmic-trading-with-python",
+      "homepage": null,
+      "language": "Python",
+      "stars": 3493,
+      "forks": 614,
+      "open_issues": 6,
+      "license_spdx": "NOASSERTION",
+      "topics": [],
+      "created_at": "2020-04-02T03:05:28Z",
+      "pushed_at": "2021-06-01T12:56:44Z",
+      "updated_at": "2026-10-13T17:25:21Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14984085?v=4",
+      "category": "quant",
+      "stars_growth_7d": null,
+      "categories": [
+        "quant"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
+      "skills": []
+    },
+    {
+      "github_id": 527993624,
+      "owner": "TradeMaster-NTU",
+      "name": "TradeMaster",
+      "full_name": "TradeMaster-NTU/TradeMaster",
+      "description": "TradeMaster is an open-source platform for quantitative trading empowered by reinforcement learning :fire: :zap: :rainbow:",
+      "html_url": "https://github.com/TradeMaster-NTU/TradeMaster",
+      "homepage": "",
+      "language": "Jupyter Notebook",
+      "stars": 3095,
+      "forks": 563,
+      "open_issues": 28,
+      "license_spdx": "Apache-2.0",
+      "topics": [
+        "finance",
+        "fintech",
+        "investment-strategies",
+        "jupyter-notebook",
+        "machine-learning",
+        "python",
+        "pytorch",
+        "quantitative-trading",
+        "reinforcement-learning",
+        "stock-market",
+        "trading-platform"
+      ],
+      "created_at": "2022-08-23T13:02:43Z",
+      "pushed_at": "2025-06-04T03:57:56Z",
+      "updated_at": "2026-10-15T05:40:39Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/111880472?v=4",
+      "category": "us-equity",
+      "stars_growth_7d": null,
+      "categories": [
+        "us-equity"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
+      "skills": []
+    },
+    {
+      "github_id": 948264786,
+      "owner": "LLMQuant",
+      "name": "quant-mind",
+      "full_name": "LLMQuant/quant-mind",
+      "description": "QuantMind is an open source agent-native knowledge extraction and retrieval framework for quantitative finance.",
+      "html_url": "https://github.com/LLMQuant/quant-mind",
+      "homepage": "http://llmquantdata.com/",
+      "language": "Python",
+      "stars": 3062,
+      "forks": 495,
+      "open_issues": 29,
+      "license_spdx": "MIT",
+      "topics": [
+        "agent",
+        "context-engineering",
+        "data",
+        "harness-engineering",
+        "knowledge",
+        "llm",
+        "pipeline",
+        "quantitative-finance",
+        "quantitative-research",
+        "workflow"
+      ],
+      "created_at": "2025-03-14T02:51:22Z",
+      "pushed_at": "2026-08-15T07:49:16Z",
+      "updated_at": "2026-10-15T03:11:36Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/67217001?v=4",
+      "category": "ai-agents",
+      "stars_growth_7d": null,
+      "categories": [
+        "ai-agents"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
+      "skills": []
+    },
+    {
+      "github_id": 1142556666,
+      "owner": "alsk1992",
+      "name": "CloddsBot",
+      "full_name": "alsk1992/CloddsBot",
+      "description": "Open Source AI trading agent that operates autonomously across 1000+ markets - Polymarket, Kalshi, Binance, Hyperliquid, Solana DEXs, 5 EVM chains. Scans    for edge, executes instantly, manages risk while you sleep. Agent commerce protocol for machine-to-machine payments. Self-hosted. Built on Claude.",
+      "html_url": "https://github.com/alsk1992/CloddsBot",
+      "homepage": "https://www.cloddsbot.com",
+      "language": "TypeScript",
+      "stars": 2971,
+      "forks": 359,
+      "open_issues": 33,
+      "license_spdx": "MIT",
+      "topics": [
+        "agi",
+        "ai",
+        "arbitrage",
+        "claude",
+        "crypto",
+        "defi",
+        "ethereum",
+        "futures",
+        "hft",
+        "hyperliquid",
+        "kalshi",
+        "polymarket",
+        "prediction-markets",
+        "pumpswap",
+        "solana",
+        "telegram-bot",
+        "trading",
+        "trading-bot",
+        "typescript",
+        "x402"
+      ],
+      "created_at": "2026-01-26T15:08:42Z",
+      "pushed_at": "2026-10-02T19:37:29Z",
+      "updated_at": "2026-10-15T00:29:18Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/193760801?v=4",
+      "category": "crypto",
+      "stars_growth_7d": null,
+      "categories": [
+        "crypto",
+        "derivatives"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
+      "skills": []
+    },
+    {
+      "github_id": 283867293,
+      "owner": "nickmccullum",
+      "name": "algorithmic-trading-python",
+      "full_name": "nickmccullum/algorithmic-trading-python",
+      "description": "The repository for freeCodeCamp's YouTube course, Algorithmic Trading in Python",
+      "html_url": "https://github.com/nickmccullum/algorithmic-trading-python",
+      "homepage": null,
+      "language": "Jupyter Notebook",
+      "stars": 2896,
+      "forks": 2550,
+      "open_issues": 49,
+      "license_spdx": null,
+      "topics": [],
+      "created_at": "2020-07-30T20:09:01Z",
+      "pushed_at": "2024-06-20T07:31:16Z",
+      "updated_at": "2026-10-13T18:42:41Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16008406?v=4",
+      "category": "quant",
+      "stars_growth_7d": null,
+      "categories": [
+        "quant"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
+      "skills": []
+    },
+    {
+      "github_id": 94264011,
+      "owner": "scrtlabs",
+      "name": "catalyst",
+      "full_name": "scrtlabs/catalyst",
+      "description": "An Algorithmic Trading Library for Crypto-Assets in Python",
+      "html_url": "https://github.com/scrtlabs/catalyst",
+      "homepage": "http://enigma.co",
+      "language": "Python",
+      "stars": 2560,
+      "forks": 705,
+      "open_issues": 136,
+      "license_spdx": "Apache-2.0",
+      "topics": [
+        "algorithmic-trading",
+        "cryptocurrencies",
+        "cryptocurrency",
+        "trading"
+      ],
+      "created_at": "2017-06-13T22:31:34Z",
+      "pushed_at": "2022-11-26T14:07:55Z",
+      "updated_at": "2026-10-15T06:12:46Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20174034?v=4",
+      "category": "crypto",
+      "stars_growth_7d": null,
+      "categories": [
+        "crypto"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
+      "skills": []
+    },
+    {
+      "github_id": 104699346,
+      "owner": "shirosaidev",
+      "name": "stocksight",
+      "full_name": "shirosaidev/stocksight",
+      "description": "Stock market analyzer and predictor using Elasticsearch, Twitter, News headlines and Python natural language processing and sentiment analysis",
+      "html_url": "https://github.com/shirosaidev/stocksight",
+      "homepage": "https://shirosaidev.github.io/stocksight/",
+      "language": "Python",
+      "stars": 2543,
+      "forks": 492,
+      "open_issues": 15,
+      "license_spdx": "Apache-2.0",
+      "topics": [
+        "elasticsearch",
+        "natural-language-processing",
+        "nltk",
+        "python",
+        "sentiment",
+        "sentiment-analysis",
+        "stock-analysis",
+        "stock-analyzer",
+        "stock-market",
+        "stock-prediction",
+        "stock-price-prediction",
+        "textblob",
+        "tweepy",
+        "twitter",
+        "twitter-sentiment-analysis",
+        "twitter-streaming-api",
+        "vader-sentiment-analysis"
+      ],
+      "created_at": "2017-09-25T03:29:01Z",
+      "pushed_at": "2023-12-05T06:45:25Z",
+      "updated_at": "2026-10-12T18:36:47Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17442431?v=4",
+      "category": "sentiment",
+      "stars_growth_7d": null,
+      "categories": [
+        "sentiment",
+        "findata"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
+      "skills": []
     },
     {
       "github_id": 944516885,
@@ -1132,13 +2169,13 @@
       "homepage": "https://www.financialdatasets.ai/",
       "language": "Python",
       "stars": 2306,
-      "forks": 350,
-      "open_issues": 16,
+      "forks": 351,
+      "open_issues": 17,
       "license_spdx": "MIT",
       "topics": [],
       "created_at": "2025-03-07T13:39:26Z",
       "pushed_at": "2025-06-05T19:50:38Z",
-      "updated_at": "2026-10-11T05:55:32Z",
+      "updated_at": "2026-10-15T07:17:58Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/202291166?v=4",
       "category": "findata",
       "stars_growth_7d": null,
@@ -1147,13 +2184,13 @@
         "us-equity",
         "crypto"
       ],
-      "last_synced_at": "2026-10-13T14:45:58.577Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": false,
       "is_mcp": true,
       "mcp_source_url": "https://github.com/financial-datasets/mcp-server/blob/08e7a3dbb949d3d99bbd6d6f3a22e5f02973ec58/README.md",
       "mcp_source_ref": "08e7a3dbb949d3d99bbd6d6f3a22e5f02973ec58",
       "mcp_source_sha": "294479df1523015450b84b226b0c38fc2f3b75a966897cb3de56176b96451e23",
-      "mcp_verified_at": "2026-10-13T14:45:58.577Z",
+      "mcp_verified_at": "2026-10-15T07:19:16.158Z",
       "mcp_description": "Financial statements, equity prices, company news, and crypto prices from Financial Datasets.",
       "mcp_topics": [
         "Finance",
@@ -1162,7 +2199,8 @@
       "mcp_transport": "stdio",
       "mcp_auth": "Financial Datasets API key",
       "mcp_status": "community",
-      "mcp_trading_warning": false
+      "mcp_trading_warning": false,
+      "skills": []
     },
     {
       "github_id": 218500041,
@@ -1173,23 +2211,24 @@
       "html_url": "https://github.com/ProsusAI/finBERT",
       "homepage": null,
       "language": "Jupyter Notebook",
-      "stars": 2252,
-      "forks": 538,
+      "stars": 2253,
+      "forks": 539,
       "open_issues": 8,
       "license_spdx": "Apache-2.0",
       "topics": [],
       "created_at": "2019-10-30T10:20:43Z",
       "pushed_at": "2026-10-12T08:18:25Z",
-      "updated_at": "2026-10-12T17:40:42Z",
+      "updated_at": "2026-10-13T07:30:39Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/56258180?v=4",
       "category": "sentiment",
+      "stars_growth_7d": null,
       "categories": [
         "sentiment"
       ],
-      "stars_growth_7d": null,
-      "last_synced_at": "2026-10-12T20:57:42.249Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": false,
-      "is_mcp": false
+      "is_mcp": false,
+      "skills": []
     },
     {
       "github_id": 130222943,
@@ -1219,14 +2258,15 @@
       "updated_at": "2026-10-12T20:42:51Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/806717?v=4",
       "category": "us-equity",
+      "stars_growth_7d": null,
       "categories": [
         "us-equity",
         "findata"
       ],
-      "stars_growth_7d": null,
-      "last_synced_at": "2026-10-12T20:57:42.249Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": false,
-      "is_mcp": false
+      "is_mcp": false,
+      "skills": []
     },
     {
       "github_id": 995562554,
@@ -1237,8 +2277,8 @@
       "html_url": "https://github.com/alpacahq/alpaca-mcp-server",
       "homepage": "https://alpaca.markets/algotrading",
       "language": "Python",
-      "stars": 1019,
-      "forks": 336,
+      "stars": 1022,
+      "forks": 338,
       "open_issues": 24,
       "license_spdx": "MIT",
       "topics": [
@@ -1255,7 +2295,7 @@
       ],
       "created_at": "2025-06-03T17:09:19Z",
       "pushed_at": "2026-10-12T10:40:50Z",
-      "updated_at": "2026-10-13T09:50:30Z",
+      "updated_at": "2026-10-14T12:36:03Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/30398729?v=4",
       "category": "us-equity",
       "stars_growth_7d": null,
@@ -1264,13 +2304,13 @@
         "crypto",
         "derivatives"
       ],
-      "last_synced_at": "2026-10-13T14:45:58.577Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": false,
       "is_mcp": true,
       "mcp_source_url": "https://github.com/alpacahq/alpaca-mcp-server/blob/2a973a046607c42742bf141184b71f1990fa1809/README.md",
       "mcp_source_ref": "2a973a046607c42742bf141184b71f1990fa1809",
       "mcp_source_sha": "0f52cb9f51a74d0fad1438a7c2e212889a41a487ec59a82bd19526ebce7fc100",
-      "mcp_verified_at": "2026-10-13T14:45:58.577Z",
+      "mcp_verified_at": "2026-10-15T07:19:16.158Z",
       "mcp_description": "Stock, options, and crypto market data, portfolio access, and order management through Alpaca.",
       "mcp_topics": [
         "Finance",
@@ -1279,7 +2319,164 @@
       "mcp_transport": "stdio / Streamable HTTP",
       "mcp_auth": "Alpaca API key + secret",
       "mcp_status": "official",
-      "mcp_trading_warning": true
+      "mcp_trading_warning": true,
+      "skills": []
+    },
+    {
+      "github_id": 963828488,
+      "owner": "ariadng",
+      "name": "metatrader-mcp-server",
+      "full_name": "ariadng/metatrader-mcp-server",
+      "description": "Model Context Protocol (MCP) to enable AI LLMs to trade using MetaTrader platform",
+      "html_url": "https://github.com/ariadng/metatrader-mcp-server",
+      "homepage": "",
+      "language": "Python",
+      "stars": 827,
+      "forks": 266,
+      "open_issues": 31,
+      "license_spdx": "MIT",
+      "topics": [
+        "ai",
+        "finance",
+        "investment",
+        "llm",
+        "mcp",
+        "metatrader",
+        "quantitative-finance",
+        "trading"
+      ],
+      "created_at": "2025-04-10T09:15:15Z",
+      "pushed_at": "2026-03-28T18:39:29Z",
+      "updated_at": "2026-10-14T21:59:12Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/57926750?v=4",
+      "category": "ai-agents",
+      "stars_growth_7d": null,
+      "categories": [
+        "ai-agents"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": true,
+      "mcp_source_url": "https://github.com/ariadng/metatrader-mcp-server/blob/bd2ff591e32cb492fafefe74221d502dd78b71ef/README.md",
+      "mcp_source_ref": "bd2ff591e32cb492fafefe74221d502dd78b71ef",
+      "mcp_source_sha": "3a241e322fc3f5cc4e895a43d255feb8da3f592117b169dcc45117fd676ca259",
+      "mcp_verified_at": "2026-10-15T07:19:16.158Z",
+      "mcp_description": "Model Context Protocol (MCP) to enable AI LLMs to trade using MetaTrader platform",
+      "mcp_topics": [
+        "Finance"
+      ],
+      "mcp_transport": "unknown",
+      "mcp_auth": "unknown",
+      "mcp_status": "community",
+      "mcp_trading_warning": false,
+      "skills": []
+    },
+    {
+      "github_id": 1043767874,
+      "owner": "wshobson",
+      "name": "maverick-mcp",
+      "full_name": "wshobson/maverick-mcp",
+      "description": "Stock market MCP server for Yahoo Finance data, technical analysis, portfolio tracking, and Python backtesting. Runs locally with no API key for core tools.",
+      "html_url": "https://github.com/wshobson/maverick-mcp",
+      "homepage": "https://sethhobson.com",
+      "language": "Python",
+      "stars": 705,
+      "forks": 165,
+      "open_issues": 7,
+      "license_spdx": "MIT",
+      "topics": [
+        "ai-agents",
+        "anthropic",
+        "backtesting",
+        "claude",
+        "fastmcp",
+        "finance",
+        "financial-analysis",
+        "llm",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "portfolio-tracking",
+        "python",
+        "quantitative-finance",
+        "stock-analysis",
+        "stock-market",
+        "stock-screening",
+        "stocks",
+        "technical-analysis",
+        "yfinance"
+      ],
+      "created_at": "2025-08-24T15:24:20Z",
+      "pushed_at": "2026-10-13T06:17:27Z",
+      "updated_at": "2026-10-14T09:59:32Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/553618?v=4",
+      "category": "backtest",
+      "stars_growth_7d": null,
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": true,
+      "categories": [
+        "backtest",
+        "portfolio"
+      ],
+      "mcp_source_url": "https://github.com/wshobson/maverick-mcp/blob/475899c4363ac077d9ed0c09608b4ef79f222f47/README.md",
+      "mcp_source_ref": "475899c4363ac077d9ed0c09608b4ef79f222f47",
+      "mcp_source_sha": "3bb57750de25eff21d39cc48af2bd284c5cae0ae1ecf7235342ed64733503a80",
+      "mcp_verified_at": "2026-10-15T07:19:16.158Z",
+      "mcp_description": "Stock market MCP server for Yahoo Finance data, technical analysis, portfolio tracking, and Python backtesting. Runs locally with no API key for core tools.",
+      "mcp_topics": [
+        "Finance"
+      ],
+      "mcp_transport": "unknown",
+      "mcp_auth": "unknown",
+      "mcp_status": "community",
+      "mcp_trading_warning": false,
+      "skills": []
+    },
+    {
+      "github_id": 999170423,
+      "owner": "robcerda",
+      "name": "monarch-mcp-server",
+      "full_name": "robcerda/monarch-mcp-server",
+      "description": "MCP Server for use with Monarch Money",
+      "html_url": "https://github.com/robcerda/monarch-mcp-server",
+      "homepage": "",
+      "language": "Python",
+      "stars": 420,
+      "forks": 173,
+      "open_issues": 12,
+      "license_spdx": "MIT",
+      "topics": [
+        "finance",
+        "mcp-server",
+        "monarch",
+        "monarch-money"
+      ],
+      "created_at": "2025-06-09T21:05:58Z",
+      "pushed_at": "2026-10-13T08:06:38Z",
+      "updated_at": "2026-10-15T01:14:00Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/16689532?v=4",
+      "category": "ai-agents",
+      "stars_growth_7d": null,
+      "categories": [
+        "ai-agents"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": true,
+      "mcp_source_url": "https://github.com/robcerda/monarch-mcp-server/blob/994d1a124e68b3f3522a4f7945c5828ffb16d081/README.md",
+      "mcp_source_ref": "994d1a124e68b3f3522a4f7945c5828ffb16d081",
+      "mcp_source_sha": "8f6b4c3e2d68fb6b346d1647c352e698a56aace4a5a933354e13098d7f44c85d",
+      "mcp_verified_at": "2026-10-15T07:19:16.158Z",
+      "mcp_description": "MCP Server for use with Monarch Money",
+      "mcp_topics": [
+        "Finance"
+      ],
+      "mcp_transport": "unknown",
+      "mcp_auth": "unknown",
+      "mcp_status": "community",
+      "mcp_trading_warning": false,
+      "skills": []
     },
     {
       "github_id": 1178408128,
@@ -1290,14 +2487,14 @@
       "html_url": "https://github.com/agiprolabs/claude-trading-skills",
       "homepage": "",
       "language": "Python",
-      "stars": 413,
-      "forks": 83,
+      "stars": 416,
+      "forks": 82,
       "open_issues": 4,
       "license_spdx": "MIT",
       "topics": [],
       "created_at": "2026-03-11T01:54:30Z",
       "pushed_at": "2026-09-03T02:19:36Z",
-      "updated_at": "2026-10-13T03:15:22Z",
+      "updated_at": "2026-10-14T12:46:46Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/208560124?v=4",
       "category": "crypto",
       "stars_growth_7d": null,
@@ -1306,7 +2503,7 @@
         "quant",
         "ai-agents"
       ],
-      "last_synced_at": "2026-10-13T14:45:58.577Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": true,
       "is_mcp": false,
       "skills": [
@@ -1321,7 +2518,7 @@
           "source_url": "https://github.com/agiprolabs/claude-trading-skills/blob/981e1d736cdc02bdc1c55c74ec9224e956414706/skills/coingecko-api/SKILL.md",
           "source_ref": "981e1d736cdc02bdc1c55c74ec9224e956414706",
           "source_sha": "3f7a78243e9d90d2a28c7ab26eeedef557e9073599f02aef4e790ac5a6982ed1",
-          "verified_at": "2026-10-13T14:45:58.577Z"
+          "verified_at": "2026-10-15T07:19:16.158Z"
         },
         {
           "name": "defillama-api",
@@ -1334,7 +2531,7 @@
           "source_url": "https://github.com/agiprolabs/claude-trading-skills/blob/981e1d736cdc02bdc1c55c74ec9224e956414706/skills/defillama-api/SKILL.md",
           "source_ref": "981e1d736cdc02bdc1c55c74ec9224e956414706",
           "source_sha": "78fecd91ca49784550182e40760037f9c20d2efbc4397b12f470896ad8fe0789",
-          "verified_at": "2026-10-13T14:45:58.577Z"
+          "verified_at": "2026-10-15T07:19:16.158Z"
         },
         {
           "name": "token-economics",
@@ -1347,7 +2544,7 @@
           "source_url": "https://github.com/agiprolabs/claude-trading-skills/blob/981e1d736cdc02bdc1c55c74ec9224e956414706/skills/token-economics/SKILL.md",
           "source_ref": "981e1d736cdc02bdc1c55c74ec9224e956414706",
           "source_sha": "93e590cb585398f50ff891876aabdba80cf83e437c53827a31620904f9efdca9",
-          "verified_at": "2026-10-13T14:45:58.577Z"
+          "verified_at": "2026-10-15T07:19:16.158Z"
         },
         {
           "name": "portfolio-analytics",
@@ -1361,7 +2558,7 @@
           "source_url": "https://github.com/agiprolabs/claude-trading-skills/blob/981e1d736cdc02bdc1c55c74ec9224e956414706/skills/portfolio-analytics/SKILL.md",
           "source_ref": "981e1d736cdc02bdc1c55c74ec9224e956414706",
           "source_sha": "ebaf91cd8678957eaa21f9298b178dc82baee2dfecf4458a5e91e1479265e849",
-          "verified_at": "2026-10-13T14:45:58.577Z"
+          "verified_at": "2026-10-15T07:19:16.158Z"
         },
         {
           "name": "risk-management",
@@ -1374,7 +2571,7 @@
           "source_url": "https://github.com/agiprolabs/claude-trading-skills/blob/981e1d736cdc02bdc1c55c74ec9224e956414706/skills/risk-management/SKILL.md",
           "source_ref": "981e1d736cdc02bdc1c55c74ec9224e956414706",
           "source_sha": "cc7c016d080bed83eb5cca2e23d9d0ab767ea9abd215a77c51d86494c2438ec5",
-          "verified_at": "2026-10-13T14:45:58.577Z"
+          "verified_at": "2026-10-15T07:19:16.158Z"
         },
         {
           "name": "position-sizing",
@@ -1387,7 +2584,7 @@
           "source_url": "https://github.com/agiprolabs/claude-trading-skills/blob/981e1d736cdc02bdc1c55c74ec9224e956414706/skills/position-sizing/SKILL.md",
           "source_ref": "981e1d736cdc02bdc1c55c74ec9224e956414706",
           "source_sha": "522a7c3de61d7b7edcf36c2ea36f58cb77fc827ee41420abd1e5bc96885d1e5a",
-          "verified_at": "2026-10-13T14:45:58.577Z"
+          "verified_at": "2026-10-15T07:19:16.158Z"
         },
         {
           "name": "vectorbt",
@@ -1400,7 +2597,7 @@
           "source_url": "https://github.com/agiprolabs/claude-trading-skills/blob/981e1d736cdc02bdc1c55c74ec9224e956414706/skills/vectorbt/SKILL.md",
           "source_ref": "981e1d736cdc02bdc1c55c74ec9224e956414706",
           "source_sha": "1e35ad7dfa956a398ff75b24a7ca5ece1da631ea09767238db1389f43cb73511",
-          "verified_at": "2026-10-13T14:45:58.577Z"
+          "verified_at": "2026-10-15T07:19:16.158Z"
         },
         {
           "name": "walk-forward-validation",
@@ -1413,9 +2610,440 @@
           "source_url": "https://github.com/agiprolabs/claude-trading-skills/blob/981e1d736cdc02bdc1c55c74ec9224e956414706/skills/walk-forward-validation/SKILL.md",
           "source_ref": "981e1d736cdc02bdc1c55c74ec9224e956414706",
           "source_sha": "4b291994d2e4d68a5821122c4fcc2cf8ea9996f87b11a44eef8461a8a890b32f",
-          "verified_at": "2026-10-13T14:45:58.577Z"
+          "verified_at": "2026-10-15T07:19:16.158Z"
         }
       ]
+    },
+    {
+      "github_id": 951563472,
+      "owner": "massive-com",
+      "name": "mcp_massive",
+      "full_name": "massive-com/mcp_massive",
+      "description": "An MCP server for Massive.com Financial Market Data",
+      "html_url": "https://github.com/massive-com/mcp_massive",
+      "homepage": "",
+      "language": "Python",
+      "stars": 397,
+      "forks": 115,
+      "open_issues": 12,
+      "license_spdx": "MIT",
+      "topics": [
+        "cryptocurrency",
+        "fintech",
+        "llm",
+        "market-data",
+        "mcp",
+        "mcp-server",
+        "options",
+        "stocks"
+      ],
+      "created_at": "2025-03-19T22:05:09Z",
+      "pushed_at": "2026-10-08T14:13:09Z",
+      "updated_at": "2026-10-14T23:03:09Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/191946194?v=4",
+      "category": "crypto",
+      "stars_growth_7d": null,
+      "categories": [
+        "crypto",
+        "derivatives"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": true,
+      "mcp_source_url": "https://github.com/massive-com/mcp_massive/blob/1e161a8c50b69bd467b092e0721e30908ab94eb6/README.md",
+      "mcp_source_ref": "1e161a8c50b69bd467b092e0721e30908ab94eb6",
+      "mcp_source_sha": "6f9010dc1ecd42585ae99ffab82859e24648656c2d5d171fd958e19ef9a04795",
+      "mcp_verified_at": "2026-10-15T07:19:16.158Z",
+      "mcp_description": "An MCP server for Massive.com Financial Market Data",
+      "mcp_topics": [
+        "Finance"
+      ],
+      "mcp_transport": "unknown",
+      "mcp_auth": "unknown",
+      "mcp_status": "community",
+      "mcp_trading_warning": false,
+      "skills": []
+    },
+    {
+      "github_id": 958733763,
+      "owner": "stefanoamorelli",
+      "name": "sec-edgar-mcp",
+      "full_name": "stefanoamorelli/sec-edgar-mcp",
+      "description": "A SEC EDGAR MCP (Model Context Protocol) Server",
+      "html_url": "https://github.com/stefanoamorelli/sec-edgar-mcp",
+      "homepage": "https://sec-edgar-mcp.amorelli.tech/",
+      "language": "Python",
+      "stars": 372,
+      "forks": 100,
+      "open_issues": 14,
+      "license_spdx": "AGPL-3.0",
+      "topics": [
+        "ai",
+        "artificial-intelligence",
+        "edgar",
+        "edgar-database",
+        "finance",
+        "genai",
+        "llm",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "model-context-protocol-server"
+      ],
+      "created_at": "2025-04-01T17:13:35Z",
+      "pushed_at": "2026-10-03T09:11:21Z",
+      "updated_at": "2026-10-13T05:57:33Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10986064?v=4",
+      "category": "ai-agents",
+      "stars_growth_7d": null,
+      "categories": [
+        "ai-agents"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": true,
+      "mcp_source_url": "https://github.com/stefanoamorelli/sec-edgar-mcp/blob/86646eb0e23f84eb2b2d1a793c888ad63a8a82bc/README.md",
+      "mcp_source_ref": "86646eb0e23f84eb2b2d1a793c888ad63a8a82bc",
+      "mcp_source_sha": "a938b83d46e4bb2fb5ed9000b768b2196e4bab43e6c3abaeea92e47cd8ba48ec",
+      "mcp_verified_at": "2026-10-15T07:19:16.158Z",
+      "mcp_description": "A SEC EDGAR MCP (Model Context Protocol) Server",
+      "mcp_topics": [
+        "Finance"
+      ],
+      "mcp_transport": "unknown",
+      "mcp_auth": "unknown",
+      "mcp_status": "community",
+      "mcp_trading_warning": false,
+      "skills": []
+    },
+    {
+      "github_id": 961423058,
+      "owner": "Alex2Yang97",
+      "name": "yahoo-finance-mcp",
+      "full_name": "Alex2Yang97/yahoo-finance-mcp",
+      "description": "This is a Model Context Protocol (MCP) server that provides comprehensive financial data from Yahoo Finance. It allows you to retrieve detailed information about stocks, including historical prices, company information, financial statements, options data, and market news.",
+      "html_url": "https://github.com/Alex2Yang97/yahoo-finance-mcp",
+      "homepage": "",
+      "language": "Python",
+      "stars": 361,
+      "forks": 167,
+      "open_issues": 11,
+      "license_spdx": "MIT",
+      "topics": [
+        "mcp",
+        "mcp-server",
+        "yahoo-finance",
+        "yfinance",
+        "yfinance-mcp"
+      ],
+      "created_at": "2025-04-06T13:48:09Z",
+      "pushed_at": "2026-09-19T13:00:47Z",
+      "updated_at": "2026-10-11T20:25:32Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44308748?v=4",
+      "category": "derivatives",
+      "stars_growth_7d": null,
+      "categories": [
+        "derivatives",
+        "sentiment"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": true,
+      "mcp_source_url": "https://github.com/Alex2Yang97/yahoo-finance-mcp/blob/b9c176547d3797b2196adeba0210ae67861ac589/README.md",
+      "mcp_source_ref": "b9c176547d3797b2196adeba0210ae67861ac589",
+      "mcp_source_sha": "3ef7faf2bc1d11f14857e528f4f5b73c796a0d72251c8ef7117c8cbd0a3a03e7",
+      "mcp_verified_at": "2026-10-15T07:19:16.158Z",
+      "mcp_description": "This is a Model Context Protocol (MCP) server that provides comprehensive financial data from Yahoo Finance. It allows you to retrieve detailed information about stocks, including historical prices, company information, financial statements, options data, and market news.",
+      "mcp_topics": [
+        "Finance"
+      ],
+      "mcp_transport": "unknown",
+      "mcp_auth": "unknown",
+      "mcp_status": "community",
+      "mcp_trading_warning": false,
+      "skills": []
+    },
+    {
+      "github_id": 1132869719,
+      "owner": "xang1234",
+      "name": "stock-screener",
+      "full_name": "xang1234/stock-screener",
+      "description": "CANSLIM & Minervini stock screener for 12 markets (US, China, HK, Japan, India, Korea, Taiwan & more). 80+ filters, StockBee-style breadth, group rankings, theme discovery and an AI research chatbot. Free daily static site + MCP server.",
+      "html_url": "https://github.com/xang1234/stock-screener",
+      "homepage": "https://xang1234.github.io/stock-screener/",
+      "language": "Python",
+      "stars": 350,
+      "forks": 116,
+      "open_issues": 11,
+      "license_spdx": "Apache-2.0",
+      "topics": [
+        "canslim",
+        "finance",
+        "investment",
+        "market-breadth",
+        "minervini",
+        "nasdaq-stocks",
+        "nyse-stocks",
+        "stock-analysis",
+        "stock-screener",
+        "trading",
+        "trading-automation"
+      ],
+      "created_at": "2026-01-12T15:06:06Z",
+      "pushed_at": "2026-10-15T04:24:24Z",
+      "updated_at": "2026-10-15T04:24:29Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/22629539?v=4",
+      "category": "us-equity",
+      "stars_growth_7d": null,
+      "categories": [
+        "us-equity"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
+      "mcp_source_url": null,
+      "mcp_source_ref": "c723e29ae6e215f5711ac08fdc042db509ffb2f2",
+      "mcp_source_sha": "586d3cffaf98a5f7510e9ccad0be618cf12a1868b5413e45ea01f592aa33ee31",
+      "mcp_verified_at": null,
+      "mcp_description": "CANSLIM & Minervini stock screener for 12 markets (US, China, HK, Japan, India, Korea, Taiwan & more). 80+ filters, StockBee-style breadth, group rankings, theme discovery and an AI research chatbot. Free daily static site + MCP server.",
+      "mcp_topics": [
+        "Finance"
+      ],
+      "mcp_transport": "unknown",
+      "mcp_auth": "unknown",
+      "mcp_status": "community",
+      "mcp_trading_warning": false,
+      "skills": []
+    },
+    {
+      "github_id": 1027583181,
+      "owner": "guangxiangdebizi",
+      "name": "TradingAgents-MCPmode",
+      "full_name": "guangxiangdebizi/TradingAgents-MCPmode",
+      "description": "TradingAgents-MCPmode 是一个创新的多智能体交易分析系统，集成了 Model Context Protocol (MCP) 工具，实现了智能化的股票分析和交易决策流程。系统通过多个专业化智能体的协作，提供全面的市场分析、投资建议和风险管理。",
+      "html_url": "https://github.com/guangxiangdebizi/TradingAgents-MCPmode",
+      "homepage": "http://47.79.147.241:8501/",
+      "language": "Python",
+      "stars": 338,
+      "forks": 72,
+      "open_issues": 7,
+      "license_spdx": null,
+      "topics": [
+        "agent",
+        "finance",
+        "fintech",
+        "index",
+        "llm",
+        "mcp",
+        "stocks",
+        "tradingbot"
+      ],
+      "created_at": "2025-07-28T08:23:49Z",
+      "pushed_at": "2025-11-22T07:04:36Z",
+      "updated_at": "2026-10-14T08:55:42Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/154864206?v=4",
+      "category": "ai-agents",
+      "stars_growth_7d": null,
+      "categories": [
+        "ai-agents",
+        "us-equity"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": true,
+      "mcp_source_url": "https://github.com/guangxiangdebizi/TradingAgents-MCPmode/blob/8806e3b5327b035b32e6d864b9afe6009f8103d4/README.md",
+      "mcp_source_ref": "8806e3b5327b035b32e6d864b9afe6009f8103d4",
+      "mcp_source_sha": "ab1845dc33bb054027243ba9e80b17f8f033f8be45612546c16eba3c0865ba90",
+      "mcp_verified_at": "2026-10-15T07:19:16.158Z",
+      "mcp_description": "TradingAgents-MCPmode 是一个创新的多智能体交易分析系统，集成了 Model Context Protocol (MCP) 工具，实现了智能化的股票分析和交易决策流程。系统通过多个专业化智能体的协作，提供全面的市场分析、投资建议和风险管理。",
+      "mcp_topics": [
+        "Finance"
+      ],
+      "mcp_transport": "unknown",
+      "mcp_auth": "unknown",
+      "mcp_status": "community",
+      "mcp_trading_warning": false,
+      "skills": []
+    },
+    {
+      "github_id": 1192629876,
+      "owner": "ALAGENT-HKU",
+      "name": "x2strategy",
+      "full_name": "ALAGENT-HKU/x2strategy",
+      "description": "Extract structured strategy specifications from quantitative finance research papers — Agent Skill for GitHub Copilot & Claude Code",
+      "html_url": "https://github.com/ALAGENT-HKU/x2strategy",
+      "homepage": null,
+      "language": "Python",
+      "stars": 282,
+      "forks": 47,
+      "open_issues": 1,
+      "license_spdx": null,
+      "topics": [],
+      "created_at": "2026-03-26T12:06:18Z",
+      "pushed_at": "2026-06-12T12:05:38Z",
+      "updated_at": "2026-10-14T11:36:11Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/220307212?v=4",
+      "category": "ai-agents",
+      "stars_growth_7d": null,
+      "categories": [
+        "ai-agents"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
+      "skills": []
+    },
+    {
+      "github_id": 962429346,
+      "owner": "zwldarren",
+      "name": "akshare-one-mcp",
+      "full_name": "zwldarren/akshare-one-mcp",
+      "description": "MCP server that provides access to Chinese stock market data using akshare-one",
+      "html_url": "https://github.com/zwldarren/akshare-one-mcp",
+      "homepage": "",
+      "language": "Python",
+      "stars": 233,
+      "forks": 52,
+      "open_issues": 10,
+      "license_spdx": "MIT",
+      "topics": [
+        "akshare",
+        "mcp",
+        "mcp-server",
+        "stock-data"
+      ],
+      "created_at": "2025-04-08T06:32:41Z",
+      "pushed_at": "2026-10-15T00:14:22Z",
+      "updated_at": "2026-10-06T10:49:08Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/44387110?v=4",
+      "category": "findata",
+      "stars_growth_7d": null,
+      "categories": [
+        "findata",
+        "ai-agents"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": true,
+      "mcp_source_url": "https://github.com/zwldarren/akshare-one-mcp/blob/27678a7239d37020aab39a03e0e817eb1bd9939a/README.md",
+      "mcp_source_ref": "27678a7239d37020aab39a03e0e817eb1bd9939a",
+      "mcp_source_sha": "a94465053d7df941ce9e91a80db89f51bb1049409cc9a58ad48f5ff4f6c44924",
+      "mcp_verified_at": "2026-10-15T07:19:16.158Z",
+      "mcp_description": "MCP server that provides access to Chinese stock market data using akshare-one",
+      "mcp_topics": [
+        "Finance"
+      ],
+      "mcp_transport": "unknown",
+      "mcp_auth": "unknown",
+      "mcp_status": "community",
+      "mcp_trading_warning": false,
+      "skills": []
+    },
+    {
+      "github_id": 1191114524,
+      "owner": "daniel3303",
+      "name": "Equibles",
+      "full_name": "daniel3303/Equibles",
+      "description": "Self-hosted, open-source financial data MCP server for AI agents — SEC filings, XBRL financials, 13F holdings, insider & congressional trades, short interest, FRED, CFTC/CBOE and daily prices across 64 MCP tools. Equibles Cloud adds earnings call transcripts, live quotes, options chains with Greeks, guidance and a screener.",
+      "html_url": "https://github.com/daniel3303/Equibles",
+      "homepage": "https://equibles.com",
+      "language": "C#",
+      "stars": 230,
+      "forks": 31,
+      "open_issues": 27,
+      "license_spdx": "AGPL-3.0",
+      "topics": [
+        "ai",
+        "ai-agents",
+        "artificial-intelligence",
+        "claude",
+        "earnings-calls",
+        "finance",
+        "financial-data",
+        "fintech",
+        "insider-trading",
+        "llm",
+        "market-data",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol",
+        "options-trading",
+        "quantitative-finance",
+        "sec",
+        "sec-filings",
+        "self-hosted",
+        "stock-market"
+      ],
+      "created_at": "2026-03-24T23:46:49Z",
+      "pushed_at": "2026-10-15T02:17:20Z",
+      "updated_at": "2026-10-15T02:11:41Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/36623265?v=4",
+      "category": "derivatives",
+      "stars_growth_7d": null,
+      "categories": [
+        "derivatives",
+        "findata"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": true,
+      "mcp_source_url": "https://github.com/daniel3303/Equibles/blob/99846a4b1e63d0b8d269e04bf1bc6124164ecc20/README.md",
+      "mcp_source_ref": "99846a4b1e63d0b8d269e04bf1bc6124164ecc20",
+      "mcp_source_sha": "0b3e46d7b40d724a21bb6ec6a9fbc894931416a22dd5bc301e7fe849f6363169",
+      "mcp_verified_at": "2026-10-15T07:19:16.158Z",
+      "mcp_description": "Self-hosted, open-source financial data MCP server for AI agents — SEC filings, XBRL financials, 13F holdings, insider & congressional trades, short interest, FRED, CFTC/CBOE and daily prices across 64 MCP tools. Equibles Cloud adds earnings call transcripts, live quotes, options chains with Greeks, guidance and a screener.",
+      "mcp_topics": [
+        "Finance"
+      ],
+      "mcp_transport": "unknown",
+      "mcp_auth": "unknown",
+      "mcp_status": "community",
+      "mcp_trading_warning": false,
+      "skills": []
+    },
+    {
+      "github_id": 960403871,
+      "owner": "Qoyyuum",
+      "name": "mcp-metatrader5-server",
+      "full_name": "Qoyyuum/mcp-metatrader5-server",
+      "description": "A Model Context Protocol (MCP) server for interacting with the MetaTrader 5 trading platform. This server provides AI assistants with tools and resources to access market data, perform trading operations, and analyze trading history.",
+      "html_url": "https://github.com/Qoyyuum/mcp-metatrader5-server",
+      "homepage": "https://pypi.org/project/mcp-metatrader5-server/",
+      "language": "Python",
+      "stars": 230,
+      "forks": 79,
+      "open_issues": 5,
+      "license_spdx": null,
+      "topics": [
+        "mcp-server",
+        "metatrader-5"
+      ],
+      "created_at": "2025-04-04T11:27:21Z",
+      "pushed_at": "2026-10-12T00:20:09Z",
+      "updated_at": "2026-10-12T07:35:15Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/971309?v=4",
+      "category": "findata",
+      "stars_growth_7d": null,
+      "categories": [
+        "findata",
+        "ai-agents"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": true,
+      "mcp_source_url": "https://github.com/Qoyyuum/mcp-metatrader5-server/blob/8ecd504ca4ea1efc844ec62efc85c4f50fda4540/README.md",
+      "mcp_source_ref": "8ecd504ca4ea1efc844ec62efc85c4f50fda4540",
+      "mcp_source_sha": "b5b3f886eee86ffb9b7675a8183020acb3323a48e90a210587c74d43bd6454f2",
+      "mcp_verified_at": "2026-10-15T07:19:16.158Z",
+      "mcp_description": "A Model Context Protocol (MCP) server for interacting with the MetaTrader 5 trading platform. This server provides AI assistants with tools and resources to access market data, perform trading operations, and analyze trading history.",
+      "mcp_topics": [
+        "Finance"
+      ],
+      "mcp_transport": "unknown",
+      "mcp_auth": "unknown",
+      "mcp_status": "community",
+      "mcp_trading_warning": false,
+      "skills": []
     },
     {
       "github_id": 1027446090,
@@ -1426,14 +3054,14 @@
       "html_url": "https://github.com/alphavantage/alpha_vantage_mcp",
       "homepage": "https://mcp.alphavantage.co",
       "language": "Python",
-      "stars": 221,
+      "stars": 220,
       "forks": 55,
       "open_issues": 3,
       "license_spdx": "MIT",
       "topics": [],
       "created_at": "2025-07-28T02:59:14Z",
       "pushed_at": "2026-10-03T00:09:33Z",
-      "updated_at": "2026-10-12T21:46:52Z",
+      "updated_at": "2026-10-15T00:29:14Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/50210747?v=4",
       "category": "findata",
       "stars_growth_7d": null,
@@ -1442,13 +3070,13 @@
         "us-equity",
         "crypto"
       ],
-      "last_synced_at": "2026-10-13T14:45:58.577Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": false,
       "is_mcp": true,
       "mcp_source_url": "https://github.com/alphavantage/alpha_vantage_mcp/blob/3ed9b05db06d16476d326a12441d68ad071b261a/README.md",
       "mcp_source_ref": "3ed9b05db06d16476d326a12441d68ad071b261a",
       "mcp_source_sha": "0d233e23543e4dc582da07b3f500b10fa3cbe68850b15bd58d2821a5a27cf996",
-      "mcp_verified_at": "2026-10-13T14:45:58.577Z",
+      "mcp_verified_at": "2026-10-15T07:19:16.158Z",
       "mcp_description": "Stock, FX, crypto, economic indicators, and company fundamentals from Alpha Vantage.",
       "mcp_topics": [
         "Finance",
@@ -1457,7 +3085,8 @@
       "mcp_transport": "stdio / HTTP",
       "mcp_auth": "Alpha Vantage API key; remote OAuth supported",
       "mcp_status": "official",
-      "mcp_trading_warning": false
+      "mcp_trading_warning": false,
+      "skills": []
     },
     {
       "github_id": 957440248,
@@ -1484,17 +3113,17 @@
       "updated_at": "2026-10-11T23:33:52Z",
       "avatar_url": "https://avatars.githubusercontent.com/u/4680567?v=4",
       "category": "findata",
+      "stars_growth_7d": null,
       "categories": [
         "findata"
       ],
-      "stars_growth_7d": null,
-      "last_synced_at": "2026-10-13T14:45:58.577Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": false,
       "is_mcp": true,
       "mcp_source_url": "https://github.com/narumiruna/yfinance-mcp/blob/9661378c3d1bf8a7c6343eceabaf0a2460d8c514/README.md",
       "mcp_source_ref": "9661378c3d1bf8a7c6343eceabaf0a2460d8c514",
       "mcp_source_sha": "3e0d133398ad78754666f8f8ec879d2fad779af0c2d54e5378e7aa5ef0c4927e",
-      "mcp_verified_at": "2026-10-13T14:45:58.577Z",
+      "mcp_verified_at": "2026-10-15T07:19:16.158Z",
       "mcp_description": "Yahoo Finance market data for AI research workflows.",
       "mcp_topics": [
         "Finance"
@@ -1502,7 +3131,8 @@
       "mcp_transport": "Not specified",
       "mcp_auth": "See upstream documentation",
       "mcp_status": "community",
-      "mcp_trading_warning": false
+      "mcp_trading_warning": false,
+      "skills": []
     },
     {
       "github_id": 947569884,
@@ -1546,13 +3176,13 @@
         "us-equity",
         "crypto"
       ],
-      "last_synced_at": "2026-10-13T14:45:58.577Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": false,
       "is_mcp": true,
       "mcp_source_url": "https://github.com/OctagonAI/octagon-mcp-server/blob/a3234633fbcc523be4b2ed68233c9e967c0c7fa2/README.md",
       "mcp_source_ref": "a3234633fbcc523be4b2ed68233c9e967c0c7fa2",
       "mcp_source_sha": "436c96528da3c711f967b98a554783eec49671fda8e239d996412f77c72bee3d",
-      "mcp_verified_at": "2026-10-13T14:45:58.577Z",
+      "mcp_verified_at": "2026-10-15T07:19:16.158Z",
       "mcp_description": "SEC filings, earnings calls, stocks and crypto data, and prediction-market research.",
       "mcp_topics": [
         "Finance",
@@ -1561,7 +3191,52 @@
       "mcp_transport": "stdio",
       "mcp_auth": "Octagon API key",
       "mcp_status": "community",
-      "mcp_trading_warning": false
+      "mcp_trading_warning": false,
+      "skills": []
+    },
+    {
+      "github_id": 1249052801,
+      "owner": "ApocData",
+      "name": "ApocData-skill",
+      "full_name": "ApocData/ApocData-skill",
+      "description": "ApocData · AI-native financial database for China A-share market. Drop-in Skill / MCP for Claude,ChatGPT, Qwen, Kimi, DeepSeek agents.",
+      "html_url": "https://github.com/ApocData/ApocData-skill",
+      "homepage": "http://www.apocdata.com",
+      "language": "Shell",
+      "stars": 102,
+      "forks": 1,
+      "open_issues": 1,
+      "license_spdx": "Apache-2.0",
+      "topics": [
+        "ai-agent",
+        "announcements",
+        "china-stocks",
+        "chinese",
+        "claude",
+        "cursor",
+        "deepseek",
+        "finance",
+        "financial-data",
+        "mcp-server",
+        "quantitative-finance",
+        "qwen",
+        "skills",
+        "stock-market"
+      ],
+      "created_at": "2026-05-25T09:55:27Z",
+      "pushed_at": "2026-10-14T06:50:14Z",
+      "updated_at": "2026-10-14T06:50:18Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/287656515?v=4",
+      "category": "ai-agents",
+      "stars_growth_7d": null,
+      "categories": [
+        "ai-agents",
+        "us-equity"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": false,
+      "skills": []
     },
     {
       "github_id": 969942554,
@@ -1574,7 +3249,7 @@
       "language": "TypeScript",
       "stars": 59,
       "forks": 28,
-      "open_issues": 5,
+      "open_issues": 6,
       "license_spdx": "MIT",
       "topics": [],
       "created_at": "2025-04-21T07:29:43Z",
@@ -1586,13 +3261,13 @@
       "categories": [
         "crypto"
       ],
-      "last_synced_at": "2026-10-13T14:45:58.577Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": false,
       "is_mcp": true,
       "mcp_source_url": "https://github.com/bnb-chain/bnbchain-mcp/blob/a133675365d5d941d891b17a42f2ca587c33922a/README.md",
       "mcp_source_ref": "a133675365d5d941d891b17a42f2ca587c33922a",
       "mcp_source_sha": "e88e66b010624b3a4c6c065628db840908f8ac89ce2d836063d18f8e69c83306",
-      "mcp_verified_at": "2026-10-13T14:45:58.577Z",
+      "mcp_verified_at": "2026-10-15T07:19:16.158Z",
       "mcp_description": "BNB Chain and EVM network research, token and contract queries, and wallet transactions.",
       "mcp_topics": [
         "Crypto"
@@ -1600,7 +3275,8 @@
       "mcp_transport": "stdio / SSE",
       "mcp_auth": "Optional wallet private key for write operations",
       "mcp_status": "community",
-      "mcp_trading_warning": true
+      "mcp_trading_warning": true,
+      "skills": []
     },
     {
       "github_id": 961594357,
@@ -1630,13 +3306,13 @@
         "us-equity",
         "crypto"
       ],
-      "last_synced_at": "2026-10-13T14:45:58.577Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": false,
       "is_mcp": true,
       "mcp_source_url": "https://github.com/cdtait/fmp-mcp-server/blob/0cac7e78c90d7cf158743d42d706181e732cac9a/README.md",
       "mcp_source_ref": "0cac7e78c90d7cf158743d42d706181e732cac9a",
       "mcp_source_sha": "f154bd5111585700111c041574b06adfc849f3bdd8ffbedc2e6d02a9cc1d7c1e",
-      "mcp_verified_at": "2026-10-13T14:45:58.577Z",
+      "mcp_verified_at": "2026-10-15T07:19:16.158Z",
       "mcp_description": "Company profiles, financial statements, equity quotes, crypto, forex, and ETF research.",
       "mcp_topics": [
         "Finance",
@@ -1645,7 +3321,61 @@
       "mcp_transport": "stdio / SSE / Streamable HTTP",
       "mcp_auth": "Financial Modeling Prep API key",
       "mcp_status": "community",
-      "mcp_trading_warning": false
+      "mcp_trading_warning": false,
+      "skills": []
+    },
+    {
+      "github_id": 1162766561,
+      "owner": "EodHistoricalData",
+      "name": "eodhd-claude-skills",
+      "full_name": "EodHistoricalData/eodhd-claude-skills",
+      "description": "Claude Code plugin for EODHD financial data — 150k+ tickers, 70+ exchanges, OAuth MCP server with 80 tools, 7 workflow skills, financial-analyst agent, 5 slash commands. MIT.",
+      "html_url": "https://github.com/EodHistoricalData/eodhd-claude-skills",
+      "homepage": "https://eodhd.com",
+      "language": "Python",
+      "stars": 46,
+      "forks": 12,
+      "open_issues": 6,
+      "license_spdx": "MIT",
+      "topics": [
+        "ai-agents",
+        "claude-code",
+        "claude-code-plugin",
+        "eodhd",
+        "finance",
+        "financial-data",
+        "market-data",
+        "mcp",
+        "mcp-server",
+        "plugin",
+        "stock-market"
+      ],
+      "created_at": "2026-02-20T17:07:02Z",
+      "pushed_at": "2026-10-10T21:41:16Z",
+      "updated_at": "2026-10-12T02:15:29Z",
+      "avatar_url": "https://avatars.githubusercontent.com/u/33543530?v=4",
+      "category": "findata",
+      "stars_growth_7d": null,
+      "categories": [
+        "findata",
+        "ai-agents"
+      ],
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
+      "has_skill_md": false,
+      "is_mcp": true,
+      "mcp_source_url": "https://github.com/EodHistoricalData/eodhd-claude-skills/blob/9839c790b5ea684dbb114867563fab5bdebc66df/README.md",
+      "mcp_source_ref": "9839c790b5ea684dbb114867563fab5bdebc66df",
+      "mcp_source_sha": "b40d5de0a196393bfe7d5970645af42cec2a8045097b25c6d5d6cf517025e256",
+      "mcp_verified_at": "2026-10-15T07:19:16.158Z",
+      "mcp_description": "Claude Code plugin for EODHD financial data — 150k+ tickers, 70+ exchanges, OAuth MCP server with 80 tools, 7 workflow skills, financial-analyst agent, 5 slash commands. MIT.",
+      "mcp_topics": [
+        "Finance"
+      ],
+      "mcp_transport": "unknown",
+      "mcp_auth": "unknown",
+      "mcp_status": "community",
+      "mcp_trading_warning": false,
+      "skills": []
     },
     {
       "github_id": 1145598556,
@@ -1671,7 +3401,7 @@
         "crypto",
         "ai-agents"
       ],
-      "last_synced_at": "2026-10-13T14:45:58.577Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": true,
       "is_mcp": false,
       "skills": [
@@ -1687,7 +3417,7 @@
           "source_url": "https://github.com/hummingbot/skills/blob/01f776e7e2534e1862d163296d7f4fd4988a377b/skills/trading-agent-builder/SKILL.md",
           "source_ref": "01f776e7e2534e1862d163296d7f4fd4988a377b",
           "source_sha": "aa35ef88aa0ba561fb3642b12dc6ac9a8a8b44bf5a64bbbc6b0bd480c2261af5",
-          "verified_at": "2026-10-13T14:45:58.577Z"
+          "verified_at": "2026-10-15T07:19:16.158Z"
         },
         {
           "name": "find-arbitrage-opps",
@@ -1701,7 +3431,7 @@
           "source_url": "https://github.com/hummingbot/skills/blob/01f776e7e2534e1862d163296d7f4fd4988a377b/skills/find-arbitrage-opps/SKILL.md",
           "source_ref": "01f776e7e2534e1862d163296d7f4fd4988a377b",
           "source_sha": "68ad03938b5432cc2b54ecc04c9507727aa8dbc9751930d36712fa0ef6f592a1",
-          "verified_at": "2026-10-13T14:45:58.577Z"
+          "verified_at": "2026-10-15T07:19:16.158Z"
         }
       ]
     },
@@ -1729,7 +3459,7 @@
         "crypto",
         "ai-agents"
       ],
-      "last_synced_at": "2026-10-13T14:45:58.577Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": true,
       "is_mcp": false,
       "skills": [
@@ -1744,7 +3474,7 @@
           "source_url": "https://github.com/crypto-com/crypto-agent-trading/blob/92e80c5527312d0acdf769f16511ba3c6db1f2fe/crypto-com-app/SKILL.md",
           "source_ref": "92e80c5527312d0acdf769f16511ba3c6db1f2fe",
           "source_sha": "5af9419c9056f7fdde18b84631a2c2483419ccb7691f0ebb73dde88bd7d953bc",
-          "verified_at": "2026-10-13T14:45:58.577Z"
+          "verified_at": "2026-10-15T07:19:16.158Z"
         },
         {
           "name": "crypto-com-exchange",
@@ -1757,7 +3487,7 @@
           "source_url": "https://github.com/crypto-com/crypto-agent-trading/blob/92e80c5527312d0acdf769f16511ba3c6db1f2fe/crypto-com-exchange/SKILL.md",
           "source_ref": "92e80c5527312d0acdf769f16511ba3c6db1f2fe",
           "source_sha": "2d2f7bf51829dea3af68bdab5bf740749dc234860fd677c0b8acbd84047b41ca",
-          "verified_at": "2026-10-13T14:45:58.577Z"
+          "verified_at": "2026-10-15T07:19:16.158Z"
         }
       ]
     },
@@ -1785,7 +3515,7 @@
         "crypto",
         "ai-agents"
       ],
-      "last_synced_at": "2026-10-13T14:45:58.577Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": true,
       "is_mcp": false,
       "skills": [
@@ -1800,7 +3530,7 @@
           "source_url": "https://github.com/JStrait515/crypto-agent-skill/blob/4b487436901fd0c1c26a1d3cc7e75ce51ed431fb/crypto-market/SKILL.md",
           "source_ref": "4b487436901fd0c1c26a1d3cc7e75ce51ed431fb",
           "source_sha": "4d4379688ac59077adb15212dc3b53bbaf4608b0951d1bc46a09e33dc9b8ed05",
-          "verified_at": "2026-10-13T14:45:58.577Z"
+          "verified_at": "2026-10-15T07:19:16.158Z"
         }
       ]
     },
@@ -1814,8 +3544,8 @@
       "homepage": "https://www.npmjs.com/package/@cyanheads/coingecko-mcp-server",
       "language": "TypeScript",
       "stars": 1,
-      "forks": 0,
-      "open_issues": 3,
+      "forks": 1,
+      "open_issues": 12,
       "license_spdx": "Apache-2.0",
       "topics": [
         "ai-agents",
@@ -1842,13 +3572,13 @@
         "crypto",
         "findata"
       ],
-      "last_synced_at": "2026-10-13T14:45:58.577Z",
+      "last_synced_at": "2026-10-15T07:19:16.158Z",
       "has_skill_md": false,
       "is_mcp": true,
       "mcp_source_url": "https://github.com/cyanheads/coingecko-mcp-server/blob/7483a4b91ea51be08e8ab691b2331b4bd6254541/README.md",
       "mcp_source_ref": "7483a4b91ea51be08e8ab691b2331b4bd6254541",
       "mcp_source_sha": "318be5945837e2c23b037c311caafd8ed2019b99f8e27853ba3d92847637342c",
-      "mcp_verified_at": "2026-10-13T14:45:58.577Z",
+      "mcp_verified_at": "2026-10-15T07:19:16.158Z",
       "mcp_description": "CoinGecko prices, rankings, historical charts, token profiles, and crypto market research.",
       "mcp_topics": [
         "Crypto"
@@ -1856,9 +3586,10 @@
       "mcp_transport": "stdio / Streamable HTTP",
       "mcp_auth": "No API key required; optional CoinGecko Demo key",
       "mcp_status": "community",
-      "mcp_trading_warning": false
+      "mcp_trading_warning": false,
+      "skills": []
     }
   ],
-  "cached_at": "2026-10-13T14:45:58.577Z",
-  "count": 38
+  "cached_at": "2026-10-15T07:19:16.158Z",
+  "count": 77
 }
