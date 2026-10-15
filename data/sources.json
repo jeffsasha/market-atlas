@@ -1146,5 +1146,82 @@
       "auth": "unknown",
       "publisher_status": "community"
     }
+  },
+  {
+    "full_name": "twelvedata/mcp",
+    "categories": [
+      "findata",
+      "ai-agents"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "QuantConnect/mcp-server",
+    "categories": [
+      "ai-agents"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "calvernaz/alphavantage",
+    "categories": [
+      "findata",
+      "us-equity"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "dragon1086/kospi-kosdaq-stock-server",
+    "categories": [
+      "us-equity"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "edrisranjbar/lifeos",
+    "categories": [
+      "ai-agents"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
   }
 ]
