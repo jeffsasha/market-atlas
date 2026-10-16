@@ -1523,5 +1523,66 @@
       "auth": "unknown",
       "publisher_status": "community"
     }
+  },
+  {
+    "full_name": "PacktPublishing/Hands-On-Machine-Learning-for-Algorithmic-Trading",
+    "categories": [
+      "quant"
+    ]
+  },
+  {
+    "full_name": "quant-science/sunday-quant-scientist",
+    "categories": [
+      "quant"
+    ]
+  },
+  {
+    "full_name": "avhz/RustQuant",
+    "categories": [
+      "derivatives"
+    ]
+  },
+  {
+    "full_name": "Barca0412/Introduction-to-Quantitative-Finance",
+    "categories": [
+      "ai-agents"
+    ]
+  },
+  {
+    "full_name": "austin-starks/NextTrade",
+    "categories": [
+      "us-equity"
+    ]
+  },
+  {
+    "full_name": "ivopetiz/algotrading",
+    "categories": [
+      "crypto",
+      "backtest"
+    ]
+  },
+  {
+    "full_name": "PacktPublishing/Machine-Learning-for-Algorithmic-Trading-Second-Edition_Original",
+    "categories": [
+      "quant"
+    ]
+  },
+  {
+    "full_name": "dwcoder/QuantitativePrimer",
+    "categories": [
+      "quant"
+    ]
+  },
+  {
+    "full_name": "scorpionhiccup/StockPricePrediction",
+    "categories": [
+      "us-equity"
+    ]
+  },
+  {
+    "full_name": "LongOnly/Quantitative-Notebooks",
+    "categories": [
+      "us-equity"
+    ]
   }
 ]
