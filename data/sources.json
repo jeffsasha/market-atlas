@@ -1380,5 +1380,85 @@
       "auth": "unknown",
       "publisher_status": "community"
     }
+  },
+  {
+    "full_name": "JamesANZ/prediction-market-mcp",
+    "categories": [
+      "crypto",
+      "findata"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "ethancod1ng/binance-mcp-server",
+    "categories": [
+      "crypto",
+      "findata"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "AnteWall/avanza-mcp",
+    "categories": [
+      "findata",
+      "ai-agents"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "bidouilles/mcp-tradingview-server",
+    "categories": [
+      "ta",
+      "findata"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "nirholas/Binance-US-MCP",
+    "categories": [
+      "crypto",
+      "findata"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
   }
 ]
