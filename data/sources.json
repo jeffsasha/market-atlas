@@ -1223,5 +1223,83 @@
       "auth": "unknown",
       "publisher_status": "community"
     }
+  },
+  {
+    "full_name": "stefanoamorelli/nasdaq-data-link-mcp",
+    "categories": [
+      "ai-agents"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "G-OTW/OpenTraderWorld",
+    "categories": [
+      "crypto",
+      "backtest"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "surajrimal07/NepseAPI-Unofficial",
+    "categories": [
+      "findata",
+      "ai-agents"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "aitrados/finance-trading-ai-agents-mcp",
+    "categories": [
+      "ai-agents"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "AgentX-ai/yahoo-finance-server",
+    "categories": [
+      "sentiment",
+      "findata"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
   }
 ]
