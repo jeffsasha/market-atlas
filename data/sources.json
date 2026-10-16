@@ -1460,5 +1460,68 @@
       "auth": "unknown",
       "publisher_status": "community"
     }
+  },
+  {
+    "full_name": "BrainDAO/mcp-polymarket",
+    "categories": [
+      "findata",
+      "ai-agents"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "visusnet/trade-republic-mcp-server",
+    "categories": [
+      "findata",
+      "ai-agents"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "finmap-org/mcp-server",
+    "categories": [
+      "findata",
+      "ai-agents"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "manitgupta/NSE-MCP",
+    "categories": [
+      "ai-agents"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
   }
 ]
