@@ -1584,5 +1584,70 @@
     "categories": [
       "us-equity"
     ]
+  },
+  {
+    "full_name": "facioquo/stock-indicators-dotnet",
+    "categories": [
+      "crypto",
+      "backtest"
+    ]
+  },
+  {
+    "full_name": "AlgoTraders/stock-analysis-engine",
+    "categories": [
+      "backtest",
+      "derivatives"
+    ]
+  },
+  {
+    "full_name": "kyky2347/ALTA",
+    "categories": [
+      "ai-agents"
+    ]
+  },
+  {
+    "full_name": "jsmidt/QuantPy",
+    "categories": [
+      "quant"
+    ]
+  },
+  {
+    "full_name": "hustcer/star",
+    "categories": [
+      "us-equity"
+    ]
+  },
+  {
+    "full_name": "ygwyg/MAHORAGA",
+    "categories": [
+      "sentiment",
+      "ai-agents"
+    ]
+  },
+  {
+    "full_name": "KylinMountain/TradingAgents-AShare",
+    "categories": [
+      "ai-agents",
+      "us-equity"
+    ]
+  },
+  {
+    "full_name": "195440/nof1.ai",
+    "categories": [
+      "ai-agents"
+    ]
+  },
+  {
+    "full_name": "0xethanq/astra-quant-agent",
+    "categories": [
+      "crypto",
+      "risk"
+    ]
+  },
+  {
+    "full_name": "RUC-NLPIR/FinSight",
+    "categories": [
+      "ai-agents"
+    ]
   }
 ]
