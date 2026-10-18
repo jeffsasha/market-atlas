@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "framer-motion": "^11.0.0",
     "gsap": "^3.15.0",
     "lucide-react": "^0.454.0",

@@ -1,5 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/next';
 import localFont from 'next/font/local';
 import Navbar from '@/components/Navbar';
 import GlobalBackground from '@/components/GlobalBackground';
@@ -35,6 +36,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
             <a href="https://github.com/jeffsasha" target="_blank" rel="noopener noreferrer" className="mono transition-colors hover:text-violet-400">GitHub · @jeffsasha</a>
           </footer>
           </CommandPaletteProvider>
+          <Analytics />
       </body>
     </html>
   );
