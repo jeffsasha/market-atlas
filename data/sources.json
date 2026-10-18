@@ -1665,5 +1665,73 @@
       "auth": "unknown",
       "publisher_status": "community"
     }
+  },
+  {
+    "full_name": "mogons/noraz-agent",
+    "categories": [
+      "crypto",
+      "ai-agents"
+    ]
+  },
+  {
+    "full_name": "Signal-Execution-Labs/forex-trading-ai-agent",
+    "categories": [
+      "crypto",
+      "backtest"
+    ]
+  },
+  {
+    "full_name": "Senpi-ai/senpi-skills",
+    "categories": [
+      "crypto",
+      "ai-agents"
+    ]
+  },
+  {
+    "full_name": "muratmula/ai-robinhood-chain",
+    "categories": [
+      "crypto",
+      "ai-agents"
+    ]
+  },
+  {
+    "full_name": "MiChaelinzo/Trading-Agent-",
+    "categories": [
+      "ai-agents"
+    ]
+  },
+  {
+    "full_name": "yolojewjitsu/moon-dev-ai-agents",
+    "categories": [
+      "ai-agents"
+    ]
+  },
+  {
+    "full_name": "irfndi/prism-liquidity-agent",
+    "categories": [
+      "backtest",
+      "ai-agents"
+    ]
+  },
+  {
+    "full_name": "JakeNesler/OpenProphet",
+    "categories": [
+      "derivatives",
+      "findata"
+    ]
+  },
+  {
+    "full_name": "QuantiaAI/helm-agents",
+    "categories": [
+      "crypto",
+      "risk"
+    ]
+  },
+  {
+    "full_name": "TradingGoose/TradingGoose.github.io",
+    "categories": [
+      "portfolio",
+      "findata"
+    ]
   }
 ]
