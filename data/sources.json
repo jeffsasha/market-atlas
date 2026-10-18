@@ -1649,5 +1649,21 @@
     "categories": [
       "ai-agents"
     ]
+  },
+  {
+    "full_name": "fzn0x/idx",
+    "categories": [
+      "ai-agents",
+      "us-equity"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
   }
 ]
