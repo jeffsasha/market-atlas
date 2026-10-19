@@ -1749,5 +1749,62 @@
       "auth": "unknown",
       "publisher_status": "community"
     }
+  },
+  {
+    "full_name": "nirholas/agenti",
+    "categories": [
+      "crypto",
+      "findata"
+    ]
+  },
+  {
+    "full_name": "Alchemist-X/predict-raven",
+    "categories": [
+      "ai-agents"
+    ]
+  },
+  {
+    "full_name": "millw14/merrymen",
+    "categories": [
+      "ai-agents"
+    ]
+  },
+  {
+    "full_name": "EthanAlgoX/MarketBot",
+    "categories": [
+      "ai-agents"
+    ]
+  },
+  {
+    "full_name": "edkdev/defi-trading-mcp",
+    "categories": [
+      "crypto",
+      "portfolio"
+    ]
+  },
+  {
+    "full_name": "oujingzhou/openfr",
+    "categories": [
+      "ai-agents"
+    ]
+  },
+  {
+    "full_name": "averma416/consulting-gauntlet",
+    "categories": [
+      "ai-agents"
+    ]
+  },
+  {
+    "full_name": "FlowLLM-AI/finance-mcp",
+    "categories": [
+      "ai-agents"
+    ]
+  },
+  {
+    "full_name": "Skopaq-AI/skopaqtrader",
+    "categories": [
+      "ai-agents",
+      "us-equity"
+    ]
   }
 ]
