@@ -1733,5 +1733,21 @@
       "portfolio",
       "findata"
     ]
+  },
+  {
+    "full_name": "coinpaprika/coinpaprika-mcp",
+    "categories": [
+      "crypto",
+      "findata"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
   }
 ]
