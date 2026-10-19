@@ -1806,5 +1806,21 @@
       "ai-agents",
       "us-equity"
     ]
+  },
+  {
+    "full_name": "mhajder/ghostfolio-mcp",
+    "categories": [
+      "portfolio",
+      "findata"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
   }
 ]
