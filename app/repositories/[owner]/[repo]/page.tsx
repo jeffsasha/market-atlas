@@ -1,7 +1,11 @@
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { readCache } from '@/lib/store';
 import { getReadme } from '@/lib/github';
-import { Star, GitFork, ExternalLink } from 'lucide-react';
+import { CATEGORIES } from '@/lib/categories';
+import { timeAgo } from '@/lib/format';
+import CopyButton from '@/components/CopyButton';
+import { ArrowLeft, ArrowUpRight, ExternalLink } from 'lucide-react';
 
 export default async function RepoDetail({ params }: { params: { owner: string; repo: string } }) {
   const full = `${params.owner}/${params.repo}`;
@@ -10,48 +14,63 @@ export default async function RepoDetail({ params }: { params: { owner: string; 
   if (!r) notFound();
   let readme: string | null = null;
   try { readme = await getReadme(params.owner, params.repo); } catch {}
+  const categories = ((r.categories as string[] | undefined) || [r.category]).map(id => CATEGORIES.find(c => c.id === id)).filter(Boolean) as typeof CATEGORIES[number][];
+  const clone = `git clone ${r.html_url}.git`;
 
   return (
-    <div className="mx-auto max-w-4xl px-4 py-8">
-      <div className="flex items-start justify-between gap-4">
-        <div>
-          <h1 className="mono text-2xl font-semibold tracking-tight">{r.full_name}</h1>
-          <p className="text-neutral-600 dark:text-neutral-400 mt-2 leading-relaxed">{r.description}</p>
+    <div className="mx-auto max-w-4xl px-5 py-8 sm:py-10">
+      <nav aria-label="Breadcrumb" className="mb-6 flex flex-wrap items-center gap-2 text-xs text-neutral-500">
+        <Link href="/#discover" className="inline-flex items-center gap-1.5 transition-colors hover:text-[var(--market-accent)]"><ArrowLeft size={13} />All projects</Link>
+        {categories[0] && <><span aria-hidden="true">/</span><Link href={`/?category=${categories[0].id}#discover`} className="transition-colors hover:text-[var(--market-accent)]">{categories[0].name}</Link></>}
+      </nav>
+      <div className="flex items-start gap-4">
+        {r.avatar_url && <img src={r.avatar_url} alt="" width={56} height={56} className="h-14 w-14 shrink-0 rounded-xl border border-border-light dark:border-border-dark" />}
+        <div className="min-w-0">
+          <p className="mono truncate text-xs text-neutral-500">{r.owner} /</p>
+          <h1 className="break-words text-3xl font-semibold tracking-tight sm:text-4xl">{r.name}</h1>
         </div>
-        {r.avatar_url && <img src={r.avatar_url} alt="" className="w-12 h-12 rounded-lg border" />}
       </div>
+      <p className="mt-4 max-w-2xl leading-relaxed text-neutral-600 dark:text-neutral-400">{r.description}</p>
+      {categories.length > 0 && <div className="mt-4 flex flex-wrap gap-1.5">{categories.map(c => <Link key={c.id} href={`/?category=${c.id}#discover`} className="rounded-full bg-purple-500/10 px-2.5 py-1 text-[11px] text-purple-700 transition-colors hover:bg-purple-500/20 dark:text-purple-300">{c.name}</Link>)}</div>}
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6">
+      <div className="mt-6 grid grid-cols-2 gap-3 md:grid-cols-4">
         {[
-          { l: 'Stars', v: (r.stars || 0).toLocaleString() },
-          { l: 'Forks', v: (r.forks || 0).toLocaleString() },
+          { l: 'Stars', v: (r.stars || 0).toLocaleString('en-US') },
+          { l: 'Forks', v: (r.forks || 0).toLocaleString('en-US') },
           { l: 'Language', v: r.language || '—' },
           { l: 'License', v: r.license_spdx || '—' },
         ].map(s => (
-          <div key={s.l} className="border border-[#E7E5E4] dark:border-[#27272A] rounded-lg p-3 bg-white dark:bg-[#131316]">
-            <div className="text-[11px] uppercase tracking-wide text-neutral-400">{s.l}</div>
-            <div className="mono text-sm mt-1">{s.v}</div>
+          <div key={s.l} className="preview-stat rounded-xl p-3.5">
+            <div className="text-[10px] uppercase tracking-wide text-neutral-500">{s.l}</div>
+            <div className="mono mt-1.5 text-sm">{s.v}</div>
           </div>
         ))}
       </div>
 
-      <div className="mono text-xs text-neutral-500 mt-4 space-y-1">
-        <div>Created: {r.created_at ? new Date(r.created_at).toLocaleDateString() : '—'}</div>
-        <div>Last push: {r.pushed_at ? new Date(r.pushed_at).toLocaleString() : '—'}</div>
-        {r.topics?.length > 0 && <div className="flex flex-wrap gap-1 pt-1">{r.topics.slice(0, 12).map((t: string) => <span key={t} className="border rounded px-1.5 py-0.5">{t}</span>)}</div>}
+      <dl className="mt-5 flex flex-wrap gap-x-8 gap-y-2 text-xs text-neutral-500">
+        <div><dt className="inline">Created </dt><dd className="inline text-[var(--page-text)]">{r.created_at ? new Date(r.created_at).toLocaleDateString('en-US', { dateStyle: 'medium' }) : '—'}</dd></div>
+        <div><dt className="inline">Last push </dt><dd className="inline text-[var(--page-text)]" title={r.pushed_at ? new Date(r.pushed_at).toLocaleString() : undefined}>{timeAgo(r.pushed_at) || '—'}</dd></div>
+        {typeof r.open_issues === 'number' && <div><dt className="inline">Open issues </dt><dd className="inline text-[var(--page-text)]">{r.open_issues.toLocaleString('en-US')}</dd></div>}
+      </dl>
+      {r.topics?.length > 0 && <div className="mt-4 flex flex-wrap gap-1.5">{r.topics.slice(0, 12).map((t: string) => <span key={t} className="preview-topic mono rounded-md px-2 py-1 text-[10px]">{t}</span>)}</div>}
+
+      <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
+        <a href={r.html_url} target="_blank" rel="noreferrer" className="inline-flex items-center justify-center gap-2 rounded-xl bg-neutral-900 px-5 py-3 text-sm font-medium text-white transition-opacity hover:opacity-90 dark:bg-white dark:text-black">
+          Visit GitHub <ExternalLink size={14} />
+        </a>
+        <div className="preview-clone flex min-w-0 flex-1 items-center gap-2 rounded-xl py-2 pl-3 pr-2">
+          <code className="mono min-w-0 flex-1 truncate text-[11px] text-neutral-500">{clone}</code>
+          <CopyButton text={clone} label="Copy" className="shrink-0 rounded-lg px-2.5 py-1.5 text-[11px]" />
+        </div>
       </div>
 
-      <a href={r.html_url} target="_blank" rel="noreferrer" className="mt-6 inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-neutral-900 dark:bg-white text-white dark:text-black text-sm font-medium">
-        Visit GitHub <ExternalLink size={14} />
-      </a>
-
       {readme && (
-        <div className="mt-8 border-t border-[#E7E5E4] dark:border-[#27272A] pt-6">
-          <h2 className="font-semibold mb-3">README preview</h2>
-          <pre className="mono text-xs whitespace-pre-wrap text-neutral-600 dark:text-neutral-400 bg-neutral-100 dark:bg-white/5 border rounded-lg p-4 max-h-96 overflow-auto">{readme.slice(0, 8000)}</pre>
+        <div className="mt-10 border-t border-border-light pt-6 dark:border-border-dark">
+          <div className="mb-3 flex items-center justify-between gap-3"><h2 className="font-semibold">README preview</h2><a href={`${r.html_url}#readme`} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-xs text-neutral-500 transition-colors hover:text-[var(--market-accent)]">Read on GitHub <ArrowUpRight size={12} /></a></div>
+          <pre className="preview-stat mono max-h-[32rem] overflow-auto whitespace-pre-wrap rounded-xl p-4 text-xs leading-relaxed text-neutral-600 dark:text-neutral-400">{readme.slice(0, 8000)}</pre>
         </div>
       )}
-      <p className="mt-6 text-[11px] mono text-neutral-400">Source: GitHub API · Synced {r.last_synced_at ? new Date(r.last_synced_at).toLocaleString() : 'unknown'}</p>
+      <p className="mono mt-6 text-[11px] text-neutral-500">Source: GitHub API · Synced {r.last_synced_at ? new Date(r.last_synced_at).toLocaleString() : 'unknown'}</p>
     </div>
   );
 }
