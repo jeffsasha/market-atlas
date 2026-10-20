@@ -5,6 +5,7 @@ import localFont from 'next/font/local';
 import Navbar from '@/components/Navbar';
 import GlobalBackground from '@/components/GlobalBackground';
 import MarketTicker from '@/components/MarketTicker';
+import BackToTop from '@/components/BackToTop';
 import { CommandPaletteProvider } from '@/components/CommandPalette';
 import { readCache } from '@/lib/store';
 import { buildSearchIndex } from '@/lib/search';
@@ -28,10 +29,12 @@ export default async function RootLayout({ children }: { children: React.ReactNo
       <head><script dangerouslySetInnerHTML={{ __html: themeInit() }} /></head>
       <body className={display.className}>
           <CommandPaletteProvider items={items}>
+          <a href="#main" className="skip-link">Skip to content</a>
           <GlobalBackground />
           <Navbar />
           <MarketTicker />
-          <main className="min-h-screen">{children}</main>
+          <main id="main" tabIndex={-1} className="min-h-screen outline-none">{children}</main>
+          <BackToTop />
           <footer className="border-t border-[#E7E5E4] dark:border-[#27272A] py-8 text-center text-sm text-neutral-500">
             <a href="https://github.com/jeffsasha" target="_blank" rel="noopener noreferrer" className="mono transition-colors hover:text-violet-400">GitHub · @jeffsasha</a>
           </footer>

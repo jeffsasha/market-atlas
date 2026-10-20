@@ -20,7 +20,7 @@ export default function ExploreSections({ projects, skills, mcp }: { projects: n
         {sections.map((item, index) => <motion.div key={item.title} initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * .06 }}>
           <FloatingSurface className="h-full"><Link href={item.href} className="explore-tile group flex h-full flex-col bg-[#FAFAF9] p-5 dark:bg-[#0A0A0B]">
             <div className="mb-6 flex items-center justify-between"><span className="mono text-xs text-neutral-400">0{index + 1}</span><ArrowUpRight size={17} className="transition-transform group-hover:-translate-y-1 group-hover:translate-x-1" /></div>
-            <h3 className="text-xl font-bold uppercase tracking-tight">{item.title}</h3><p className="mb-6 mt-2 text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">{item.detail}</p><p className="mono mt-auto text-[9px] uppercase tracking-wider text-neutral-500">{item.footer}</p>
+            <h3 className="text-xl font-bold uppercase tracking-tight">{item.title}</h3><p className="mb-6 mt-2 text-xs leading-relaxed text-neutral-500 dark:text-neutral-400">{item.detail}</p><p className="mono mt-auto text-[10px] uppercase tracking-wider text-neutral-500">{item.footer}</p>
           </Link></FloatingSurface>
         </motion.div>)}
       </div>
