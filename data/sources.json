@@ -1822,5 +1822,11 @@
       "auth": "unknown",
       "publisher_status": "community"
     }
+  },
+  {
+    "full_name": "GouveRoger12/milan-capital",
+    "categories": [
+      "ai-agents"
+    ]
   }
 ]
