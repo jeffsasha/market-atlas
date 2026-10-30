@@ -1842,5 +1842,21 @@
       "ai-agents",
       "us-equity"
     ]
+  },
+  {
+    "full_name": "cplj/axiocairn-mcp",
+    "categories": [
+      "backtest",
+      "risk"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
   }
 ]
