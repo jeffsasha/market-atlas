@@ -27,6 +27,7 @@
     "build": "next build",
     "dev": "next dev",
     "discover": "tsx scripts/discover.ts",
+    "discover:new": "tsx scripts/discover-new.ts",
     "lint": "next lint",
     "seed": "tsx scripts/seed.ts",
     "start": "next start",

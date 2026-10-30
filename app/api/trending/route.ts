@@ -6,7 +6,11 @@ import { readCache } from '@/lib/store';
 // repos sorted by stars but growth shows as n/a, and flag verified:false.
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
-  const limit = Math.min(Number(searchParams.get('limit') || 20), 100);
+  // Same clamping as lib/search.ts: non-finite values fall back to the default,
+  // otherwise floor and clamp to [1, 100].
+  const limitParam = searchParams.get('limit');
+  const limitParsed = limitParam === null ? 20 : Number(limitParam);
+  const limit = Number.isFinite(limitParsed) ? Math.max(1, Math.min(100, Math.floor(limitParsed))) : 20;
   const repos = await readCache();
   const withGrowth = repos.filter(r => typeof r.stars_growth_7d === 'number').sort((a, b) => b.stars_growth_7d - a.stars_growth_7d);
   const verified = withGrowth.length > 0;

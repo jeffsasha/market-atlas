@@ -45,8 +45,11 @@ export async function getRepoRef(fullName: string, branch: string): Promise<stri
 
 export async function getReadme(owner: string, repo: string) {
   try {
-    const j = await gh(`/repos/${owner}/${repo}/readme`, { headers: { Accept: 'application/vnd.github.raw' } });
-    return typeof j === 'string' ? j : JSON.stringify(j).slice(0, 20000);
+    // Bypass gh(): it parses res.json(), but the raw README endpoint returns
+    // plain text, not JSON. Fetch directly and read it as text instead.
+    const res = await fetch(API + `/repos/${owner}/${repo}/readme`, { signal: AbortSignal.timeout(20000), headers: { ...headers(), Accept: 'application/vnd.github.raw' }, next: { revalidate: 3600 } });
+    if (!res.ok) return null;
+    return (await res.text()).slice(0, 20000);
   } catch { return null; }
 }
 

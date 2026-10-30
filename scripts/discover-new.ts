@@ -78,7 +78,12 @@ function freshEnough(repo: GhRepo, maxAgeDays: number): boolean {
 
 async function main() {
   const dryRun = process.argv.includes('--dry-run');
-  const maxAdd = Number(process.argv.find(a => a.startsWith('--max-add='))?.slice(10) || 10);
+  // Non-finite or <= 0 values (e.g. --max-add=abc, --max-add=0, --max-add=-5)
+  // would otherwise make the selection cap NaN (unbounded) or 0 (nothing
+  // selected); fall back to the default of 10 instead.
+  const maxAddArg = process.argv.find(a => a.startsWith('--max-add='))?.slice(10);
+  const maxAddParsed = maxAddArg === undefined ? 10 : Number(maxAddArg);
+  const maxAdd = Number.isFinite(maxAddParsed) && maxAddParsed > 0 ? Math.floor(maxAddParsed) : 10;
   const kindsArg = process.argv.find(a => a.startsWith('--kinds='))?.slice(8);
   const onlyKinds = new Set<Kind>(
     (kindsArg ? kindsArg.split(',') : []).filter(k => ['skill', 'mcp', 'agent', 'top'].includes(k)) as Kind[]

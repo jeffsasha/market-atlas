@@ -16,6 +16,7 @@ import json
 import subprocess
 import sys
 import urllib.request
+from pathlib import Path
 
 sys.path.insert(0, "/opt/muse/skills/custom-connector-setup/bin")
 from dynamic_credentials import add_surrogate_to_request
@@ -23,10 +24,12 @@ from dynamic_credentials import add_surrogate_to_request
 REPO = sys.argv[1] if len(sys.argv) > 1 else "jeffsasha/market-atlas"
 API = "https://api.github.com"
 ALLOWED = ("api.github.com",)
+# Repo root derived from this script's location (scripts/), not a hardcoded VM path.
+REPO_ROOT = Path(__file__).resolve().parent.parent
 
 
 def sh(*args):
-    p = subprocess.run(args, capture_output=True, text=True, cwd="/home/hatch/workspace/market-atlas")
+    p = subprocess.run(args, capture_output=True, text=True, cwd=REPO_ROOT)
     if p.returncode != 0:
         raise RuntimeError(f"{' '.join(args)} failed: {p.stderr.strip()}")
     return p.stdout
@@ -63,7 +66,9 @@ def main():
         raise SystemExit(f"Remote main has moved ({remote_sha[:7]} != parent {parent[:7]}); refusing to push.")
 
     # Build tree entries for everything changed vs parent.
-    status = sh("git", "diff", "--name-status", parent, head).strip().splitlines()
+    # --no-renames: renames appear as a delete + add, so each line is exactly
+    # "<status>\t<path>" and the split below cannot break on "R100\told\tnew".
+    status = sh("git", "diff", "--no-renames", "--name-status", parent, head).strip().splitlines()
     entries = []
     for line in status:
         st, path = line.split("\t", 1)
@@ -75,7 +80,7 @@ def main():
         # (they can differ if files were edited after committing).
         content = subprocess.run(
             ["git", "show", f"{head}:{path}"],
-            capture_output=True, cwd="/home/hatch/workspace/market-atlas").stdout
+            capture_output=True, cwd=REPO_ROOT).stdout
         blob = api("POST", f"/repos/{REPO}/git/blobs",
                    {"content": base64.b64encode(content).decode(), "encoding": "base64"})
         entries.append({"path": path, "mode": mode, "type": "blob", "sha": blob["sha"]})

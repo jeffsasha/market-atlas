@@ -11,6 +11,10 @@ export async function GET(req: NextRequest) {
     minStars: searchParams.get('minStars') ? Number(searchParams.get('minStars')) : undefined,
     sort: searchParams.get('sort') || 'popular',
   });
-  const limit = Math.min(Number(searchParams.get('limit') || 24), 100);
+  // Same clamping as lib/search.ts: non-finite values fall back to the default,
+  // otherwise floor and clamp to [1, 100].
+  const limitParam = searchParams.get('limit');
+  const limitParsed = limitParam === null ? 24 : Number(limitParam);
+  const limit = Number.isFinite(limitParsed) ? Math.max(1, Math.min(100, Math.floor(limitParsed))) : 24;
   return NextResponse.json({ results: out.slice(0, limit), total: out.length, cached: repos.length > 0 });
 }

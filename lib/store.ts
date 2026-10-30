@@ -12,7 +12,9 @@ export async function readCache(): Promise<CachedRepo[]> {
   try {
     const raw = await fs.readFile(CACHE, 'utf-8');
     const j = JSON.parse(raw);
-    return j.repositories || [];
+    // An empty cache is not a usable cache: fall back to the checked-in catalog.
+    if (Array.isArray(j.repositories) && j.repositories.length > 0) return j.repositories;
+    return catalog.repositories;
   } catch { return catalog.repositories; }
 }
 
@@ -24,8 +26,11 @@ export async function writeCache(repos: CachedRepo[]) {
 export function filterRepos(repos: CachedRepo[], opts: { q?: string; category?: string; language?: string; minStars?: number; sort?: string }) {
   let out = [...repos];
   if (opts.q) {
-    const q = opts.q.toLowerCase();
-    out = out.filter(r => (r.full_name + ' ' + (r.description || '') + ' ' + (r.topics || []).join(' ')).toLowerCase().includes(q));
+    const words = opts.q.toLowerCase().split(/\s+/).filter(Boolean);
+    out = out.filter(r => {
+      const haystack = (r.full_name + ' ' + (r.description || '') + ' ' + (r.topics || []).join(' ')).toLowerCase();
+      return words.every(word => haystack.includes(word));
+    });
   }
   if (opts.category && opts.category !== 'all') out = out.filter(r => (r.categories || [r.category]).includes(opts.category));
   if (opts.language) out = out.filter(r => r.language === opts.language);
