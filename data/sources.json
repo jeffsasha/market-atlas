@@ -1835,5 +1835,12 @@
       "crypto",
       "ai-agents"
     ]
+  },
+  {
+    "full_name": "AIPMAndy/ai-invest-agent",
+    "categories": [
+      "ai-agents",
+      "us-equity"
+    ]
   }
 ]
