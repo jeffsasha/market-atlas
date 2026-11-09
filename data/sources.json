@@ -1858,5 +1858,12 @@
       "auth": "unknown",
       "publisher_status": "community"
     }
+  },
+  {
+    "full_name": "Niceck/hhxg-top-hhxg-python",
+    "categories": [
+      "findata",
+      "ai-agents"
+    ]
   }
 ]
