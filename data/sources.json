@@ -1865,5 +1865,53 @@
       "findata",
       "ai-agents"
     ]
+  },
+  {
+    "full_name": "nirholas/Binance-MCP",
+    "categories": [
+      "crypto",
+      "findata"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "nirholas/crypto-data-aggregator",
+    "categories": [
+      "crypto",
+      "portfolio"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
+  },
+  {
+    "full_name": "nirholas/crypto-market-data",
+    "categories": [
+      "crypto",
+      "findata"
+    ],
+    "mcp": {
+      "path": "README.md",
+      "topics": [
+        "Finance"
+      ],
+      "transport": "unknown",
+      "auth": "unknown",
+      "publisher_status": "community"
+    }
   }
 ]
