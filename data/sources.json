@@ -1929,5 +1929,11 @@
       "auth": "unknown",
       "publisher_status": "community"
     }
+  },
+  {
+    "full_name": "0xMerl99/Agent-World-Protocol",
+    "categories": [
+      "ai-agents"
+    ]
   }
 ]
