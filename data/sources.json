@@ -1935,5 +1935,12 @@
     "categories": [
       "ai-agents"
     ]
+  },
+  {
+    "full_name": "ml4t/skills",
+    "categories": [
+      "backtest",
+      "ai-agents"
+    ]
   }
 ]
