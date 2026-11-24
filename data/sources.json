@@ -1942,5 +1942,12 @@
       "backtest",
       "ai-agents"
     ]
+  },
+  {
+    "full_name": "chainstacklabs/web3-ai-trading-agent",
+    "categories": [
+      "crypto",
+      "findata"
+    ]
   }
 ]
