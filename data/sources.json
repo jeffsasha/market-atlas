@@ -1949,5 +1949,12 @@
       "crypto",
       "findata"
     ]
+  },
+  {
+    "full_name": "BijectiveLabs/bitra",
+    "categories": [
+      "crypto",
+      "ai-agents"
+    ]
   }
 ]
