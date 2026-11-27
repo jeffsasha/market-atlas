@@ -1956,5 +1956,12 @@
       "crypto",
       "ai-agents"
     ]
+  },
+  {
+    "full_name": "AlphaGBM/skills",
+    "categories": [
+      "derivatives",
+      "ai-agents"
+    ]
   }
 ]
