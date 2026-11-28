@@ -1963,5 +1963,12 @@
       "derivatives",
       "ai-agents"
     ]
+  },
+  {
+    "full_name": "TalyxTerminal/TalyxTerminal",
+    "categories": [
+      "crypto",
+      "backtest"
+    ]
   }
 ]
